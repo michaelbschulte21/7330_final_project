@@ -34,3 +34,9 @@ if(flag){
   
   dbKillConnections()
 }
+
+####### Load data into tables ##########
+
+source('Data_load.R')
+
+dbKillConnections()
