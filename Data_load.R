@@ -1,6 +1,6 @@
 # Data_load.R
 
-source('API/API_access_pt1.R')
+# source('API/API_access_pt1.R')
 
 source('Connections/F1_connect.R')
 rm(secrets)
