@@ -35,7 +35,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Driver_Standings` (
                   `driver_ID` varchar(45) NULL,
                   `points` INT NULL,
                   `position` INT NULL,
-                  `position_Text` varchar(5) NULL,
+                  `position_Text` varchar(3) NULL,
                   `wins` INT NULL,
                   `constructor_ID` varchar(45) NULL,
                   `round` INT NULL
@@ -94,7 +94,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   `number` INT NULL,
                   `grid` INT NULL,
                   `position` INT NULL,
-                  `position_Text` varchar(5) NULL,
+                  `position_Text` varchar(3) NULL,
                   -- `position_Order` INT NULL,
                   `points` INT NULL,
                   `laps` INT NULL,
@@ -104,6 +104,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   `rank` INT NULL,
                   `fastest_Lap_Time` TIMESTAMP NULL,
                   `fastest_Lap_Speed` FLOAT NULL,
+                  `fastest_Lap_Speed_Units` char(3) NULL,
                   `status` varchar(45) NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`result_ID`)
@@ -158,7 +159,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Standings` (
                   `constructor_ID` varchar(45) NULL,
                   `points` INT NULL,
                   `position` INT NULL,
-                  `position_Text` varchar(5) NULL,
+                  `position_Text` varchar(3) NULL,
                   `wins` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`constructor_Standings_ID`)
@@ -174,7 +175,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Results` (
                   `points` INT NULL,
                   `number` INT NULL,
                   `position` INT NULL,
-                  `position_Text` varchar(5) NULL,
+                  `position_Text` varchar(3) NULL,
                   `status` varchar(45) NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`constructor_Results_ID`)
@@ -192,5 +193,6 @@ dbExecute(conn = dbconnection_season, statement = script)
 script <- paste0("CREATE TABLE IF NOT EXISTS `Status` (
                   `status_ID` INT NOT NULL,
                   `status` VARCHAR(45) NULL,
+                  `round` INT NULL,
                   PRIMARY KEY (`status_ID`));")
 dbExecute(conn = dbconnection_season, statement = script)

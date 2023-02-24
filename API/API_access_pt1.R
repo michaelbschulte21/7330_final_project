@@ -51,7 +51,7 @@ table_names <- c('circuits',
 # circuits <- circuits$MRData$CircuitTable$Circuits
 # 
 # constructors <- api_getter(season = y, round_number = nr, value = table_names[2])
-# constructors <- constructors$MRData$ConstructorTable$Constructors
+# constructors <- as.data.frame(constructors$MRData$ConstructorTable$Constructors)
 # 
 # constructorStandings <- api_getter(season = y, round_number = nr, value = table_names[3])
 # constructorStandings <- as.data.frame(constructorStandings$MRData$StandingsTable$StandingsLists$ConstructorStandings)
@@ -61,25 +61,31 @@ table_names <- c('circuits',
 # 
 # driverStandings <- api_getter(season = y, round_number = nr, value = table_names[5])
 # driverStandings <- as.data.frame(driverStandings$MRData$StandingsTable$StandingsLists$DriverStandings)
+# driverStandings.constructors <- as.data.frame(driverStandings$Constructors)
 # 
 # # laps must be year >= 1996
 # laps <- api_getter(season = y, round_number = nr, value = table_names[6], lap_number = 1)
 # laps <- as.data.frame(laps$MRData$RaceTable)
-# laps <- as.data.frame(laps$Races.Laps)
+# laps.laps <- as.data.frame(laps$Races.Laps)
+# laps.laps.timings <- as.data.frame(laps.laps$Timings)
 # 
 # # Return to laps. It may be broken
 # pitstops <- api_getter(season = y, round_number = nr, value = table_names[7])
+# pitstops.races <- as.data.frame(pitstops$MRData$RaceTable)
 # pitstops <- as.data.frame(pitstops$MRData$RaceTable$Races) # Needs to be looked at
+# pitstops.pitstops <- as.data.frame(pitstops$PitStops)
 # 
 # qualifying <- api_getter(season = y, round_number = nr, value = table_names[8])
 # qualifying <- qualifying$MRData$RaceTable$Races # Needs to be cut more. Find race ID
+# qualifying.races <- qualifying
 # qualifying <- as.data.frame(qualifying$QualifyingResults)
 # 
 # results <- api_getter(season = y, round_number = nr, value = table_names[9])
+# results.race <- as.data.frame(results$MRData$RaceTable$Race)
 # results <- as.data.frame(results$MRData$RaceTable$Races$Results) # May need to be broadened
 # 
 # status <- api_getter(season = y, round_number = nr, value = table_names[10])
-# status <- status$MRData$StatusTable$Status
+# status <- as.data.frame(status$MRData$StatusTable$Status)
 # 
 # race <- api_getter(season = y, round_number = nr, value = NULL)
 # race <- as.data.frame(race$MRData$RaceTable$Races)
