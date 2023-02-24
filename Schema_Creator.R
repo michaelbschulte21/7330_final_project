@@ -23,8 +23,8 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Circuits` (
                   `latitude` FLOAT NULL,
                   `longitude` FLOAT NULL,
                   -- `number_alt` FLOAT NULL,
-                  `round` INT NULL,
-                  PRIMARY KEY (`circuit_ID`)
+                  `round` INT NULL
+                  -- PRIMARY KEY (`circuit_ID`)
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
@@ -53,8 +53,8 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Drivers` (
                   `last_name` VARCHAR(45) NULL,
                   `DOB` DATE NULL,
                   `nationality` VARCHAR(45) NULL,
-                  `round` INT NULL,
-                  PRIMARY KEY (`driver_ID`)
+                  `round` INT NULL
+                  -- PRIMARY KEY (`driver_ID`)
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
@@ -64,7 +64,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Lap_Times` (
                   `driver_ID` varchar(45) NULL,
                   `lap` INT NULL,
                   `position` INT NULL,
-                  `time` TIMESTAMP NULL,
+                  `time` TIME NULL,
                   -- `milliseconds` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`race_ID`)
@@ -98,11 +98,11 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   -- `position_Order` INT NULL,
                   `points` INT NULL,
                   `laps` INT NULL,
-                  `time` TIMESTAMP NULL,
+                  `time` TIME NULL,
                   `milliseconds` INT NULL,
                   `fastest_Lap` INT NULL,
                   `rank` INT NULL,
-                  `fastest_Lap_Time` TIMESTAMP NULL,
+                  `fastest_Lap_Time` TIME NULL,
                   `fastest_Lap_Speed` FLOAT NULL,
                   `fastest_Lap_Speed_Units` char(3) NULL,
                   `status` varchar(45) NULL,
@@ -117,8 +117,8 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructors` (
                   -- `constructor_Ref` VARCHAR(45) NULL,
                   `constructor_name` VARCHAR(45) NULL,
                   `nationality` VARCHAR(45) NULL,
-                  `round` INT NULL,
-                  PRIMARY KEY (`constructor_ID`)
+                  `round` INT NULL
+                  -- PRIMARY KEY (`constructor_ID`)
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
@@ -130,9 +130,9 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Qualifying` (
                   `constructor_ID` varchar(45) NULL,
                   `number` INT NULL,
                   `position` INT NULL,
-                  `q1` TIMESTAMP NULL,
-                  `q2` TIMESTAMP NULL,
-                  `q3` TIMESTAMP NULL,
+                  `q1` TIME NULL,
+                  `q2` TIME NULL,
+                  `q3` TIME NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`qualify_ID`)
                   );")
@@ -144,7 +144,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Pit_Stops` (
                   `driver_ID` varchar(45) NULL,
                   `stop` INT NULL,
                   `lap` INT NULL,
-                  `time` TIMESTAMP NULL,
+                  `time` TIME NULL,
                   `duration` FLOAT NULL,
                   -- `milliseconds` INT NULL,
                   `round` INT NULL
@@ -194,6 +194,7 @@ dbExecute(conn = dbconnection_season, statement = script)
 script <- paste0("CREATE TABLE IF NOT EXISTS `Status` (
                   `status_ID` INT NOT NULL,
                   `status` VARCHAR(45) NULL,
-                  `round` INT NULL,
-                  PRIMARY KEY (`status_ID`));")
+                  `round` INT NULL
+                  -- PRIMARY KEY (`status_ID`)
+                  );")
 dbExecute(conn = dbconnection_season, statement = script)

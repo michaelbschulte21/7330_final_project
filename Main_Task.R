@@ -20,6 +20,38 @@ drop_all_schema <- function(){
   print('All existing schemas have been nuked')
 }
 
+truncate_current <- function(i){
+  script <- paste0("TRUNCATE TABLE Circuits;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Driver_Standings;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Drivers;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Lap_Times;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Races;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Results;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Constructors;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Qualifying;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Pit_Stops;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Constructor_Standings;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Constructor_Results;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Seasons;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Status;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  print(paste0('Truncated season = ', years[i]))
+}
+
+########### Create formula1 schema ###########
+
 source('Connections/Local_connect.R')
 rm(secrets)
 
