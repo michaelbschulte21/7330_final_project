@@ -41,6 +41,7 @@ source('API/API_access_pt1.R')
 ######## Check if schema exists ########
 
 for(i in 1:length(years)){
+  print(paste0(years[i]))
   source('Connections/Local_connect.R')
   rm(secrets)
   
