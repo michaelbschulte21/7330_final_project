@@ -1,4 +1,4 @@
-# Schema_Creator.R
+# Schema_Creator_old.R
 
 source('Connections/Local_connect.R')
 rm(secrets)

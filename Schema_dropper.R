@@ -14,4 +14,7 @@ for(i in 1:length(years)){
   dbExecute(conn = dbconnection_local, statement = script)
 }
 
+script <- paste0('DROP SCHEMA IF EXISTS formula1;')
+dbExecute(conn = dbconnection_local, statement = script)
+
 dbKillConnections()

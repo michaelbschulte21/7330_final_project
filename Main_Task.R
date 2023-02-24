@@ -7,7 +7,8 @@ source('Libraries.R')
 ######### Function to kill all connections #########
 
 dbKillConnections <- function(){
-  all_cons <- dbListConnections(MySQL())
+  all_cons <- dbListConnections(RMySQL::MySQL())
+  print(all_cons)
   for(con in all_cons){
     dbDisconnect(conn = con)
   }
@@ -18,6 +19,8 @@ drop_all_schema <- function(){
   source('Schema_dropper.R')
   print('All existing schemas have been nuked')
 }
+
+source('Schema_Creator_formula1.R')
 
 source('API/API_access_pt1.R')
 

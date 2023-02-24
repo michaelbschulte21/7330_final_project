@@ -14,16 +14,72 @@ rm(secrets)
 # stuff <- dbGetQuery(conn = dbconnection_f1, statement = script)
 
 # Seasons
-script <- paste0("INSERT INTO seasons (year)
-                     VALUES ", paste("(",
-                                     years
-                                     ,")", collapse = ",\n"),";")
-dbExecute(conn = dbconnection_f1, statement = script)
+# script <- paste0("INSERT INTO seasons (year)
+#                      VALUES ", paste("(",
+#                                      years
+#                                      ,")", collapse = ",\n"),";")
+# dbExecute(conn = dbconnection_f1, statement = script)
 
-for(i in 1:length(years)){
+require(dplyr)
+
+script <- paste0("SELECT max(year) AS max_year
+                 FROM Seasons;")
+start_year <- dbGetQuery(conn = dbconnection_f1, statement = script)
+start_year <- start_year$max_year
+if(is.na(start_year)){
+  start_year <- 1
+} else if(start_year != max(years)){
+  start_year <- length(years) - (as.integer(max(years)) - start_year) + 1
+} else if(start_year == max(years)){
+  start_year <- length(years)
+  script <- paste0("DELETE FROM Seasons
+                   WHERE year = ", max(years),";")
+  dbExecute(conn = dbconnection_f1, statement = script)
+  i <- length(years)
+  source('Connections/Season_connect.R')
+  script <- paste0("TRUNCATE TABLE Circuits;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Driver_Standings;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Drivers;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Lap_Times;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Races;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Results;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Constructors;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Qualifying;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Pit_Stops;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Constructor_Standings;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Constructor_Results;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABEL Seasons;")
+  dbExecute(conn = dbconnection_season, statement = script)
+  script <- paste0("TRUNCATE TABLE Status;")
+  dbExecute(conn = dbconnection_season, statement = script)
+}
+
+for(i in start_year:length(years)){
+  dbKillConnections()
+  source('Connections/F1_connect.R')
+  source('Connections/Season_connect.R')
+  rm(secrets)
   race <- api_getter(season = years[i], round_number = NULL, value = NULL)
   race <- race$MRData$RaceTable$Races
   num_rounds <- max(as.integer(race$round))
+  
+  script <- paste0("INSERT INTO Seasons (year, num_rounds)
+                   VALUES ", paste("(",
+                                   years[i], ", ",
+                                   num_rounds
+                                   ,")", sep = "", collapse = ",\n"),";")
+  dbExecute(conn = dbconnection_f1, statement = script)
   
   for(nr in 1:num_rounds){
     source('API/API_access_pt2.R')
