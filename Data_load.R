@@ -82,9 +82,10 @@ for(i in start_year:length(years)){
   dbExecute(conn = dbconnection_f1, statement = script)
   
   # Seasons
-  script <- paste0("INSERT INTO seasons (year)
+  script <- paste0("INSERT INTO seasons (year, num_rounds)
                      VALUES ", paste("(",
-                                     years[i]
+                                     years[i], ", ",
+                                     num_rounds
                                      ,")", collapse = ",\n"),";")
   dbExecute(conn = dbconnection_season, statement = script)
   

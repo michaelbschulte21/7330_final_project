@@ -185,6 +185,7 @@ dbExecute(conn = dbconnection_season, statement = script)
 # Seasons
 script <- paste0("CREATE TABLE IF NOT EXISTS `Seasons` (
                   `year` INT NOT NULL,
+                  `num_rounds` INT NULL,
                   PRIMARY KEY (`year`)
                  );")
 dbExecute(conn = dbconnection_season, statement = script)
