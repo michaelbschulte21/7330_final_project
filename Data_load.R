@@ -1,5 +1,6 @@
 # Data_load.R
 
+####### Start #########
 # source('API/API_access_pt1.R')
 
 source('Connections/F1_connect.R')
@@ -154,7 +155,7 @@ for(i in start_year:length(years)){
                                         results$Constructor$constructorId, "', '",
                                         results$Driver$driverId, "', ",
                                         results$points, ", ",
-                                        results$number, ", ",
+                                        if_null_int(results$number), ", ",
                                         results$position, ", '",
                                         results$positionText, "', '",
                                         results$status, "', ",
