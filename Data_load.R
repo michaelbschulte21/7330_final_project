@@ -110,7 +110,7 @@ for(i in start_year:length(years)){
     
       ######## Circuits ########
       if(nrow(circuits) > 0){
-        script <- paste0("INSERT INTO circuits (circuit_ID, circuit_name, locality, country, latitude, longitude, round)
+        script <- paste0("INSERT INTO circuits (circuit_ID, circuit_name, locality, country, latitude, longitude, season, round)
                          VALUES ", paste("('",
                                         circuits$circuitId, "', '",
                                         circuits$circuitName, "', '",
@@ -118,6 +118,7 @@ for(i in start_year:length(years)){
                                         circuits$Location$country, "', ",
                                         circuits$Location$lat, ", ",
                                         circuits$Location$long, ", ",
+                                        years[i], ", ",
                                         nr
                                         ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -130,13 +131,14 @@ for(i in start_year:length(years)){
       
       ############# Constructor Standings ##############
       if(nrow(constructorStandings) > 0){
-        script <- paste0("INSERT INTO constructor_standings (constructor_ID, points, position, position_Text, wins, round)
+        script <- paste0("INSERT INTO constructor_standings (constructor_ID, points, position, position_Text, wins, season, round)
                          VALUES ", paste("('",
                                         constructorStandings$Constructor$constructorId, "', ",
                                         constructorStandings$points, ", ",
                                         constructorStandings$position, ", '",
                                         constructorStandings$positionText, "', ",
                                         constructorStandings$wins, ", ",
+                                        years[i], ", ",
                                         nr
                                         ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -149,7 +151,7 @@ for(i in start_year:length(years)){
       
       ############## Constructor Results ################
       if(nrow(results) > 0){
-        script <- paste0("INSERT INTO constructor_results (race_name, constructor_ID, driver_ID, points, number, position, position_Text, status, round)
+        script <- paste0("INSERT INTO constructor_results (race_name, constructor_ID, driver_ID, points, number, position, position_Text, status, season, round)
                          VALUES ", paste("('",
                                         results.race$raceName, "', '",
                                         results$Constructor$constructorId, "', '",
@@ -159,6 +161,7 @@ for(i in start_year:length(years)){
                                         results$position, ", '",
                                         results$positionText, "', '",
                                         results$status, "', ",
+                                        years[i], ", ",
                                         nr
                                         ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -171,11 +174,12 @@ for(i in start_year:length(years)){
       
       ############### Constructors #################
       if(nrow(constructors) > 0){
-        script <- paste0("INSERT INTO constructors (constructor_ID, constructor_name, nationality, round)
+        script <- paste0("INSERT INTO constructors (constructor_ID, constructor_name, nationality, season, round)
                          VALUES ", paste("('",
                                         constructors$constructorId, "', '",
                                         constructors$name, "', '",
                                         constructors$nationality, "', ",
+                                        years[i], ", ",
                                         nr
                                         ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -188,7 +192,7 @@ for(i in start_year:length(years)){
       
       ################ Driver Standings ###############
       if(nrow(driverStandings) > 0){
-        script <- paste0("INSERT INTO driver_standings (driver_ID, points, position, position_Text, wins, constructor_ID, round)
+        script <- paste0("INSERT INTO driver_standings (driver_ID, points, position, position_Text, wins, constructor_ID, season, round)
                          VALUES ", paste("('",
                                         driverStandings$Driver$driverId, "', ",
                                         driverStandings$points, ", ",
@@ -196,6 +200,7 @@ for(i in start_year:length(years)){
                                         driverStandings$positionText, "', ",
                                         driverStandings$wins, ", '",
                                         driverStandings.constructors$constructorId, "', ",
+                                        years[i], ", ",
                                         nr
                                         ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -208,7 +213,7 @@ for(i in start_year:length(years)){
       
       ############### Drivers ##############
       if(nrow(drivers) > 0){
-        script <- paste0("INSERT INTO drivers (driver_ID, number, code, first_name, last_name, DOB, nationality, round)
+        script <- paste0("INSERT INTO drivers (driver_ID, number, code, first_name, last_name, DOB, nationality, season, round)
                          VALUES ", paste("('",
                                          drivers$driverId, "', ",
                                          if_null_int(drivers$permanentNumber), ", ",
@@ -217,6 +222,7 @@ for(i in start_year:length(years)){
                                          apostrophe_fix(drivers$familyName), "', '",
                                          drivers$dateOfBirth, "', '",
                                          drivers$nationality, "', ",
+                                         years[i], ", ",
                                          nr
                                          ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -230,13 +236,14 @@ for(i in start_year:length(years)){
       ############### Lap Times ################
       if(years[i] >= 1996){
         if(nrow(laps) > 0){
-          script <- paste0("INSERT INTO lap_times (race_name, driver_ID, lap, position, time, round)
+          script <- paste0("INSERT INTO lap_times (race_name, driver_ID, lap, position, time, season, round)
                            VALUES ", paste("('",
                                            laps$Races.raceName, "', '",
                                            laps.laps.timings$driverId, "', ",
                                            laps.laps$number, ", ",
                                            laps.laps.timings$position, ", '",
                                            laps.laps.timings$time, "', ",
+                                           years[i], ", ",
                                            nr
                                            ,")", sep = "", collapse = ",\n"),";")
           dbExecute(conn = dbconnection_season, statement = script)
@@ -257,7 +264,7 @@ for(i in start_year:length(years)){
       ########### Pit Stops #########
       if(years[i] >= 2012){
         if(nrow(pitstops) > 0){
-          script <- paste0("INSERT INTO pit_stops (race_name, driver_ID, stop, lap, time, duration, round)
+          script <- paste0("INSERT INTO pit_stops (race_name, driver_ID, stop, lap, time, duration, season, round)
                            VALUES ", paste("('",
                                            pitstops.races$Races.raceName, "', '",
                                            pitstops.pitstops$driverId, "', ",
@@ -265,6 +272,7 @@ for(i in start_year:length(years)){
                                            pitstops.pitstops$lap, ", '",
                                            pitstops.pitstops$time, "', ",
                                            pitstops.pitstops$duration, ", ",
+                                           years[i], ", ",
                                            nr
                                            ,")", sep = "", collapse = ",\n"),";")
           dbExecute(conn = dbconnection_season, statement = script)
@@ -284,7 +292,7 @@ for(i in start_year:length(years)){
       
       ############## Qualifying #############
       if(nrow(qualifying) > 0){
-        script <- paste0("INSERT INTO qualifying (race_name, driver_ID, constructor_ID, number, position, q1, q2, q3, round)
+        script <- paste0("INSERT INTO qualifying (race_name, driver_ID, constructor_ID, number, position, q1, q2, q3, season, round)
                          VALUES ", paste("('",
                                          qualifying.races$raceName, "', '",
                                          qualifying$Driver$driverId, "', '",
@@ -294,6 +302,7 @@ for(i in start_year:length(years)){
                                          qualifying$Q1, "', '",
                                          qualifying$Q2, "', '",
                                          qualifying$Q3, "', ",
+                                         years[i], ", ",
                                          nr
                                          ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -306,13 +315,14 @@ for(i in start_year:length(years)){
       
       ########### Races ############
       if(nrow(race) > 0){
-        script <- paste0("INSERT INTO races (race_name, year, circuit_ID, date, time, round)
+        script <- paste0("INSERT INTO races (race_name, year, circuit_ID, date, time, season, round)
                          VALUES ", paste("('",
                                          race$raceName, "', ",
                                          years[i], ", '",
                                          race$Circuit$circuitId, "', '",
                                          race$date, "', ",
                                          if_null_char(race$time), ", ",
+                                         years[i], ", ",
                                          nr
                                          ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -325,7 +335,7 @@ for(i in start_year:length(years)){
       
       ########### Results #############
       if(nrow(results) > 0){
-        script <- paste0("INSERT INTO results (race_name, driver_ID, constructor_ID, number, grid, position, position_Text, points, laps, time, milliseconds, fastest_Lap, `rank`, fastest_Lap_Time, fastest_Lap_Speed, fastest_Lap_Speed_Units, status, round)
+        script <- paste0("INSERT INTO results (race_name, driver_ID, constructor_ID, number, grid, position, position_Text, points, laps, time, milliseconds, fastest_Lap, `rank`, fastest_Lap_Time, fastest_Lap_Speed, fastest_Lap_Speed_Units, status, season, round)
                          VALUES ", paste("(",
                                          if_null_char(results.race$raceName), ", ",
                                          if_null_char(results$Driver$driverId), ", ",
@@ -344,6 +354,7 @@ for(i in start_year:length(years)){
                                          if_null_int(results$FastestLap$AverageSpeed$speed), ", ",
                                          if_null_char(results$FastestLap$AverageSpeed$units), ", ",
                                          if_null_char(results$status), ", ",
+                                         years[i], ", ",
                                          nr
                                          ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)
@@ -356,10 +367,11 @@ for(i in start_year:length(years)){
       
       ############# Status ############
       if(nrow(status) > 0){
-        script <- paste0("INSERT INTO status (status_ID, status, round)
+        script <- paste0("INSERT INTO status (status_ID, status, season, round)
                          VALUES ", paste("(",
                                          status$statusId, ", '",
                                          status$status, "', ",
+                                         years[i], ", ",
                                          nr
                                          ,")", sep = "", collapse = ",\n"),";")
         dbExecute(conn = dbconnection_season, statement = script)

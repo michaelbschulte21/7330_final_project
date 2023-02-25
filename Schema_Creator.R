@@ -23,6 +23,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Circuits` (
                   `latitude` FLOAT NULL,
                   `longitude` FLOAT NULL,
                   -- `number_alt` FLOAT NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`circuit_ID`)
                   );")
@@ -38,6 +39,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Driver_Standings` (
                   `position_Text` varchar(3) NULL,
                   `wins` INT NULL,
                   `constructor_ID` varchar(45) NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`driver_Standings_ID`)
                   );")
@@ -53,6 +55,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Drivers` (
                   `last_name` VARCHAR(45) NULL,
                   `DOB` DATE NULL,
                   `nationality` VARCHAR(45) NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`driver_ID`)
                   );")
@@ -66,6 +69,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Lap_Times` (
                   `position` INT NULL,
                   `time` TIME NULL,
                   -- `milliseconds` INT NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`race_ID`)
                   );")
@@ -80,6 +84,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Races` (
                   -- `name` VARCHAR(45) NULL,
                   `date` DATE NULL,
                   `time` TIME NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`race_ID`)
                   );")
@@ -106,6 +111,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   `fastest_Lap_Speed` FLOAT NULL,
                   `fastest_Lap_Speed_Units` char(3) NULL,
                   `status` varchar(45) NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`result_ID`)
                   );")
@@ -117,6 +123,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructors` (
                   -- `constructor_Ref` VARCHAR(45) NULL,
                   `constructor_name` VARCHAR(45) NULL,
                   `nationality` VARCHAR(45) NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`constructor_ID`)
                   );")
@@ -133,6 +140,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Qualifying` (
                   `q1` TIME NULL,
                   `q2` TIME NULL,
                   `q3` TIME NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`qualify_ID`)
                   );")
@@ -147,6 +155,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Pit_Stops` (
                   `time` TIME NULL,
                   `duration` FLOAT NULL,
                   -- `milliseconds` INT NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`race_ID`)
                   );")
@@ -161,6 +170,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Standings` (
                   `position` INT NULL,
                   `position_Text` varchar(3) NULL,
                   `wins` INT NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`constructor_Standings_ID`)
                   );")
@@ -177,6 +187,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Results` (
                   `position` INT NULL,
                   `position_Text` varchar(3) NULL,
                   `status` varchar(45) NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`constructor_Results_ID`)
                   );")
@@ -194,6 +205,7 @@ dbExecute(conn = dbconnection_season, statement = script)
 script <- paste0("CREATE TABLE IF NOT EXISTS `Status` (
                   `status_ID` INT NOT NULL,
                   `status` VARCHAR(45) NULL,
+                  `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`status_ID`)
                   );")
