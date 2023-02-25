@@ -41,7 +41,7 @@ if(is.na(start_year)){
   truncate_current(i)
 }
 
-print(paste0("start_year = ", start_year))
+print(paste0("start_year = ", start_year, " which is year = ", years[start_year]))
 
 source('Data_Cleaning_Tools.R')
 
