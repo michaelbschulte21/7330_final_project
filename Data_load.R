@@ -373,6 +373,11 @@ for(i in start_year:length(years)){
       cat("Error occurred: ", conditionMessage(e), "\n")
       stop_loop <- TRUE
       truncate_current(i)
+      script <- paste0("SELECT *
+                       FROM table_insert_tracker
+                       WHERE year = ", years[i], ";")
+      table_insert_tracker <- dbGetQuery(conn = dbconnection_f1, statement = script)
+      View(table_insert_tracker)
       break
     })
   }
