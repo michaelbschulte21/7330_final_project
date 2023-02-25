@@ -13,7 +13,7 @@ dbKillConnections()
 source('Connections/Season_connect.R')
 
 ######### Create Tables ################
-# Circuits
+########## Circuits ##########
 script <- paste0("CREATE TABLE IF NOT EXISTS `Circuits` (
                   `circuit_ID` varchar(45) NOT NULL,
                   -- `circuit_Ref` VARCHAR(45) NOT NULL,
@@ -28,7 +28,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Circuits` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Driver Standings
+########## Driver Standings ##########
 script <- paste0("CREATE TABLE IF NOT EXISTS `Driver_Standings` (
                   -- `driver_Standings_ID` INT NOT NULL,
                   -- `race_ID` INT NULL,
@@ -43,7 +43,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Driver_Standings` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Drivers
+########### Drivers ##############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Drivers` (
                   `driver_ID` varchar(45) NOT NULL,
                   -- `driver_Ref` VARCHAR(45) NULL,
@@ -58,7 +58,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Drivers` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Lap Times
+############ Lap Times ###############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Lap_Times` (
                   `race_name` varchar(45) NOT NULL,
                   `driver_ID` varchar(45) NULL,
@@ -71,7 +71,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Lap_Times` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Races
+############### Races #############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Races` (
                   `race_name` varchar(45) NOT NULL,
                   `year` INT NULL,
@@ -85,7 +85,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Races` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Results
+############# Results #############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   -- `result_ID` INT NOT NULL,
                   `race_name` varchar(45) NULL,
@@ -111,7 +111,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Constructors
+############## Constructors ##############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Constructors` (
                   `constructor_ID` varchar(45) NOT NULL,
                   -- `constructor_Ref` VARCHAR(45) NULL,
@@ -122,7 +122,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructors` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Qualifying
+############ Qualifying #############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Qualifying` (
                   -- `qualify_ID` INT NOT NULL,
                   `race_name` varchar(45) NULL,
@@ -138,7 +138,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Qualifying` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Pit Stops
+############# Pit Stops ###############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Pit_Stops` (
                   `race_name` varchar(45) NOT NULL,
                   `driver_ID` varchar(45) NULL,
@@ -152,7 +152,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Pit_Stops` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Constructor Standings
+############# Constructor Standings #############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Standings` (
                   -- `constructor_Standings_ID` INT NOT NULL,
                   -- `race_ID` INT NULL,
@@ -166,7 +166,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Standings` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Constructor Results
+########### Constructor Results ##############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Results` (
                   -- `constructor_Results_ID` INT NOT NULL,
                   `race_name` varchar(45) NULL,
@@ -182,7 +182,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Results` (
                   );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Seasons
+################ Seasons ###########
 script <- paste0("CREATE TABLE IF NOT EXISTS `Seasons` (
                   `year` INT NOT NULL,
                   `num_rounds` INT NULL
@@ -190,7 +190,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Seasons` (
                  );")
 dbExecute(conn = dbconnection_season, statement = script)
 
-# Status
+############## Status ##########
 script <- paste0("CREATE TABLE IF NOT EXISTS `Status` (
                   `status_ID` INT NOT NULL,
                   `status` VARCHAR(45) NULL,
