@@ -5,7 +5,7 @@ if_null_char <- function(df){
     df <- 'NULL'
   } else{
     df <- as.character(sapply(df, function(id){
-      if(is.null(id) | is.na(id)){
+      if(is.null(id) | is.na(id) | id == ""){
         return('NULL')
       } else{
         return(paste0("'", id, "'"))
@@ -21,7 +21,7 @@ if_null_int <- function(df){
     df <- 'NULL'
   } else{
     df <- sapply(df, function(id){
-      if(is.null(id) | is.na(id)){
+      if(is.null(id) | is.na(id) | id == ""){
         return('NULL')
       } else{
         return(id)
