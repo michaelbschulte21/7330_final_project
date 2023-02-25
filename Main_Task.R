@@ -15,7 +15,8 @@ dbKillConnections <- function(){
   print(paste0(length(all_cons), " connections killed"))
 }
 
-drop_all_schema <- function(){
+# Drop all schema
+schema_nuke <- function(){
   source('Schema_dropper.R')
   print('All existing schemas have been nuked')
 }
@@ -48,6 +49,21 @@ truncate_current <- function(i){
   script <- paste0("TRUNCATE TABLE Status;")
   dbExecute(conn = dbconnection_season, statement = script)
   print(paste0('Truncated season = ', years[i]))
+}
+
+truncate_all <- function(){
+  for(i in 1:length(years)){
+    source('Connections/Season_connect.R')
+    truncate_current(i)
+    dbKillConnections()
+  }
+  source('Connections/F1_connect.R')
+  script <- paste0("TRUNCATE TABLE seasons;")
+  dbExecute(conn = dbconnection_f1, statement = script)
+  script <- paste0("TRUNCATE TABLE table_insert_tracker;")
+  dbExecute(conn = dbconnection_f1, statement = script)
+  print(paste0("formula1 truncated"))
+  dbKillConnections()
 }
 
 ########### Create formula1 schema ###########
@@ -98,5 +114,3 @@ for(i in 1:length(years)){
 ####### Load data into tables ##########
 
 source('Data_load.R')
-
-dbKillConnections()

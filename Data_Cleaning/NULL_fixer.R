@@ -1,4 +1,4 @@
-# NULL_Killer.R
+# Data_Cleaning/NULL_fixer.R
 
 if_null_char <- function(df){
   if(length(df) == 0){
@@ -28,10 +28,5 @@ if_null_int <- function(df){
       }
     })
   }
-  return(df)
-}
-
-clean_nums <- function(df){
-  df <- gsub("[+-]", "", df)
   return(df)
 }

@@ -27,7 +27,14 @@ drivers <- drivers$MRData$DriverTable$Drivers
 
 driverStandings <- api_getter(season = years[i], round_number = nr, value = table_names[5])
 driverStandings <- as.data.frame(driverStandings$MRData$StandingsTable$StandingsLists$DriverStandings)
-driverStandings.constructors <- as.data.frame(driverStandings$Constructors)
+tryCatch(
+  {
+    driverStandings.constructors <- as.data.frame(driverStandings$Constructors)
+  },
+  error = function(e) {
+    driverStandings.constructors <- driverStandings %>% tidyr::unnest(Constructors) %>% dplyr::bind_rows()
+  }
+)
 
 # laps must be year >= 1996
 if(years[i] >= 1996){
