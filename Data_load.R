@@ -131,7 +131,7 @@ for(i in start_year:length(years)){
       if(nrow(constructorStandings) > 0){
         script <- paste0("INSERT INTO constructor_standings (constructor_ID, points, position, position_Text, wins, round)
                          VALUES ", paste("('",
-                                        constructorStandings, "', ",
+                                        constructorStandings$Constructor$constructorId, "', ",
                                         constructorStandings$points, ", ",
                                         constructorStandings$position, ", '",
                                         constructorStandings$positionText, "', ",
