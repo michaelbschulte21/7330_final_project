@@ -264,7 +264,7 @@ for(i in start_year:length(years)){
       
       ########### Pit Stops #########
       if(years[i] >= 2012){
-        if(nrow(pitstops) > 0){
+        if(length(pitstops) > 0){
           script <- paste0("INSERT INTO pit_stops (race_name, driver_ID, stop, lap, time, duration, season, round)
                            VALUES ", paste("('",
                                            pitstops.races$Races.raceName, "', '",
@@ -272,7 +272,7 @@ for(i in start_year:length(years)){
                                            pitstops.pitstops$stop, ", ",
                                            pitstops.pitstops$lap, ", '",
                                            pitstops.pitstops$time, "', ",
-                                           pitstops.pitstops$duration, ", ",
+                                           convert_time(pitstops.pitstops$duration), ", ",
                                            years[i], ", ",
                                            nr
                                            ,")", sep = "", collapse = ",\n"),";")
@@ -299,10 +299,10 @@ for(i in start_year:length(years)){
                                          qualifying$Driver$driverId, "', '",
                                          qualifying$Constructor$constructorId, "', ",
                                          qualifying$number, ", ",
-                                         qualifying$position, ", '",
-                                         qualifying$Q1, "', '",
-                                         qualifying$Q2, "', '",
-                                         qualifying$Q3, "', ",
+                                         qualifying$position, ", ",
+                                         if_null_char(qualifying$Q1), ", ",
+                                         if_null_char(qualifying$Q2), ", ",
+                                         if_null_char(qualifying$Q3), ", ",
                                          years[i], ", ",
                                          nr
                                          ,")", sep = "", collapse = ",\n"),";")
@@ -322,7 +322,7 @@ for(i in start_year:length(years)){
                                          years[i], ", '",
                                          race$Circuit$circuitId, "', '",
                                          race$date, "', ",
-                                         if_null_char(race$time), ", ",
+                                         if_null_char(time_fix_1(race$time)), ", ",
                                          years[i], ", ",
                                          nr
                                          ,")", sep = "", collapse = ",\n"),";")

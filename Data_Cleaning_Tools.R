@@ -12,6 +12,11 @@ apostrophe_fix <- function(df){
   return(df)
 }
 
+time_fix_1 <- function(df){
+  df <- sub("Z", "", df)
+  return(df)
+}
+
 # timestamp_fix <- function(df){
 #   df <- sapply(df, function(x) {
 #     if (grepl("\\d+\\.\\d+", x)) {
@@ -65,6 +70,32 @@ time_clean <- function(df_column) {
                                                           df_column, NA))
   return(df_column)
 }
+
+convert_time <- function(df_column) {
+  # create a vector to store the converted times
+  converted_times <- vector()
+  
+  # loop through each entry in the column
+  for (i in 1:length(df_column)) {
+    # check if the entry is in the format "x:xx.xxx"
+    if (grepl("\\d:\\d\\d\\.\\d\\d\\d", df_column[i])) {
+      # split the entry into the minutes and seconds/milliseconds
+      split_time <- strsplit(df_column[i], ":")[[1]]
+      minutes <- as.numeric(split_time[1])
+      seconds <- as.numeric(split_time[2])
+      # calculate the converted time and add it to the vector
+      converted_time <- minutes*60 + seconds
+      converted_times <- c(converted_times, converted_time)
+    } else {
+      # if the entry is not in the correct format, just add it to the vector as-is
+      converted_times <- c(converted_times, df_column[i])
+    }
+  }
+  
+  # return the vector of converted times
+  return(converted_times)
+}
+
 
 
 # Combines all the data cleaning functions above into 1

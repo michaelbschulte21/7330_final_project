@@ -45,10 +45,19 @@ if(years[i] >= 1996){
 }
 # pitstops has data for year >= 2012
 if(years[i] >= 2012){
-  pitstops <- api_getter(season = years[i], round_number = nr, value = table_names[7])
-  pitstops.races <- as.data.frame(pitstops$MRData$RaceTable)
-  pitstops <- as.data.frame(pitstops$MRData$RaceTable$Races)
-  pitstops.pitstops <- as.data.frame(pitstops$PitStops)
+  tryCatch(
+    {
+      pitstops <- api_getter(season = years[i], round_number = nr, value = table_names[7])
+      pitstops.races <- as.data.frame(pitstops$MRData$RaceTable)
+      pitstops <- as.data.frame(pitstops$MRData$RaceTable$Races)
+      pitstops.pitstops <- as.data.frame(pitstops$PitStops)
+    }, error = function(e){
+      pitstops <- api_getter(season = years[i], round_number = nr, value = table_names[7])
+      pitstops.races$Races.raceName <- 'NULL'
+      pitstops <- as.data.frame(pitstops$MRData$RaceTable$Races)
+      pitstops.pitstops <- as.data.frame(pitstops$PitStops)
+    }
+  )
 }
 # Qualifying is only complete for year >= 2003
 qualifying <- api_getter(season = years[i], round_number = nr, value = table_names[8])
