@@ -38,6 +38,8 @@ script <- paste0("CREATE TABLE IF NOT EXISTS table_insert_tracker (
                  num_rounds INT DEFAULT 0,
                  current_round INT DEFAULT 0,",
                  paste(tables_in_db_insert_order, " INT DEFAULT 0", sep = "", collapse = ",\n"), ",
+                 start_time TIME NULL,
+                 end_time TIME NULL,
                  completed_insertion INT DEFAULT 0
                  );")
 dbExecute(conn = dbconnection_f1, statement = script)

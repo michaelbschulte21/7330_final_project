@@ -91,6 +91,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Races` (
 dbExecute(conn = dbconnection_season, statement = script)
 
 ############# Results #############
+# Turning the time column into varchar. Need to figure out how to convert 65.32 into 00:00:65.32
 script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   -- `result_ID` INT NOT NULL,
                   `race_name` varchar(45) NULL,
@@ -103,7 +104,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   -- `position_Order` INT NULL,
                   `points` INT NULL,
                   `laps` INT NULL,
-                  `time` TIME NULL,
+                  `time` varchar(45) NULL,
                   `milliseconds` INT NULL,
                   `fastest_Lap` INT NULL,
                   `rank` INT NULL,

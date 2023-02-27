@@ -51,6 +51,7 @@ stop_loop <- FALSE
 for(i in start_year:length(years)){
   dbKillConnections()
   print(paste0("The season is ", years[i]))
+  t1[i] <- Sys.time()
   source('Connections/F1_connect.R')
   source('Connections/Season_connect.R')
   rm(secrets)
@@ -66,11 +67,12 @@ for(i in start_year:length(years)){
                                    ,")", sep = "", collapse = ",\n"),";")
   dbExecute(conn = dbconnection_f1, statement = script)
   
-  script <- paste0("INSERT INTO table_insert_tracker (year, num_rounds)
+  script <- paste0("INSERT INTO table_insert_tracker (year, num_rounds, start_time)
                    VALUES ", paste("(",
                                    years[i], ", ",
-                                   num_rounds
-                                   ,")", sep = "", collapse = ",\n"), ";")
+                                   num_rounds, ", '",
+                                   Sys.time()
+                                   ,"')", sep = "", collapse = ",\n"), ";")
   dbExecute(conn = dbconnection_f1, statement = script)
   
   # Seasons for f1_year[i]
@@ -398,7 +400,8 @@ for(i in start_year:length(years)){
   }
   script <- paste0("UPDATE table_insert_tracker
                    SET
-                   completed_insertion = 1
+                   completed_insertion = 1,
+                   end_time = '", Sys.time(),"'
                    WHERE year = ", years[i], ";")
   dbExecute(conn = dbconnection_f1, statement = script)
 }
