@@ -51,7 +51,6 @@ stop_loop <- FALSE
 for(i in start_year:length(years)){
   dbKillConnections()
   print(paste0("The season is ", years[i]))
-  t1[i] <- Sys.time()
   source('Connections/F1_connect.R')
   source('Connections/Season_connect.R')
   rm(secrets)
