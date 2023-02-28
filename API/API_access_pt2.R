@@ -1,4 +1,4 @@
-# API_access_pt2.R
+# API/API_access_pt2.R
 
 api_getter <- function(season = NULL, round_number = NULL, value = NULL, lap_number = NULL){
   if(is.null(value)){
@@ -12,65 +12,142 @@ api_getter <- function(season = NULL, round_number = NULL, value = NULL, lap_num
   fromJSON(rawToChar(res$content))
 }
 
-circuits <- api_getter(season = years[i], round_number = nr, value = table_names[1])
-circuits <- circuits$MRData$CircuitTable$Circuits
-
-constructors <- api_getter(season = years[i], round_number = nr, value = table_names[2])
-constructors <- as.data.frame(constructors$MRData$ConstructorTable$Constructors)
-
-constructorStandings <- api_getter(season = years[i], round_number = nr, value = table_names[3])
-constructorStandings <- as.data.frame(constructorStandings$MRData$StandingsTable$StandingsLists$ConstructorStandings)
-
-# drivers with year >= 2014 have a permanent driver number
-drivers <- api_getter(season = years[i], round_number = nr, value = table_names[4])
-drivers <- drivers$MRData$DriverTable$Drivers
-
-driverStandings <- api_getter(season = years[i], round_number = nr, value = table_names[5])
-driverStandings <- as.data.frame(driverStandings$MRData$StandingsTable$StandingsLists$DriverStandings)
 tryCatch(
   {
-    driverStandings.constructors <- as.data.frame(driverStandings$Constructors)
-  },
-  error = function(e) {
-    driverStandings.constructors <- driverStandings %>% tidyr::unnest(Constructors) %>% dplyr::bind_rows()
+    circuits <- api_getter(season = years[i], round_number = nr, value = table_names[1])
+    circuits <- circuits$MRData$CircuitTable$Circuits
+  }, error = function(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See circuits call in API calls")
+  }
+)
+
+tryCatch(
+  {
+    constructors <- api_getter(season = years[i], round_number = nr, value = table_names[2])
+    constructors <- as.data.frame(constructors$MRData$ConstructorTable$Constructors)
+  }, error = funciton(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See constructors call in API calls")
+  }
+)
+
+tryCatch(
+  {
+    constructorStandings <- api_getter(season = years[i], round_number = nr, value = table_names[3])
+    constructorStandings <- as.data.frame(constructorStandings$MRData$StandingsTable$StandingsLists$ConstructorStandings)
+  }, error = function(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See constructorStandings call in API calls")
+  }
+)
+
+# drivers with year >= 2014 have a permanent driver number
+tryCatch(
+  {
+    drivers <- api_getter(season = years[i], round_number = nr, value = table_names[4])
+    drivers <- drivers$MRData$DriverTable$Drivers
+  }, error = function(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See drivers call in API calls")
+  }
+)
+
+tryCatch(
+  {
+    driverStandings <- api_getter(season = years[i], round_number = nr, value = table_names[5])
+    driverStandings <- as.data.frame(driverStandings$MRData$StandingsTable$StandingsLists$DriverStandings)
+    tryCatch(
+      {
+        driverStandings.constructors <- as.data.frame(driverStandings$Constructors)
+      },
+      error = function(e) {
+        driverStandings.constructors <- driverStandings %>% tidyr::unnest(Constructors) %>% dplyr::bind_rows()
+      }
+    )
+  }, error = function(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See driverStandings call in API calls")
   }
 )
 
 # laps must be year >= 1996
 if(years[i] >= 1996){
-  laps <- api_getter(season = years[i], round_number = nr, value = table_names[6], lap_number = 1)
-  laps <- as.data.frame(laps$MRData$RaceTable)
-  laps.laps <- as.data.frame(laps$Races.Laps)
-  laps.laps.timings <- as.data.frame(laps.laps$Timings)
+  tryCatch(
+    {
+      laps <- api_getter(season = years[i], round_number = nr, value = table_names[6], lap_number = 1)
+      laps <- as.data.frame(laps$MRData$RaceTable)
+      laps.laps <- as.data.frame(laps$Races.Laps)
+      laps.laps.timings <- as.data.frame(laps.laps$Timings)
+    }, error = function(e){
+      cat("Error occurred: ", conditionMessage(e), "\n")
+      print("See laps call in API calls")
+    }
+  )
 }
 # pitstops has data for year >= 2012
 if(years[i] >= 2012){
   tryCatch(
     {
-      pitstops <- api_getter(season = years[i], round_number = nr, value = table_names[7])
-      pitstops.races <- as.data.frame(pitstops$MRData$RaceTable)
-      pitstops <- as.data.frame(pitstops$MRData$RaceTable$Races)
-      pitstops.pitstops <- as.data.frame(pitstops$PitStops)
+      tryCatch(
+        {
+          pitstops <- api_getter(season = years[i], round_number = nr, value = table_names[7])
+          pitstops.races <- as.data.frame(pitstops$MRData$RaceTable)
+          pitstops <- as.data.frame(pitstops$MRData$RaceTable$Races)
+          pitstops.pitstops <- as.data.frame(pitstops$PitStops)
+        }, error = function(e){
+          pitstops <- api_getter(season = years[i], round_number = nr, value = table_names[7])
+          pitstops.races$Races.raceName <- 'NULL'
+          pitstops <- as.data.frame(pitstops$MRData$RaceTable$Races)
+          pitstops.pitstops <- as.data.frame(pitstops$PitStops)
+        }
+      )
     }, error = function(e){
-      pitstops <- api_getter(season = years[i], round_number = nr, value = table_names[7])
-      pitstops.races$Races.raceName <- 'NULL'
-      pitstops <- as.data.frame(pitstops$MRData$RaceTable$Races)
-      pitstops.pitstops <- as.data.frame(pitstops$PitStops)
+      cat("Error occurred: ", conditionMessage(e), "\n")
+      print("See pitstops call in API calls")
     }
   )
 }
 # Qualifying is only complete for year >= 2003
-qualifying <- api_getter(season = years[i], round_number = nr, value = table_names[8])
-qualifying <- qualifying$MRData$RaceTable$Races # Needs to be cut more. Find race ID
-qualifying.races <- qualifying
-qualifying <- as.data.frame(qualifying$QualifyingResults)
+tryCatch(
+  {
+    qualifying <- api_getter(season = years[i], round_number = nr, value = table_names[8])
+    qualifying <- qualifying$MRData$RaceTable$Races # Needs to be cut more. Find race ID
+    qualifying.races <- qualifying
+    qualifying <- as.data.frame(qualifying$QualifyingResults)
+  }, error = function(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See qualifying call in API calls")
+  }
+)
 
-results <- api_getter(season = years[i], round_number = nr, value = table_names[9])
-results.race <- as.data.frame(results$MRData$RaceTable$Race)
-results <- as.data.frame(results$MRData$RaceTable$Races$Results) # May need to be broadened
+tryCatch(
+  {
+    results <- api_getter(season = years[i], round_number = nr, value = table_names[9])
+    results.race <- as.data.frame(results$MRData$RaceTable$Race)
+    results <- as.data.frame(results$MRData$RaceTable$Races$Results) # May need to be broadened
+  }, error = function(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See results call in API calls")
+  }
+)
 
-status <- api_getter(season = years[i], round_number = nr, value = table_names[10])
-status <- as.data.frame(status$MRData$StatusTable$Status)
+tryCatch(
+  {
+    status <- api_getter(season = years[i], round_number = nr, value = table_names[10])
+    status <- as.data.frame(status$MRData$StatusTable$Status)
+  }, error = function(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See status call in API calls")
+  }
+)
 
-race <- api_getter(season = years[i], round_number = nr, value = NULL)
-race <- as.data.frame(race$MRData$RaceTable$Races)
+tryCatch(
+  {
+    race <- api_getter(season = years[i], round_number = nr, value = NULL)
+    race <- as.data.frame(race$MRData$RaceTable$Races)
+  }, error = function(e){
+    cat("Error occurred: ", conditionMessage(e), "\n")
+    print("See race call in API calls")
+  }
+)

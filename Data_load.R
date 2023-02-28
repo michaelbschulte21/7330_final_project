@@ -36,6 +36,9 @@ if(is.na(start_year)){
   script <- paste0("DELETE FROM Seasons
                    WHERE year = ", max(years),";")
   dbExecute(conn = dbconnection_f1, statement = script)
+  script <- paste0("DELETE FROM table_insert_tracker
+                   WHERE year = ", max(years),";")
+  dbExecute(conn = dbconnection_f1, statement = script)
   i <- length(years)
   source('Connections/Season_connect.R')
   truncate_current(i)
@@ -213,20 +216,22 @@ for(i in start_year:length(years)){
       dbExecute(conn = dbconnection_f1, statement = script)
       
       ############### Drivers ##############
-      if(nrow(drivers) > 0){
-        script <- paste0("INSERT INTO drivers (driver_ID, number, code, first_name, last_name, DOB, nationality, season, round)
-                         VALUES ", paste("('",
-                                         drivers$driverId, "', ",
-                                         if_null_int(drivers$permanentNumber), ", ",
-                                         if_null_char(drivers$code), ", '",
-                                         drivers$givenName, "', '",
-                                         apostrophe_fix(drivers$familyName), "', '",
-                                         drivers$dateOfBirth, "', '",
-                                         drivers$nationality, "', ",
-                                         years[i], ", ",
-                                         nr
-                                         ,")", sep = "", collapse = ",\n"),";")
-        dbExecute(conn = dbconnection_season, statement = script)
+      if(!is.null(nrow(drivers))){
+        if(nrow(drivers) > 0){
+          script <- paste0("INSERT INTO drivers (driver_ID, number, code, first_name, last_name, DOB, nationality, season, round)
+                           VALUES ", paste("('",
+                                           drivers$driverId, "', ",
+                                           if_null_int(drivers$permanentNumber), ", ",
+                                           if_null_char(drivers$code), ", '",
+                                           drivers$givenName, "', '",
+                                           apostrophe_fix(drivers$familyName), "', '",
+                                           drivers$dateOfBirth, "', '",
+                                           drivers$nationality, "', ",
+                                           years[i], ", ",
+                                           nr
+                                           ,")", sep = "", collapse = ",\n"),";")
+          dbExecute(conn = dbconnection_season, statement = script)
+        }
       }
       script <- paste0("UPDATE table_insert_tracker
                        SET
@@ -236,18 +241,20 @@ for(i in start_year:length(years)){
       
       ############### Lap Times ################
       if(years[i] >= 1996){
-        if(nrow(laps) > 0){
-          script <- paste0("INSERT INTO lap_times (race_name, driver_ID, lap, position, time, season, round)
-                           VALUES ", paste("('",
-                                           laps$Races.raceName, "', '",
-                                           laps.laps.timings$driverId, "', ",
-                                           laps.laps$number, ", ",
-                                           laps.laps.timings$position, ", '",
-                                           laps.laps.timings$time, "', ",
-                                           years[i], ", ",
-                                           nr
-                                           ,")", sep = "", collapse = ",\n"),";")
-          dbExecute(conn = dbconnection_season, statement = script)
+        if(!is.null(nrow(laps))){
+          if(nrow(laps) > 0){
+            script <- paste0("INSERT INTO lap_times (race_name, driver_ID, lap, position, time, season, round)
+                             VALUES ", paste("('",
+                                             laps$Races.raceName, "', '",
+                                             laps.laps.timings$driverId, "', ",
+                                             laps.laps$number, ", ",
+                                             laps.laps.timings$position, ", '",
+                                             laps.laps.timings$time, "', ",
+                                             years[i], ", ",
+                                             nr
+                                             ,")", sep = "", collapse = ",\n"),";")
+            dbExecute(conn = dbconnection_season, statement = script)
+          }
         }
         script <- paste0("UPDATE table_insert_tracker
                        SET
