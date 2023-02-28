@@ -413,3 +413,22 @@ for(i in start_year:length(years)){
 }
 
 dbKillConnections()
+
+rm(circuits, 
+   constructors, 
+   constructorStandings, 
+   drivers, 
+   driverStandings, 
+   driverStandings.constructors, 
+   laps, 
+   laps.laps, 
+   laps.laps.timings, 
+   pitstops, 
+   pitstops.races, 
+   pitstops.pitstops, 
+   qualifying, 
+   qualifying.races, 
+   results, 
+   results.race, 
+   status, 
+   race)
