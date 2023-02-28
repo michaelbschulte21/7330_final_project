@@ -11,6 +11,7 @@ dbExecute(conn = dbconnection_local, statement = script)
 dbKillConnections()
 
 source('Connections/Season_connect.R')
+rm(secrets)
 
 ######### Create Tables ################
 ########## Circuits ##########
