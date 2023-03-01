@@ -6,7 +6,8 @@ rm(secrets)
 require(dplyr)
 
 script <- paste0("SELECT max(year) AS max_year
-                 FROM Seasons;")
+                 FROM table_insert_tracker
+                 WHERE completed_insertion = '1';")
 start_year <- dbGetQuery(conn = dbconnection_f1, statement = script)
 start_year <- start_year$max_year
 if(is.na(start_year)){
