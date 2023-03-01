@@ -12,6 +12,7 @@ api_getter <- function(season = NULL, round_number = NULL, value = NULL, lap_num
   fromJSON(rawToChar(res$content))
 }
 
+######## Circuits #######
 tryCatch(
   {
     circuits <- api_getter(season = years[i], round_number = nr, value = table_names[1])
@@ -22,6 +23,7 @@ tryCatch(
   }
 )
 
+########### Constructors ##########
 tryCatch(
   {
     constructors <- api_getter(season = years[i], round_number = nr, value = table_names[2])
@@ -32,6 +34,7 @@ tryCatch(
   }
 )
 
+############ Constructor Standings #########
 tryCatch(
   {
     constructorStandings <- api_getter(season = years[i], round_number = nr, value = table_names[3])
@@ -42,6 +45,7 @@ tryCatch(
   }
 )
 
+######### Drivers ########
 # drivers with year >= 2014 have a permanent driver number
 tryCatch(
   {
@@ -53,6 +57,7 @@ tryCatch(
   }
 )
 
+######### Driver Standings #######
 tryCatch(
   {
     driverStandings <- api_getter(season = years[i], round_number = nr, value = table_names[5])
@@ -71,6 +76,7 @@ tryCatch(
   }
 )
 
+########## Laps #############
 # laps must be year >= 1996
 if(years[i] >= 1996){
   tryCatch(
@@ -85,6 +91,8 @@ if(years[i] >= 1996){
     }
   )
 }
+
+####### Pit Stops ###################
 # pitstops has data for year >= 2012
 if(years[i] >= 2012){
   tryCatch(
@@ -108,6 +116,8 @@ if(years[i] >= 2012){
     }
   )
 }
+
+############ Qualifying #########################
 # Qualifying is only complete for year >= 2003
 tryCatch(
   {
@@ -121,6 +131,7 @@ tryCatch(
   }
 )
 
+############ Results #############
 tryCatch(
   {
     results <- api_getter(season = years[i], round_number = nr, value = table_names[9])
@@ -132,6 +143,7 @@ tryCatch(
   }
 )
 
+############ Status ############
 tryCatch(
   {
     status <- api_getter(season = years[i], round_number = nr, value = table_names[10])
@@ -142,6 +154,7 @@ tryCatch(
   }
 )
 
+########## Race ###########
 tryCatch(
   {
     race <- api_getter(season = years[i], round_number = nr, value = NULL)
