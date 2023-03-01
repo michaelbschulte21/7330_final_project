@@ -17,8 +17,15 @@ dbKillConnections <- function(){
 
 # Drop all schema
 schema_nuke <- function(){
+  all_schema <- TRUE
   source('Schema_dropper.R')
   print('All existing schemas have been nuked')
+}
+
+schema_nuke_years <- function(){
+  all_schema <- FALSE
+  source('Schema_dropper.R')
+  print('All existing individual years schemas have been nuked')
 }
 
 truncate_current <- function(i){
@@ -114,3 +121,11 @@ for(i in 1:length(years)){
 ####### Load data into tables ##########
 
 source('Data_load.R')
+
+########## Normalize the data ###########
+
+source('Main_Task_pt2.R')
+
+######## Drop not normalized data ########
+
+# schema_nuke_years()
