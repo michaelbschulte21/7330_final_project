@@ -209,6 +209,8 @@ script <- paste0("INSERT INTO constructor_results (constructor_Results_ID, race_
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+print(paste0('Constructor Results loaded'))
+
 ########## Constructor Standings ##########
 script <- paste0(paste("SELECT * FROM f1_", years, ".constructor_standings", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
