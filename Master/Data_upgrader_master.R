@@ -35,8 +35,9 @@ drivers <- drivers %>% dplyr::rename('driver_abbr' = 'driver_ID')
 drivers$driver_ID <- 1:nrow(drivers)
 drivers <- drivers %>% dplyr::relocate(driver_ID, .before = driver_abbr)
 
-script <- paste0("INSERT INTO drivers (number, code, first_name, last_name, DOB, nationality)
+script <- paste0("INSERT INTO drivers (driver_abbr, number, code, first_name, last_name, DOB, nationality)
                  VALUES ", paste("(",
+                                 if_null_char(drivers$driver_abbr), ", ",
                                  if_null_int(drivers$number), ", ",
                                  if_null_char(drivers$code), ", '",
                                  drivers$first_name, "', '",
@@ -60,9 +61,10 @@ script <- paste0("SELECT *
 constructors_master <- dbGetQuery(conn = dbconnection_master, statement = script)
 
 if(nrow(constructors) > 0){
-  script <- paste0("INSERT INTO constructors (constructor_name, nationality)
+  script <- paste0("INSERT INTO constructors (constructor_name, constructor_abbr, nationality)
                    VALUES ", paste("('",
                                    constructors$constructor_name, "', '",
+                                   constructors$constructor_abbr, "', '",
                                    constructors$nationality
                                    ,"')", sep = "", collapse = ",\n"), ";")
   dbExecute(conn = dbconnection_master, statement = script)
@@ -84,9 +86,10 @@ circuits_master <- dbGetQuery(conn = dbconnection_master, statement = script)
 circuits <- circuits %>% filter(!circuit_name %in% circuits_master$circuit_name) %>% filter(!locality %in% circuits_master$locality) %>% filter(!latitude %in% circuits_master$latitude) %>% filter(!longitude %in% circuits_master$longitude)
 
 if(nrow(circuits) > 0){
-  script <- paste0("INSERT INTO circuits (circuit_name, locality, country, latitude, longitude)
+  script <- paste0("INSERT INTO circuits (circuit_name, circuit_abbr, locality, country, latitude, longitude)
                    VALUES ", paste("('",
                                    circuits$circuit_name, "', '",
+                                   circuits$circuit_abbr, "', '",
                                    circuits$locality, "', '",
                                    circuits$country, "', ",
                                    circuits$latitude, ", ",

@@ -73,9 +73,10 @@ circuits <- circuits %>% dplyr::rename('circuit_abbr' = 'circuit_ID')
 circuits$circuit_ID <- 1:nrow(circuits)
 circuits <- circuits %>% dplyr::relocate(circuit_ID, .before = circuit_abbr)
 
-script <- paste0("INSERT INTO circuits (circuit_name, locality, country, latitude, longitude)
+script <- paste0("INSERT INTO circuits (circuit_name, circuit_abbr, locality, country, latitude, longitude)
                  VALUES ", paste("('",
                                  circuits$circuit_name, "', '",
+                                 circuits$circuit_abbr, "', '",
                                  circuits$locality, "', '",
                                  circuits$country, "', ",
                                  circuits$latitude, ", ",

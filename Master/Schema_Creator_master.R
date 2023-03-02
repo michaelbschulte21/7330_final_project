@@ -19,6 +19,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Circuits` (
                   `circuit_ID` INT NOT NULL AUTO_INCREMENT,
                   -- `circuit_Ref` VARCHAR(45) NOT NULL,
                   `circuit_name` VARCHAR(45) NOT NULL,
+                  `circuit_abbr` VARCHAR(45) NULL,
                   `locality` VARCHAR(45) NULL,
                   `country` VARCHAR(45) NULL,
                   `latitude` FLOAT NULL,

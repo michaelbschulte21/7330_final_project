@@ -1,27 +1,5 @@
 # Main_Task_pt2.R
 
-source('API/API_access_pt1.R')
-
-source('Connections/Local_connect.R')
-rm(secrets)
-
-script <- paste0("SELECT SCHEMA_NAME
-                    FROM INFORMATION_SCHEMA.SCHEMATA
-                    WHERE SCHEMA_NAME = 'f1_master';")
-flag <- dbGetQuery(conn = dbconnection_local, statement = script)
-
-flag <- nrow(flag) == 0
-
-dbKillConnections()
-
-if(flag){
-  ######## Create Schema & Tables #########
-  
-  source('Master/Schema_Creator_master.R')
-  
-  dbKillConnections()
-}
-
 truncate_master <- function(){
   source('Connections/Master_connect.R')
   rm(secrets)
@@ -62,6 +40,29 @@ schema_nuke_master <- function(){
   dbExecute(conn = dbconnection_master, statement = script)
   dbKillConnections()
   print(paste0('f1_master has been nuked'))
+}
+
+
+source('API/API_access_pt1.R')
+
+source('Connections/Local_connect.R')
+rm(secrets)
+
+script <- paste0("SELECT SCHEMA_NAME
+                    FROM INFORMATION_SCHEMA.SCHEMATA
+                    WHERE SCHEMA_NAME = 'f1_master';")
+flag <- dbGetQuery(conn = dbconnection_local, statement = script)
+
+flag <- nrow(flag) == 0
+
+dbKillConnections()
+
+if(flag){
+  ######## Create Schema & Tables #########
+  
+  source('Master/Schema_Creator_master.R')
+  
+  dbKillConnections()
 }
 
 source('Connections/Local_connect.R')
