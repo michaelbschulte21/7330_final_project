@@ -8,6 +8,7 @@ get_year <- 2013
 script <- paste0("SELECT *
                  FROM races
                  WHERE year = ", get_year, ";")
+# use cat(script) to see a print out of script
 
 get_year <- c(2013, 1998, 2015)
 
