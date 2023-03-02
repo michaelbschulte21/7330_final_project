@@ -181,12 +181,6 @@ races <- unique(races)
 races <- races[order(races$season, races$round),]
 rownames(races) <- NULL
 
-script <- paste0("SELECT *
-                 FROM races;")
-races_master <- dbGetQuery(conn = dbconnection_master, statement = script)
-
-races <- races %>% filter(!date %in% races_master$date)
-
 if(nrow(races) > 0){
   script <- paste0("INSERT INTO races(year, round, circuit_ID, race_name, date, time)
                    VALUES ", paste("(",
