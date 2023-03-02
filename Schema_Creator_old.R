@@ -8,7 +8,7 @@ script <- paste0('CREATE SCHEMA IF NOT EXISTS formula1;')
 dbExecute(conn = dbconnection_local, statement = script)
 
 ######### Create Tables ################
-# Circuits
+########## Circuits #######
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Circuits` (
                   `circuit_ID` INT NOT NULL,
                   `circuit_Ref` VARCHAR(45) NOT NULL,
@@ -21,7 +21,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Circuits` (
                   PRIMARY KEY (`circuit_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Driver Standings
+############ Driver Standings ########
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Driver_Standings` (
                   `driver_Standings_ID` INT NOT NULL,
                   `race_ID` INT NULL,
@@ -33,7 +33,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Driver_Standings` (
                   PRIMARY KEY (`driver_Standings_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Drivers
+############ Drivers ###############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Drivers` (
                   `driver_ID` INT NOT NULL,
                   `driver_Ref` VARCHAR(45) NULL,
@@ -46,7 +46,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Drivers` (
                   PRIMARY KEY (`driver_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Lap Times
+########### Lap Times ##########
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Lap_Times` (
                   `race_ID` INT NOT NULL,
                   `driver_ID` INT NULL,
@@ -57,7 +57,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Lap_Times` (
                   PRIMARY KEY (`race_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Races
+############## Races ##############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Races` (
                   `race_ID` INT NOT NULL,
                   `year` INT NULL,
@@ -69,7 +69,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Races` (
                   PRIMARY KEY (`race_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Results
+############# Results #############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Results` (
                   `result_ID` INT NOT NULL,
                   `race_ID` INT NULL,
@@ -92,7 +92,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Results` (
                   PRIMARY KEY (`result_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Constructors
+############# Constructors #############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Constructors` (
                   `constructor_ID` INT NOT NULL,
                   `constructor_Ref` VARCHAR(45) NULL,
@@ -101,7 +101,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Constructors` (
                   PRIMARY KEY (`constructor_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Qualifying
+############ Qualifying ############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Qualifying` (
                   `qualify_ID` INT NOT NULL,
                   `race_ID` INT NULL,
@@ -115,7 +115,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Qualifying` (
                   PRIMARY KEY (`qualify_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Pit Stops
+############## Pit Stops ##############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Pit_Stops` (
                   `race_ID` INT NOT NULL,
                   `driver_ID` INT NULL,
@@ -127,7 +127,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Pit_Stops` (
                   PRIMARY KEY (`race_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Constructor Standings
+############### Constructor Standings ############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Constructor_Standings` (
                   `constructor_Standings_ID` INT NOT NULL,
                   `race_ID` INT NULL,
@@ -139,7 +139,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Constructor_Standings` 
                   PRIMARY KEY (`constructor_Standings_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Constructor Results
+############## Constructor Results ############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Constructor_Results` (
                   `constructor_Results_ID` INT NOT NULL,
                   `race_ID` INT NULL,
@@ -148,13 +148,13 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Constructor_Results` (
                   PRIMARY KEY (`constructor_Results_ID`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Seasons
+########### Seasons ############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Seasons` (
                   `year` INT NOT NULL,
                   PRIMARY KEY (`year`));")
 dbExecute(conn = dbconnection_local, statement = script)
 
-# Status
+############ Status ############
 script <- paste0("CREATE TABLE IF NOT EXISTS `formula1`.`Status` (
                   `status_ID` INT NOT NULL,
                   `status` VARCHAR(45) NULL,

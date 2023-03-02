@@ -170,14 +170,14 @@ dbExecute(conn = dbconnection_master, statement = script)
 ############# Constructor Standings #############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Constructor_Standings` (
                   `constructor_Standings_ID` INT NOT NULL AUTO_INCREMENT,
-                  -- `race_ID` INT NULL,
+                  `race_ID` INT NULL,
                   `constructor_ID` INT NULL,
                   `points` INT NULL,
                   `position` INT NULL,
                   `position_Text` varchar(3) NULL,
                   `wins` INT NULL,
-                  `season` INT NULL,
-                  `round` INT NULL,
+                  -- `season` INT NULL,
+                  -- `round` INT NULL,
                   PRIMARY KEY (`constructor_Standings_ID`)
                   );")
 dbExecute(conn = dbconnection_master, statement = script)

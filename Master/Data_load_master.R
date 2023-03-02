@@ -227,21 +227,29 @@ constructor_standings <- merge(x = constructor_standings,
 constructor_standings <- constructor_standings %>% select(-c(constructor_ID))
 constructor_standings <- constructor_standings %>% dplyr::rename('constructor_ID' = 'constructor_ID.y')
 constructor_standings <- constructor_standings %>% dplyr::relocate(constructor_ID, .before = points)
+constructor_standings <- merge(x = constructor_standings,
+                               y = races %>% select(c(race_ID, season, round)),
+                               by.x = c('season', 'round'),
+                               by.y = c('season', 'round'),
+                               all.x = T,
+                               all.y = F,
+                               sort = F)
+constructor_standings <- constructor_standings %>% dplyr::relocate(race_ID, .before = constructor_ID)
 constructor_standings <- constructor_standings[order(constructor_standings$season, constructor_standings$round, constructor_standings$constructor_ID),]
 rownames(constructor_standings) <- NULL
+constructor_standings <- constructor_standings %>% select(-c(season, round))
 constructor_standings$constructor_standings_ID <- 1:nrow(constructor_standings)
 constructor_standings <- constructor_standings %>% dplyr::relocate(constructor_standings_ID, .before = constructor_ID)
   
-script <- paste0("INSERT INTO constructor_standings (constructor_Standings_ID, constructor_ID, points, position, position_Text, wins, season, round)
+script <- paste0("INSERT INTO constructor_standings (constructor_Standings_ID, race_ID, constructor_ID, points, position, position_Text, wins)
                  VALUES ", paste("(",
                                  if_null_int(constructor_standings$constructor_standings_ID), ", ",
+                                 if_null_int(constructor_standings$race_ID), ", ",
                                  if_null_int(constructor_standings$constructor_ID), ", ",
                                  if_null_int(constructor_standings$points), ", ",
                                  if_null_int(constructor_standings$position), ", ",
                                  if_null_char(constructor_standings$position_Text), ", ",
-                                 if_null_int(constructor_standings$wins), ", ",
-                                 if_null_int(constructor_standings$season), ", ",
-                                 if_null_int(constructor_standings$round)
+                                 if_null_int(constructor_standings$wins)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
