@@ -20,6 +20,8 @@ script <- paste0("INSERT INTO seasons (year, num_rounds)
                                    ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+print(paste0('Seasons loaded'))
+
 ##### Drivers ########
 script <- paste0(paste("SELECT * FROM f1_", years, ".drivers", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
@@ -43,6 +45,8 @@ script <- paste0("INSERT INTO drivers (driver_abbr, number, code, first_name, la
                                  ,"')", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+print(paste0('Drivers loaded'))
+
 ####### Constructors #########
 script <- paste0(paste("SELECT * FROM f1_", years, ".constructors", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
@@ -61,6 +65,8 @@ script <- paste0("INSERT INTO constructors (constructor_name, constructor_abbr, 
                                   constructors$nationality
                                   ,"')", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+print(paste0('Constructors loaded'))
 
 ####### Circuits ######
 script <- paste0(paste("SELECT * FROM f1_", years, ".circuits", sep = "", collapse = "\n UNION \n"), "
@@ -84,6 +90,8 @@ script <- paste0("INSERT INTO circuits (circuit_name, circuit_abbr, locality, co
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+print(paste0('Circuits loaded'))
+
 ####### Status ##########
 script <- paste0(paste("SELECT * FROM f1_", years, ".status", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY status_ID;")
@@ -98,6 +106,8 @@ script <- paste0("INSERT INTO status (status)
                                  status$status
                                  ,"')", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+print(paste0('Status loaded'))
 
 ###### Races ###########
 script <- paste0(paste("SELECT * FROM f1_", years, ".races", sep = "", collapse = "\n UNION \n"), "
@@ -132,6 +142,8 @@ script <- paste0("INSERT INTO races(race_ID, year, round, circuit_ID, race_name,
                                  if_null_char(races$time)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+print(paste0('Races loaded'))
 
 ######### Constructor Results #########
 script <- paste0(paste("SELECT * FROM f1_", years, ".constructor_results", sep = "", collapse = "\n UNION \n"), "
@@ -231,6 +243,8 @@ script <- paste0("INSERT INTO constructor_standings (constructor_Standings_ID, c
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+print(paste0('Constructor Results loaded'))
+
 ######## Driver Standings ############
 script <- paste0(paste("SELECT * FROM f1_", years, ".driver_standings", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
@@ -279,6 +293,8 @@ script <- paste0("INSERT INTO driver_standings (driver_Standings_ID, race_ID, dr
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+print(paste0('Driver Standings'))
+
 ######### Lap Times ###########
 script <- paste0(paste("SELECT * FROM f1_", years, ".lap_times", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
@@ -312,6 +328,8 @@ script <- paste0("INSERT INTO lap_times (race_ID, driver_ID, lap, position, time
                                  if_null_char(lap_times$time)
                                  ,")", sep = "", collapse = ',\n'), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+print(paste0('Lap Times loaded'))
 
 ######## Pit Stops ##########
 script <- paste0(paste("SELECT * FROM f1_", years, ".pit_stops", sep = "", collapse = "\n UNION \n"), "
@@ -352,6 +370,8 @@ script <- paste0("INSERT INTO pit_stops (race_ID, driver_ID, stop, lap, time, du
                                  if_null_int(pit_stops$duration)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+print(paste0('Pit Stops loaded'))
 
 ######## Qualifying ##########
 script <- paste0(paste("SELECT * FROM f1_", years, ".qualifying", sep = "", collapse = "\n UNION \n"), "
@@ -400,6 +420,8 @@ script <- paste0("INSERT INTO qualifying (qualify_ID, race_ID, driver_ID, constr
                                  if_null_char(qualifying$q3)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+print(paste0('Qualifying loaded'))
 
 ######### Results ########
 script <- paste0(paste("SELECT * FROM f1_", years, ".results", sep = "", collapse = "\n UNION \n"), "
@@ -465,3 +487,5 @@ script <- paste0("INSERT INTO results (result_ID, race_ID, driver_ID, constructo
                                  if_null_int(results$status_ID)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+print(paste0('Results loaded'))

@@ -80,7 +80,7 @@ if(!flag_years_all){
 
 script <- paste0("SELECT SCHEMA_NAME
                   FROM INFORMATION_SCHEMA.SCHEMATA
-                 WHERE ",paste("SCHEMA_NAME = 'f1_", max(years),"'", sep = "", collapse = '\n OR '),";")
+                 WHERE ",paste("SCHEMA_NAME = 'f1_", start_year:max(years),"'", sep = "", collapse = '\n OR '),";")
 flag_years_max <- dbGetQuery(conn = dbconnection_local, statement = script)
 flag_years_max <- nrow(flag_years_max) == 1 & flag_years_max$SCHEMA_NAME[1] == paste0('f1_', max(years))
 print(paste0("Schema for max year only = ", flag_years_max))
