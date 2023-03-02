@@ -277,7 +277,7 @@ script <- paste0("DELETE FROM constructor_standings
                  WHERE ", paste("race_ID = '", rows.to.delete, "'", sep = "", collapse = "\n OR "), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
-script <- paste0(paste("SELECT * FROM f1_", years, ".constructor_standings", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".constructor_standings", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 constructor_standings <- dbGetQuery(conn = dbconnection_local, statement = script)
 constructor_standings <- unique(constructor_standings)
