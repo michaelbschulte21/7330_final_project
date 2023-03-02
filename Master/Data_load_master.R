@@ -491,3 +491,5 @@ script <- paste0("INSERT INTO results (result_ID, race_ID, driver_ID, constructo
 dbExecute(conn = dbconnection_master, statement = script)
 
 print(paste0('Results loaded'))
+
+dbKillConnections()
