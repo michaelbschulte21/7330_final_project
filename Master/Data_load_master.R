@@ -295,7 +295,7 @@ script <- paste0("INSERT INTO driver_standings (driver_Standings_ID, race_ID, dr
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
-print(paste0('Driver Standings'))
+print(paste0('Driver Standings loaded'))
 
 ######### Lap Times ###########
 script <- paste0(paste("SELECT * FROM f1_", years, ".lap_times", sep = "", collapse = "\n UNION \n"), "
