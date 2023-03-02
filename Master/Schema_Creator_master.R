@@ -216,3 +216,5 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Status` (
                   PRIMARY KEY (`status_ID`)
                   );")
 dbExecute(conn = dbconnection_master, statement = script)
+
+dbKillConnections()

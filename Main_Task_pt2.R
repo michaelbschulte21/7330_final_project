@@ -61,8 +61,6 @@ if(flag){
   ######## Create Schema & Tables #########
   
   source('Master/Schema_Creator_master.R')
-  
-  dbKillConnections()
 }
 
 source('Connections/Local_connect.R')
