@@ -2,7 +2,6 @@
 
 truncate_master <- function(){
   source('Connections/Master_connect.R')
-  rm(secrets)
   script <- paste0("TRUNCATE TABLE Circuits;")
   dbExecute(conn = dbconnection_master, statement = script)
   script <- paste0("TRUNCATE TABLE Driver_Standings;")
@@ -35,7 +34,6 @@ truncate_master <- function(){
 
 schema_nuke_master <- function(){
   source('Connections/Master_connect.R')
-  rm(secrets)
   script <- paste0("DROP SCHEMA IF EXISTS f1_master;")
   dbExecute(conn = dbconnection_master, statement = script)
   dbKillConnections()
