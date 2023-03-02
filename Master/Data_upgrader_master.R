@@ -1,3 +1,7 @@
+# Master/Data_upgrader_master.R
+
+start_year <- length(years)
+
 # Master/Data_load_master.R
 
 source('Connections/Local_connect.R')
@@ -9,7 +13,7 @@ rm(secrets)
 source('Data_Cleaning_Tools.R')
 
 ######## Seasons #########
-script <- paste0(paste("SELECT * FROM f1_", years, ".seasons", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".seasons", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY year;")
 seasons <- dbGetQuery(conn = dbconnection_local, statement = script)
 
@@ -17,11 +21,11 @@ script <- paste0("INSERT INTO seasons (year, num_rounds)
                  VALUES ", paste("(", 
                                  seasons$year, ", ",
                                  seasons$num_rounds
-                                   ,")", sep = "", collapse = ",\n"), ";")
+                                 ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
 ##### Drivers ########
-script <- paste0(paste("SELECT * FROM f1_", years, ".drivers", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".drivers", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 drivers <- dbGetQuery(conn = dbconnection_local, statement = script)
 drivers <- drivers %>% select(-c(season, round))
@@ -31,9 +35,8 @@ drivers <- drivers %>% dplyr::rename('driver_abbr' = 'driver_ID')
 drivers$driver_ID <- 1:nrow(drivers)
 drivers <- drivers %>% dplyr::relocate(driver_ID, .before = driver_abbr)
 
-script <- paste0("INSERT INTO drivers (driver_abbr, number, code, first_name, last_name, DOB, nationality)
+script <- paste0("INSERT INTO drivers (number, code, first_name, last_name, DOB, nationality)
                  VALUES ", paste("(",
-                                 if_null_char(drivers$driver_abbr), ", ",
                                  if_null_int(drivers$number), ", ",
                                  if_null_char(drivers$code), ", '",
                                  drivers$first_name, "', '",
@@ -44,62 +47,78 @@ script <- paste0("INSERT INTO drivers (driver_abbr, number, code, first_name, la
 dbExecute(conn = dbconnection_master, statement = script)
 
 ####### Constructors #########
-script <- paste0(paste("SELECT * FROM f1_", years, ".constructors", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".constructors", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 constructors <- dbGetQuery(conn = dbconnection_local, statement = script)
 constructors <- constructors %>% select(-c(season, round))
 constructors <- unique(constructors)
 rownames(constructors) <- NULL
 constructors <- constructors %>% dplyr::rename('constructor_abbr' = 'constructor_ID')
-constructors$constructor_ID <- 1:nrow(constructors)
-constructors <- constructors %>% dplyr::relocate(constructor_ID, .before = constructor_abbr)
 
-script <- paste0("INSERT INTO constructors (constructor_name, constructor_abbr, nationality)
-                 VALUES ", paste("('",
-                                  constructors$constructor_name, "', '",
-                                  constructors$constructor_abbr, "', '",
-                                  constructors$nationality
-                                  ,"')", sep = "", collapse = ",\n"), ";")
-dbExecute(conn = dbconnection_master, statement = script)
+script <- paste0("SELECT *
+                 FROM constructors;")
+constructors_master <- dbGetQuery(conn = dbconnection_master, statement = script)
+
+if(nrow(constructors) > 0){
+  script <- paste0("INSERT INTO constructors (constructor_name, nationality)
+                   VALUES ", paste("('",
+                                   constructors$constructor_name, "', '",
+                                   constructors$nationality
+                                   ,"')", sep = "", collapse = ",\n"), ";")
+  dbExecute(conn = dbconnection_master, statement = script)
+}
 
 ####### Circuits ######
-script <- paste0(paste("SELECT * FROM f1_", years, ".circuits", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".circuits", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 circuits <- dbGetQuery(conn = dbconnection_local, statement = script)
 circuits <- circuits %>% select(-c(season, round))
 circuits <- unique(circuits)
 rownames(circuits) <- NULL
 circuits <- circuits %>% dplyr::rename('circuit_abbr' = 'circuit_ID')
-circuits$circuit_ID <- 1:nrow(circuits)
-circuits <- circuits %>% dplyr::relocate(circuit_ID, .before = circuit_abbr)
 
-script <- paste0("INSERT INTO circuits (circuit_name, locality, country, latitude, longitude)
-                 VALUES ", paste("('",
-                                 circuits$circuit_name, "', '",
-                                 circuits$locality, "', '",
-                                 circuits$country, "', ",
-                                 circuits$latitude, ", ",
-                                 circuits$longitude
-                                 ,")", sep = "", collapse = ",\n"), ";")
-dbExecute(conn = dbconnection_master, statement = script)
+script <- paste0("SELECT *
+                 FROM circuits;")
+circuits_master <- dbGetQuery(conn = dbconnection_master, statement = script)
+
+circuits <- circuits %>% filter(!circuit_name %in% circuits_master$circuit_name) %>% filter(!locality %in% circuits_master$locality) %>% filter(!latitude %in% circuits_master$latitude) %>% filter(!longitude %in% circuits_master$longitude)
+
+if(nrow(circuits) > 0){
+  script <- paste0("INSERT INTO circuits (circuit_name, locality, country, latitude, longitude)
+                   VALUES ", paste("('",
+                                   circuits$circuit_name, "', '",
+                                   circuits$locality, "', '",
+                                   circuits$country, "', ",
+                                   circuits$latitude, ", ",
+                                   circuits$longitude
+                                   ,")", sep = "", collapse = ",\n"), ";")
+  dbExecute(conn = dbconnection_master, statement = script)
+}
+circuits <- circuits_master
 
 ####### Status ##########
-script <- paste0(paste("SELECT * FROM f1_", years, ".status", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".status", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY status_ID;")
 status <- dbGetQuery(conn = dbconnection_local, statement = script)
 status <- status %>% select(-c(season, round))
 status <- unique(status)
 rownames(status) <- NULL
-status$status_ID <- 1:nrow(status)
+script <- paste0("SELECT *
+                 FROM status;")
+status_master <- dbGetQuery(conn = dbconnection_master, statement = script)
+status <- status %>% filter(!status %in% status_master$status)
 
-script <- paste0("INSERT INTO status (status)
-                 VALUES ", paste("('",
-                                 status$status
-                                 ,"')", sep = "", collapse = ",\n"), ";")
-dbExecute(conn = dbconnection_master, statement = script)
+if(nrow(status) > 0){
+  script <- paste0("INSERT INTO status (status)
+                   VALUES ", paste("('",
+                                   status$status
+                                   ,"')", sep = "", collapse = ",\n"), ";")
+  dbExecute(conn = dbconnection_master, statement = script)
+}
+status <- status_master
 
 ###### Races ###########
-script <- paste0(paste("SELECT * FROM f1_", years, ".races", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".races", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 races <- dbGetQuery(conn = dbconnection_local, statement = script)
 races <- races %>% select(-c(year))
@@ -109,20 +128,19 @@ races$race_ID <- 1:nrow(races)
 races <- races %>% dplyr::relocate(race_ID, .before = race_name)
 races <- merge(x = races,
                y = circuits  %>% select(c(circuit_ID, circuit_abbr)),
-              by.x = 'circuit_ID',
-              by.y = 'circuit_abbr',
-              all.x = TRUE,
-              all.y = FALSE,
-              sort = FALSE)
+               by.x = 'circuit_ID',
+               by.y = 'circuit_abbr',
+               all.x = TRUE,
+               all.y = FALSE,
+               sort = FALSE)
 races <- races %>% select(-c(circuit_ID))
 races <- races %>% rename('circuit_ID' = 'circuit_ID.y')
 races <- races %>% relocate(circuit_ID, .after = race_name)
-races <- races[order(races$race_ID),]
+races <- races[order(races$round),]
 rownames(races) <- NULL
 
-script <- paste0("INSERT INTO races(race_ID, year, round, circuit_ID, race_name, date, time)
+script <- paste0("INSERT INTO races(year, round, circuit_ID, race_name, date, time)
                  VALUES ", paste("(",
-                                 races$race_ID, ", ",
                                  races$season, ", ",
                                  races$round, ", ",
                                  races$circuit_ID, ", ",
@@ -132,59 +150,61 @@ script <- paste0("INSERT INTO races(race_ID, year, round, circuit_ID, race_name,
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+script <- paste0("SELECT *
+                 FROM races;")
+races <- dbGetQuery(conn = dbconnection_master, statement = script)
+races <- races %>% dplyr::rename('season' = 'year')
+
 ######### Constructor Results #########
-script <- paste0(paste("SELECT * FROM f1_", years, ".constructor_results", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".constructor_results", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 constructor_results <- dbGetQuery(conn = dbconnection_local, statement = script)
 # constructor_results <- constructor_results %>% select(-c(season, round))
 constructor_results <- unique(constructor_results)
 rownames(constructor_results) <- NULL
 constructor_results <- merge(x = constructor_results,
-            y = constructors %>% select(c(constructor_ID, constructor_abbr)),
-            by.x = 'constructor_ID',
-            by.y = 'constructor_abbr',
-            all.x = TRUE,
-            all.y = FALSE,
-            sort = FALSE)
+                             y = constructors %>% select(c(constructor_ID, constructor_abbr)),
+                             by.x = 'constructor_ID',
+                             by.y = 'constructor_abbr',
+                             all.x = TRUE,
+                             all.y = FALSE,
+                             sort = FALSE)
 constructor_results <- constructor_results %>% select(-c(constructor_ID))
 constructor_results <- constructor_results %>% dplyr::rename('constructor_ID' = 'constructor_ID.y')
 constructor_results <- constructor_results %>% dplyr::relocate(constructor_ID, .before = driver_ID)
 constructor_results <- merge(x = constructor_results,
-                            y = drivers %>% select(c(driver_ID, driver_abbr)),
-                            by.x = 'driver_ID',
-                            by.y = 'driver_abbr',
-                            all.x = TRUE,
-                            all.y = FALSE,
-                            sort = FALSE)
+                             y = drivers %>% select(c(driver_ID, driver_abbr)),
+                             by.x = 'driver_ID',
+                             by.y = 'driver_abbr',
+                             all.x = TRUE,
+                             all.y = FALSE,
+                             sort = FALSE)
 constructor_results <- constructor_results %>% select(-c(driver_ID))
 constructor_results <- constructor_results %>% dplyr::rename('driver_ID' = 'driver_ID.y')
 constructor_results <- constructor_results %>% dplyr::relocate(driver_ID, .after = constructor_ID)
 constructor_results <- merge(x = constructor_results,
-                            y = status,
-                            by.x = 'status',
-                            by.y = 'status',
-                            all.x = TRUE,
-                            all.y = FALSE,
-                            sort = FALSE)
+                             y = status,
+                             by.x = 'status',
+                             by.y = 'status',
+                             all.x = TRUE,
+                             all.y = FALSE,
+                             sort = FALSE)
 constructor_results <- constructor_results %>% select(-c(status))
 constructor_results <- constructor_results %>% dplyr::relocate(status_ID, .after = position_Text)
 constructor_results <- merge(x = constructor_results,
-                            y = races %>% select(c(race_ID, race_name, season, round)),
-                            by.x = c('race_name', 'season', 'round'),
-                            by.y = c('race_name', 'season', 'round'),
-                            all.x = TRUE,
-                            all.y = FALSE,
-                            sort = FALSE)
+                             y = races %>% select(c(race_ID, race_name, season, round)),
+                             by.x = c('race_name', 'season', 'round'),
+                             by.y = c('race_name', 'season', 'round'),
+                             all.x = TRUE,
+                             all.y = FALSE,
+                             sort = FALSE)
 constructor_results <- constructor_results %>% select(-c(race_name, season, round))
 constructor_results <- constructor_results %>% dplyr::relocate(race_ID, .before = constructor_ID)
 constructor_results <- constructor_results[order(constructor_results$race_ID, constructor_results$constructor_ID),]
 rownames(constructor_results) <- NULL
-constructor_results$constructor_results_ID <- 1:nrow(constructor_results)
-constructor_results <- constructor_results %>% dplyr::relocate(constructor_results_ID, .before = race_ID)
 
-script <- paste0("INSERT INTO constructor_results (constructor_Results_ID, race_ID, constructor_ID, driver_ID, points, number, position, position_Text, status_ID)
+script <- paste0("INSERT INTO constructor_results (race_ID, constructor_ID, driver_ID, points, number, position, position_Text, status_ID)
                  VALUES ", paste("(",
-                                 if_null_int(constructor_results$constructor_results_ID), ", ",
                                  if_null_int(constructor_results$race_ID), ", ",
                                  if_null_int(constructor_results$constructor_ID), ", ",
                                  if_null_int(constructor_results$driver_ID), ", ",
@@ -197,18 +217,18 @@ script <- paste0("INSERT INTO constructor_results (constructor_Results_ID, race_
 dbExecute(conn = dbconnection_master, statement = script)
 
 ########## Constructor Standings ##########
-script <- paste0(paste("SELECT * FROM f1_", years, ".constructor_standings", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".constructor_standings", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 constructor_standings <- dbGetQuery(conn = dbconnection_local, statement = script)
 constructor_standings <- unique(constructor_standings)
 rownames(constructor_standings) <- NULL
 constructor_standings <- merge(x = constructor_standings,
-                                y = constructors %>% select(c(constructor_ID, constructor_abbr)),
-                                by.x = 'constructor_ID',
-                                by.y = 'constructor_abbr',
-                                all.x = TRUE,
-                                all.y = FALSE,
-                                sort = FALSE)
+                               y = constructors %>% select(c(constructor_ID, constructor_abbr)),
+                               by.x = 'constructor_ID',
+                               by.y = 'constructor_abbr',
+                               all.x = TRUE,
+                               all.y = FALSE,
+                               sort = FALSE)
 constructor_standings <- constructor_standings %>% select(-c(constructor_ID))
 constructor_standings <- constructor_standings %>% dplyr::rename('constructor_ID' = 'constructor_ID.y')
 constructor_standings <- constructor_standings %>% dplyr::relocate(constructor_ID, .before = points)
@@ -216,10 +236,9 @@ constructor_standings <- constructor_standings[order(constructor_standings$seaso
 rownames(constructor_standings) <- NULL
 constructor_standings$constructor_standings_ID <- 1:nrow(constructor_standings)
 constructor_standings <- constructor_standings %>% dplyr::relocate(constructor_standings_ID, .before = constructor_ID)
-  
-script <- paste0("INSERT INTO constructor_standings (constructor_Standings_ID, constructor_ID, points, position, position_Text, wins, season, round)
+
+script <- paste0("INSERT INTO constructor_standings (constructor_ID, points, position, position_Text, wins, season, round)
                  VALUES ", paste("(",
-                                 if_null_int(constructor_standings$constructor_standings_ID), ", ",
                                  if_null_int(constructor_standings$constructor_ID), ", ",
                                  if_null_int(constructor_standings$points), ", ",
                                  if_null_int(constructor_standings$position), ", ",
@@ -231,7 +250,7 @@ script <- paste0("INSERT INTO constructor_standings (constructor_Standings_ID, c
 dbExecute(conn = dbconnection_master, statement = script)
 
 ######## Driver Standings ############
-script <- paste0(paste("SELECT * FROM f1_", years, ".driver_standings", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".driver_standings", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 driver_standings <- dbGetQuery(conn = dbconnection_local, statement = script)
 driver_standings <- unique(driver_standings)
@@ -262,12 +281,9 @@ driver_standings <- merge(x = driver_standings,
 driver_standings <- driver_standings[order(driver_standings$season, driver_standings$round),]
 driver_standings <- driver_standings %>% select(-c(season, round)) %>% dplyr::relocate(race_ID, .before = driver_ID)
 rownames(driver_standings) <- NULL
-driver_standings$driver_standings_ID <- 1:nrow(driver_standings)
-driver_standings <- driver_standings %>% dplyr::relocate(driver_standings_ID, .before = race_ID)
 
-script <- paste0("INSERT INTO driver_standings (driver_Standings_ID, race_ID, driver_ID, points, position, position_Text, wins, constructor_ID)
+script <- paste0("INSERT INTO driver_standings (race_ID, driver_ID, points, position, position_Text, wins, constructor_ID)
                  VALUES ", paste("(",
-                                 if_null_int(driver_standings$driver_standings_ID), ", ",
                                  if_null_int(driver_standings$race_ID), ", ",
                                  if_null_int(driver_standings$driver_ID), ", ",
                                  if_null_int(driver_standings$points), ", ",
@@ -279,7 +295,7 @@ script <- paste0("INSERT INTO driver_standings (driver_Standings_ID, race_ID, dr
 dbExecute(conn = dbconnection_master, statement = script)
 
 ######### Lap Times ###########
-script <- paste0(paste("SELECT * FROM f1_", years, ".lap_times", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".lap_times", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 lap_times <- dbGetQuery(conn = dbconnection_local, statement = script)
 lap_times <- unique(lap_times)
@@ -313,7 +329,7 @@ script <- paste0("INSERT INTO lap_times (race_ID, driver_ID, lap, position, time
 dbExecute(conn = dbconnection_master, statement = script)
 
 ######## Pit Stops ##########
-script <- paste0(paste("SELECT * FROM f1_", years, ".pit_stops", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".pit_stops", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 pit_stops <- dbGetQuery(conn = dbconnection_local, statement = script)
 pit_stops <- unique(pit_stops)
@@ -353,7 +369,7 @@ script <- paste0("INSERT INTO pit_stops (race_ID, driver_ID, stop, lap, time, du
 dbExecute(conn = dbconnection_master, statement = script)
 
 ######## Qualifying ##########
-script <- paste0(paste("SELECT * FROM f1_", years, ".qualifying", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".qualifying", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 qualifying <- dbGetQuery(conn = dbconnection_local, statement = script)
 rownames(qualifying) <- NULL
@@ -383,12 +399,9 @@ qualifying <- merge(x = qualifying,
 qualifying <- qualifying[order(qualifying$season, qualifying$round, qualifying$race_ID),]
 rownames(qualifying) <- NULL
 qualifying <- qualifying %>% select(-c(season, round, race_name)) %>% dplyr::relocate(race_ID, .before = driver_ID)
-qualifying$qualify_ID <- 1:nrow(qualifying)
-qualifying <- qualifying %>% dplyr::relocate(qualify_ID, .before = race_ID)
 
-script <- paste0("INSERT INTO qualifying (qualify_ID, race_ID, driver_ID, constructor_ID, number, position, q1, q2, q3)
+script <- paste0("INSERT INTO qualifying (race_ID, driver_ID, constructor_ID, number, position, q1, q2, q3)
                  VALUES ", paste("(",
-                                 if_null_int(qualifying$qualify_ID), ", ",
                                  if_null_int(qualifying$race_ID), ", ",
                                  if_null_int(qualifying$driver_ID), ", ",
                                  if_null_int(qualifying$constructor_ID), ", ",
@@ -401,25 +414,25 @@ script <- paste0("INSERT INTO qualifying (qualify_ID, race_ID, driver_ID, constr
 dbExecute(conn = dbconnection_master, statement = script)
 
 ######### Results ########
-script <- paste0(paste("SELECT * FROM f1_", years, ".results", sep = "", collapse = "\n UNION \n"), "
+script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".results", sep = "", collapse = "\n UNION \n"), "
                  ORDER BY season;")
 results <- dbGetQuery(conn = dbconnection_local, statement = script)
 rownames(results) <- NULL
 results <- merge(x = results,
-                    y = drivers %>% select(c(driver_ID, driver_abbr)),
-                    by.x = 'driver_ID',
-                    by.y = 'driver_abbr',
-                    all.x = T,
-                    all.y = F,
-                    sort = F)
+                 y = drivers %>% select(c(driver_ID, driver_abbr)),
+                 by.x = 'driver_ID',
+                 by.y = 'driver_abbr',
+                 all.x = T,
+                 all.y = F,
+                 sort = F)
 results <- results %>% select(-c(driver_ID)) %>% dplyr::rename('driver_ID' = 'driver_ID.y') %>% dplyr::relocate(driver_ID, .before = constructor_ID)
 results <- merge(x = results,
-                  y = constructors %>% select(c(constructor_ID, constructor_abbr)),
-                  by.x = 'constructor_ID',
-                  by.y = 'constructor_abbr',
-                  all.x = T,
-                  all.y = F,
-                  sort = F)
+                 y = constructors %>% select(c(constructor_ID, constructor_abbr)),
+                 by.x = 'constructor_ID',
+                 by.y = 'constructor_abbr',
+                 all.x = T,
+                 all.y = F,
+                 sort = F)
 results <- results %>% select(-c(constructor_ID)) %>% dplyr::rename('constructor_ID' = 'constructor_ID.y') %>% dplyr::relocate(constructor_ID, .before = number)
 results <- merge(x = results,
                  y = status,
@@ -430,21 +443,18 @@ results <- merge(x = results,
                  sort = F)
 results <- results %>% select(-c(status)) %>% dplyr::relocate(status_ID, .after = fastest_Lap_Speed_Units)
 results <- merge(x = results,
-                  y = races %>% select(-c(circuit_ID, date, time)),
-                  by.x = c('season', 'round', 'race_name'),
-                  by.y = c('season', 'round', 'race_name'),
-                  all.x = T,
-                  all.y = F,
-                  sort = F)
+                 y = races %>% select(-c(circuit_ID, date, time)),
+                 by.x = c('season', 'round', 'race_name'),
+                 by.y = c('season', 'round', 'race_name'),
+                 all.x = T,
+                 all.y = F,
+                 sort = F)
 results <- results[order(results$season, results$round, results$race_ID),]
 results <- results %>% select(-c(season, round, race_name)) %>% dplyr::relocate(race_ID, .before = driver_ID)
 rownames(results) <- NULL
-results$result_ID <- 1:nrow(results)
-results <- results %>% dplyr::relocate(result_ID, .before = race_ID)
 
-script <- paste0("INSERT INTO results (result_ID, race_ID, driver_ID, constructor_ID, number, grid, position, position_Text, points, laps, `time`, milliseconds, fastest_Lap, `rank`, fastest_Lap_Time, fastest_Lap_Speed, fastest_Lap_Speed_Units, status_ID)
+script <- paste0("INSERT INTO results (race_ID, driver_ID, constructor_ID, number, grid, position, position_Text, points, laps, `time`, milliseconds, fastest_Lap, `rank`, fastest_Lap_Time, fastest_Lap_Speed, fastest_Lap_Speed_Units, status_ID)
                  VALUES ", paste("(",
-                                 if_null_int(results$result_ID), ", ",
                                  if_null_int(results$race_ID), ", ",
                                  if_null_int(results$driver_ID), ", ",
                                  if_null_int(results$constructor_ID), ", ",

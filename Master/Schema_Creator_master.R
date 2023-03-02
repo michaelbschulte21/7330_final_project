@@ -49,6 +49,7 @@ dbExecute(conn = dbconnection_master, statement = script)
 ########### Drivers ##############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Drivers` (
                   `driver_ID` INT NOT NULL AUTO_INCREMENT,
+                  `driver_abbr` VARCHAR(45) NULL,
                   -- `driver_Ref` VARCHAR(45) NULL,
                   `number` INT NULL,
                   `code` CHAR(3) NULL,
@@ -125,6 +126,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Constructors` (
                   `constructor_ID` INT NOT NULL AUTO_INCREMENT,
                   -- `constructor_Ref` VARCHAR(45) NULL,
                   `constructor_name` VARCHAR(45) NULL,
+                  `constructor_abbr` VARCHAR(45) NULL,
                   `nationality` VARCHAR(45) NULL,
                   -- `season` INT NULL,
                   -- `round` INT NULL
