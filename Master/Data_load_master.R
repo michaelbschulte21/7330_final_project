@@ -114,10 +114,6 @@ script <- paste0(paste("SELECT * FROM f1_", years, ".races", sep = "", collapse 
                  ORDER BY season;")
 races <- dbGetQuery(conn = dbconnection_local, statement = script)
 races <- races %>% select(-c(year))
-races <- unique(races)
-rownames(races) <- NULL
-races$race_ID <- 1:nrow(races)
-races <- races %>% dplyr::relocate(race_ID, .before = race_name)
 races <- merge(x = races,
                y = circuits  %>% select(c(circuit_ID, circuit_abbr)),
               by.x = 'circuit_ID',
@@ -128,7 +124,11 @@ races <- merge(x = races,
 races <- races %>% select(-c(circuit_ID))
 races <- races %>% rename('circuit_ID' = 'circuit_ID.y')
 races <- races %>% relocate(circuit_ID, .after = race_name)
-races <- races[order(races$race_ID),]
+races <- unique(races)
+races <- races[order(races$season, races$round),]
+rownames(races) <- NULL
+races$race_ID <- 1:nrow(races)
+races <- races %>% dplyr::relocate(race_ID, .before = race_name)
 rownames(races) <- NULL
 
 script <- paste0("INSERT INTO races(race_ID, year, round, circuit_ID, race_name, date, time)
