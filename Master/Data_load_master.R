@@ -245,7 +245,7 @@ script <- paste0("INSERT INTO constructor_standings (constructor_Standings_ID, c
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
-print(paste0('Constructor Results loaded'))
+print(paste0('Constructor Standings loaded'))
 
 ######## Driver Standings ############
 script <- paste0(paste("SELECT * FROM f1_", years, ".driver_standings", sep = "", collapse = "\n UNION \n"), "
