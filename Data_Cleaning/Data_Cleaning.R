@@ -202,7 +202,7 @@ results_time_cleaner <- function(results){
     all_positions <- results$position[results$race_ID == race_id & !is.na(results$time) & results$position != 1]
     if(length(all_positions) > 0){
       for(position in all_positions){
-        print(paste0('position = ', position))
+        # print(paste0('position = ', position))
         add.time <- results$time[results$race_ID == race_id & results$position == position & !is.na(results$time)]
         results$time[results$race_ID == race_id & results$position == position] <- add_time_to_base(base.time, add.time)
       }

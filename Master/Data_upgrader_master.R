@@ -273,6 +273,8 @@ if(nrow(constructor_results) > 0){
   dbExecute(conn = dbconnection_master, statement = script)
 }
 
+rm(constructor_results)
+
 print(paste0('Constructor Results updated'))
 
 ########## Constructor Standings ##########
@@ -319,6 +321,8 @@ if(nrow(constructor_standings) > 0){
                                    ,")", sep = "", collapse = ",\n"), ";")
   dbExecute(conn = dbconnection_master, statement = script)
 }
+
+rm(constructor_standings)
 
 print(paste0('Constructor Standings updated'))
 
@@ -373,6 +377,8 @@ if(nrow(driver_standings) > 0){
   dbExecute(conn = dbconnection_master, statement = script)
 }
 
+rm(driver_standings)
+
 print(paste0('Driver Standings updated'))
 
 ######### Lap Times ###########
@@ -414,6 +420,8 @@ if(nrow(lap_times) > 0){
                                    ,")", sep = "", collapse = ',\n'), ";")
   dbExecute(conn = dbconnection_master, statement = script)
 }
+
+rm(lap_times)
 
 print(paste0('Lap Times updated'))
 
@@ -462,6 +470,8 @@ if(nrow(pit_stops) > 0){
                                    ,")", sep = "", collapse = ",\n"), ";")
   dbExecute(conn = dbconnection_master, statement = script)
 }
+
+rm(pit_stops)
 
 print(paste0('Pit Stops updated'))
 
@@ -515,6 +525,8 @@ if(nrow(qualifying) > 0){
                                    ,")", sep = "", collapse = ",\n"), ";")
   dbExecute(conn = dbconnection_master, statement = script)
 }
+
+rm(qualifying)
 
 print(paste0('Qualifying updated'))
 
@@ -586,6 +598,8 @@ if(nrow(results) > 0){
                                    ,")", sep = "", collapse = ",\n"), ";")
   dbExecute(conn = dbconnection_master, statement = script)
 }
+
+rm(results)
 
 print(paste0('Results updated'))
 

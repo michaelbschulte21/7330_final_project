@@ -212,6 +212,8 @@ script <- paste0("INSERT INTO constructor_results (constructor_Results_ID, race_
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+rm(constructor_results)
+
 print(paste0('Constructor Results loaded'))
 
 ########## Constructor Standings ##########
@@ -255,6 +257,8 @@ script <- paste0("INSERT INTO constructor_standings (constructor_Standings_ID, r
                                  if_null_int(constructor_standings$wins)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+rm(constructor_standings)
 
 print(paste0('Constructor Standings loaded'))
 
@@ -306,6 +310,8 @@ script <- paste0("INSERT INTO driver_standings (driver_Standings_ID, race_ID, dr
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
 
+rm(driver_standings)
+
 print(paste0('Driver Standings loaded'))
 
 ######### Lap Times ###########
@@ -341,6 +347,8 @@ script <- paste0("INSERT INTO lap_times (race_ID, driver_ID, lap, position, time
                                  if_null_char(lap_times$time)
                                  ,")", sep = "", collapse = ',\n'), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+rm(lap_times)
 
 print(paste0('Lap Times loaded'))
 
@@ -383,6 +391,8 @@ script <- paste0("INSERT INTO pit_stops (race_ID, driver_ID, stop, lap, time, du
                                  if_null_int(pit_stops$duration)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+rm(pit_stops)
 
 print(paste0('Pit Stops loaded'))
 
@@ -433,6 +443,8 @@ script <- paste0("INSERT INTO qualifying (qualify_ID, race_ID, driver_ID, constr
                                  if_null_char(qualifying$q3)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+rm(qualifying)
 
 print(paste0('Qualifying loaded'))
 
@@ -501,6 +513,8 @@ script <- paste0("INSERT INTO results (result_ID, race_ID, driver_ID, constructo
                                  if_null_int(results$status_ID)
                                  ,")", sep = "", collapse = ",\n"), ";")
 dbExecute(conn = dbconnection_master, statement = script)
+
+rm(results)
 
 print(paste0('Results loaded'))
 
