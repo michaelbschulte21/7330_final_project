@@ -558,9 +558,10 @@ results <- merge(x = results,
                  all.x = T,
                  all.y = F,
                  sort = F)
-results <- results[order(results$season, results$round, results$race_ID),]
+results <- results[order(results$season, results$round, results$position),]
 results <- results %>% select(-c(season, round, race_name)) %>% dplyr::relocate(race_ID, .before = driver_ID)
 rownames(results) <- NULL
+results <- results_time_cleaner(results)
 
 if(nrow(results) > 0){
   script <- paste0("INSERT INTO results (race_ID, driver_ID, constructor_ID, number, grid, position, position_Text, points, laps, `time`, milliseconds, fastest_Lap, `rank`, fastest_Lap_Time, fastest_Lap_Speed, fastest_Lap_Speed_Units, status_ID)

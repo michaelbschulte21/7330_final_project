@@ -472,9 +472,10 @@ results <- merge(x = results,
                   all.x = T,
                   all.y = F,
                   sort = F)
-results <- results[order(results$season, results$round, results$race_ID),]
+results <- results[order(results$season, results$round, results$position),]
 results <- results %>% select(-c(season, round, race_name)) %>% dplyr::relocate(race_ID, .before = driver_ID)
 rownames(results) <- NULL
+results <- results_time_cleaner(results)
 results$result_ID <- 1:nrow(results)
 results <- results %>% dplyr::relocate(result_ID, .before = race_ID)
 

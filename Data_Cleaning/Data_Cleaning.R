@@ -137,9 +137,79 @@ races_cleaner <- function(races){
 }
 
 ###### Results ##########
-script <- paste0('SELECT *
-                 FROM results;')
+# script <- paste0('SELECT *
+#                  FROM results;')
 # results <- dbGetQuery(conn = dbconnection_master, statement = script)
+
+results_time_cleaner <- function(results){
+  op <- options(digits.secs=3)
+  
+  add_time_to_base <- function(base_time, add_time) {
+    # convert base_time to POSIXlt
+    base_time <- as.POSIXlt(paste(Sys.Date(), base_time), tz = "America/Chicago")
+    
+    # extract seconds and milliseconds from base_time
+    sec <- base_time$sec
+    min <- base_time$min
+    hr <- base_time$hour
+    
+    if(grepl(":", add_time)){
+      add_time <- as.POSIXlt(paste(add_time), "%M:%OS", tz = "America/Chicago")
+      at_sec <- add_time$sec
+      at_min <- add_time$min
+      sec <- sec + at_sec
+      min <- min + at_min
+    } else{
+      # add add_time to sec
+      sec <- sec + as.numeric(add_time)
+    }
+    
+    if (sec >= 60) {
+      extra_min <- floor(sec / 60)
+      sec <- sec %% 60
+    } else {
+      extra_min <- 0
+    }
+    
+    min <- min + extra_min
+    
+    if(min >= 60){
+      extra_hr <- floor(min / 60)
+      min <- min %% 60
+    } else{
+      extra_hr <- 0
+    }
+      
+    # update the seconds and milliseconds in base_time
+    base_time$min <- min
+    base_time$sec <- sec
+    base_time$hour <- hr + extra_hr
+    # base_time$msec <- total_msec
+    
+    # format the result as a character string
+    true_time <- format(base_time, "%H:%M:%OS")
+    
+    return(true_time)
+  }
+  
+  race_IDs <- unique(results$race_ID)
+  for(race_id in race_IDs){
+    print(paste0('race_ID = ', race_id))
+    base.time <- results$time[results$race_ID == race_id & results$position == 1]
+    # x <- strptime(base_time, "%H:%M:%OS")
+    # x <- as.POSIXct(x, format = '%H:%M:%OS')
+    # x <- format.POSIXlt(x, format = '%H:%M:%OS', usetz = F)
+    all_positions <- results$position[results$race_ID == race_id & !is.na(results$time) & results$position != 1]
+    if(length(all_positions) > 0){
+      for(position in all_positions){
+        print(paste0('position = ', position))
+        add.time <- results$time[results$race_ID == race_id & results$position == position & !is.na(results$time)]
+        results$time[results$race_ID == race_id & results$position == position] <- add_time_to_base(base.time, add.time)
+      }
+    }
+  }
+  return(results)
+}
 
 ########## Seasons #########
 # script <- paste0('SELECT *
