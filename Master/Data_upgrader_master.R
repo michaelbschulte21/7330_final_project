@@ -36,6 +36,7 @@ script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".drivers", sep =
 drivers <- dbGetQuery(conn = dbconnection_local, statement = script)
 drivers <- drivers %>% select(-c(season, round))
 drivers <- unique(drivers)
+drivers <- drivers_cleaner(drivers)
 rownames(drivers) <- NULL
 drivers <- drivers %>% dplyr::rename('driver_abbr' = 'driver_ID')
 
@@ -102,6 +103,7 @@ script <- paste0(paste("SELECT * FROM f1_", years[start_year], ".circuits", sep 
 circuits <- dbGetQuery(conn = dbconnection_local, statement = script)
 circuits <- circuits %>% select(-c(season, round))
 circuits <- unique(circuits)
+circuits <- circuit_cleaner(circuits)
 rownames(circuits) <- NULL
 circuits <- circuits %>% dplyr::rename('circuit_abbr' = 'circuit_ID')
 
@@ -178,6 +180,7 @@ races <- races %>% select(-c(circuit_ID))
 races <- races %>% rename('circuit_ID' = 'circuit_ID.y')
 races <- races %>% relocate(circuit_ID, .after = race_name)
 races <- unique(races)
+races <- races_cleaner(races)
 races <- races[order(races$season, races$round),]
 rownames(races) <- NULL
 

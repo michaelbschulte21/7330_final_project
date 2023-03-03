@@ -2,6 +2,8 @@
 
 source('Data_Cleaning/NULL_fixer.R')
 
+source('Data_Cleaning/Data_Cleaning.R')
+
 clean_nums <- function(df){
   df <- gsub("[+-]", "", df)
   return(df)
