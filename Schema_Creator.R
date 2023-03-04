@@ -78,7 +78,7 @@ dbExecute(conn = dbconnection_season, statement = script)
 
 ############### Races #############
 script <- paste0("CREATE TABLE IF NOT EXISTS `Races` (
-                  `race_name` varchar(45) NOT NULL,
+                  `race_name` varchar(45) NOT NULL UNIQUE,
                   `year` INT NULL,
                   -- `round` INT NULL,
                   `circuit_ID` varchar(45) NULL,
