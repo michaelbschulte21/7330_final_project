@@ -17,14 +17,13 @@ dbKillConnections <- function(){
 
 # Drop all schema
 schema_nuke <- function(){
-  all_schema <- TRUE
-  source('Schema_dropper.R')
+  source('Schema_Dropper/Schema_dropper_years.R')
+  source('Schema_Dropper/Schema_dropper_formula1.R')
   print('All existing schemas have been nuked')
 }
 
 schema_nuke_years <- function(){
-  all_schema <- FALSE
-  source('Schema_dropper.R')
+  source('Schema_Dropper/Schema_dropper_years.R')
   print('All existing individual years schemas have been nuked')
 }
 

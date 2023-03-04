@@ -1,4 +1,4 @@
-# Schema_dropper.R
+# Schema_Dropper/Schema_dropper_years.R
 
 source('Connections/Local_connect.R')
 rm(secrets)
@@ -11,12 +11,6 @@ for(i in 1:length(years)){
   print(years[i])
   ############ Drop Schema #########
   script <- paste0('DROP SCHEMA IF EXISTS f1_', years[i],';')
-  dbExecute(conn = dbconnection_local, statement = script)
-}
-
-if(all_schema){
-  print('formula1')
-  script <- paste0('DROP SCHEMA IF EXISTS formula1;')
   dbExecute(conn = dbconnection_local, statement = script)
 }
 
