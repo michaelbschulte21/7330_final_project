@@ -108,7 +108,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   `points` INT NULL,
                   `laps` INT NULL,
                   -- `time` TIME NULL,
-                  `time` TIME NULL,
+                  `time` TIME(3) NULL,
                   `milliseconds` INT NULL,
                   `fastest_Lap` INT NULL,
                   `rank` INT NULL,
