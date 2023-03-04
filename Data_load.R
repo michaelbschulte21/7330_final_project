@@ -15,6 +15,7 @@ for(i in start_year:length(years)){
   source('Connections/F1_connect.R')
   source('Connections/Season_connect.R')
   rm(secrets)
+  
   race <- api_getter(season = years[i], round_number = NULL, value = NULL)
   race <- race$MRData$RaceTable$Races
   num_rounds <- max(as.integer(race$round))
@@ -356,6 +357,12 @@ for(i in start_year:length(years)){
                        WHERE year = ", years[i], ";")
       table_insert_tracker <- dbGetQuery(conn = dbconnection_f1, statement = script)
       View(table_insert_tracker)
+      script <- paste0("DELETE FROM table_insert_tracker
+                        WHERE year = ", years[i],";")
+      dbExecute(conn = dbconnection_f1, statement = script)
+      script <- paste0("DELETE FROM seasons
+                        WHERE year = ", years[i], ";")
+      dbExecute(conn = dbconnection_f1, statement = script)
       break
     })
   }
