@@ -129,4 +129,4 @@ source('Main_Task_pt2.R')
 
 ######## Drop not normalized data ########
 
-# schema_nuke_years()
+schema_nuke_years()
