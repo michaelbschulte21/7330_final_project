@@ -68,7 +68,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Lap_Times` (
                   `driver_ID` varchar(45) NULL,
                   `lap` INT NULL,
                   `position` INT NULL,
-                  `time` TIME NULL,
+                  `time` TIME(3) NULL,
                   -- `milliseconds` INT NULL,
                   `season` INT NULL,
                   `round` INT NULL
@@ -84,7 +84,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Races` (
                   `circuit_ID` varchar(45) NULL,
                   -- `name` VARCHAR(45) NULL,
                   `date` DATE NULL,
-                  `time` TIME NULL,
+                  `time` TIME(3) NULL,
                   `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`race_ID`)
@@ -109,7 +109,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Results` (
                   `milliseconds` INT NULL,
                   `fastest_Lap` INT NULL,
                   `rank` INT NULL,
-                  `fastest_Lap_Time` TIME NULL,
+                  `fastest_Lap_Time` TIME(3) NULL,
                   `fastest_Lap_Speed` FLOAT NULL,
                   `fastest_Lap_Speed_Units` char(3) NULL,
                   `status` varchar(45) NULL,
@@ -139,9 +139,9 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Qualifying` (
                   `constructor_ID` varchar(45) NULL,
                   `number` INT NULL,
                   `position` INT NULL,
-                  `q1` TIME NULL,
-                  `q2` TIME NULL,
-                  `q3` TIME NULL,
+                  `q1` TIME(3) NULL,
+                  `q2` TIME(3) NULL,
+                  `q3` TIME(3) NULL,
                   `season` INT NULL,
                   `round` INT NULL
                   -- PRIMARY KEY (`qualify_ID`)
@@ -154,7 +154,7 @@ script <- paste0("CREATE TABLE IF NOT EXISTS `Pit_Stops` (
                   `driver_ID` varchar(45) NULL,
                   `stop` INT NULL,
                   `lap` INT NULL,
-                  `time` TIME NULL,
+                  `time` TIME(3) NULL,
                   `duration` FLOAT NULL,
                   -- `milliseconds` INT NULL,
                   `season` INT NULL,
