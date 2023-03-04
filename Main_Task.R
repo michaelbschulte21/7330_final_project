@@ -28,6 +28,7 @@ schema_nuke_years <- function(){
 }
 
 truncate_current <- function(i){
+  source('Connections/Season_connect.R')
   script <- paste0("TRUNCATE TABLE Circuits;")
   dbExecute(conn = dbconnection_season, statement = script)
   script <- paste0("TRUNCATE TABLE Driver_Standings;")

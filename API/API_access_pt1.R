@@ -28,6 +28,21 @@ table_names <- c('circuits',
                  'qualifying',
                  'results',
                  'status')
+
+tables_in_db_insert_order <- c("seasons"
+                               , "APIs"
+                               , "circuits"
+                               , "constructor_standings"
+                               , "constructor_results"
+                               , "constructors"
+                               , "driver_standings"
+                               , "drivers"
+                               , "lap_times"
+                               , "pit_stops"
+                               , "qualifying"
+                               , "races"
+                               , "results"
+                               , "status")
 # race is specified by year
 
 # tables_in_db <- c("circuits,

@@ -63,6 +63,8 @@ for(i in start_year:length(years)){
                        WHERE year = ", years[i], ";")
       dbExecute(conn = dbconnection_f1, statement = script)
       
+      Sys.sleep(5)
+      
       source('API/API_access_pt2.R')
       
       script <- paste0("UPDATE table_insert_tracker
