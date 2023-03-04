@@ -1,7 +1,7 @@
 # Data_Cleaning/Data_Cleaning.R
 
-source('Connections/Master_connect.R')
-rm(secrets)
+# source('Connections/Master_connect.R')
+# rm(secrets)
 
 ##### Circuits #######
 # script <- paste0('SELECT *
