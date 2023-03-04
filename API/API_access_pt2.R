@@ -28,7 +28,7 @@ tryCatch(
   {
     constructors <- api_getter(season = years[i], round_number = nr, value = table_names[2])
     constructors <- as.data.frame(constructors$MRData$ConstructorTable$Constructors)
-  }, error = funciton(e){
+  }, error = function(e){
     cat("Error occurred: ", conditionMessage(e), "\n")
     print("See constructors call in API calls")
   }
