@@ -19,7 +19,7 @@ f1_tables <- c('circuits',
 
 csv_to_SQL <- function(table_name){
   df <- data.frame(read.csv(file = paste0('csv_files_last_resort/', table_name, '.csv')), stringsAsFactors = FALSE)
-  dbWriteTable(conn = dbconnection_master, name = paste0(table_name), value = df, row.names = FALSE, append = TRUE)
+  dbAppendTable(conn = dbconnection_master, name = paste0(table_name), value = df, row.names = FALSE)
   print(paste0(table_name, " inserted"))
 }
 
