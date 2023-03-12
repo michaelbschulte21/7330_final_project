@@ -1,1103 +1,1103 @@
-"","race_ID","year","round","circuit_ID","race_name","date","time"
-"1",1,1950,1,1,"British Grand Prix","1950-05-13",NA
-"2",2,1950,2,2,"Monaco Grand Prix","1950-05-21",NA
-"3",3,1950,3,3,"Indianapolis 500","1950-05-30",NA
-"4",4,1950,4,4,"Swiss Grand Prix","1950-06-04",NA
-"5",5,1950,5,5,"Belgian Grand Prix","1950-06-18",NA
-"6",6,1950,6,6,"French Grand Prix","1950-07-02",NA
-"7",7,1950,7,7,"Italian Grand Prix","1950-09-03",NA
-"8",8,1951,1,4,"Swiss Grand Prix","1951-05-27",NA
-"9",9,1951,2,3,"Indianapolis 500","1951-05-30",NA
-"10",10,1951,3,5,"Belgian Grand Prix","1951-06-17",NA
-"11",11,1951,4,6,"French Grand Prix","1951-07-01",NA
-"12",12,1951,5,1,"British Grand Prix","1951-07-14",NA
-"13",13,1951,6,8,"German Grand Prix","1951-07-29",NA
-"14",14,1951,7,7,"Italian Grand Prix","1951-09-16",NA
-"15",15,1951,8,9,"Spanish Grand Prix","1951-10-28",NA
-"16",16,1952,1,4,"Swiss Grand Prix","1952-05-18",NA
-"17",17,1952,2,3,"Indianapolis 500","1952-05-30",NA
-"18",18,1952,3,5,"Belgian Grand Prix","1952-06-22",NA
-"19",19,1952,4,10,"French Grand Prix","1952-07-06",NA
-"20",20,1952,5,1,"British Grand Prix","1952-07-19",NA
-"21",21,1952,6,8,"German Grand Prix","1952-08-03",NA
-"22",22,1952,7,11,"Dutch Grand Prix","1952-08-17",NA
-"23",23,1952,8,7,"Italian Grand Prix","1952-09-07",NA
-"24",24,1953,1,12,"Argentine Grand Prix","1953-01-18",NA
-"25",25,1953,2,3,"Indianapolis 500","1953-05-30",NA
-"26",26,1953,3,11,"Dutch Grand Prix","1953-06-07",NA
-"27",27,1953,4,5,"Belgian Grand Prix","1953-06-21",NA
-"28",28,1953,5,6,"French Grand Prix","1953-07-05",NA
-"29",29,1953,6,1,"British Grand Prix","1953-07-18",NA
-"30",30,1953,7,8,"German Grand Prix","1953-08-02",NA
-"31",31,1953,8,4,"Swiss Grand Prix","1953-08-23",NA
-"32",32,1953,9,7,"Italian Grand Prix","1953-09-13",NA
-"33",33,1954,1,12,"Argentine Grand Prix","1954-01-17",NA
-"34",34,1954,2,3,"Indianapolis 500","1954-05-31",NA
-"35",35,1954,3,5,"Belgian Grand Prix","1954-06-20",NA
-"36",36,1954,4,6,"French Grand Prix","1954-07-04",NA
-"37",37,1954,5,1,"British Grand Prix","1954-07-17",NA
-"38",38,1954,6,8,"German Grand Prix","1954-08-01",NA
-"39",39,1954,7,4,"Swiss Grand Prix","1954-08-22",NA
-"40",40,1954,8,7,"Italian Grand Prix","1954-09-05",NA
-"41",41,1954,9,9,"Spanish Grand Prix","1954-10-24",NA
-"42",42,1955,1,12,"Argentine Grand Prix","1955-01-16",NA
-"43",43,1955,2,2,"Monaco Grand Prix","1955-05-22",NA
-"44",44,1955,3,3,"Indianapolis 500","1955-05-30",NA
-"45",45,1955,4,5,"Belgian Grand Prix","1955-06-05",NA
-"46",46,1955,5,11,"Dutch Grand Prix","1955-06-19",NA
-"47",47,1955,6,13,"British Grand Prix","1955-07-16",NA
-"48",48,1955,7,7,"Italian Grand Prix","1955-09-11",NA
-"49",49,1956,1,12,"Argentine Grand Prix","1956-01-22",NA
-"50",50,1956,2,2,"Monaco Grand Prix","1956-05-13",NA
-"51",51,1956,3,3,"Indianapolis 500","1956-05-30",NA
-"52",52,1956,4,5,"Belgian Grand Prix","1956-06-03",NA
-"53",53,1956,5,6,"French Grand Prix","1956-07-01",NA
-"54",54,1956,6,1,"British Grand Prix","1956-07-14",NA
-"55",55,1956,7,8,"German Grand Prix","1956-08-05",NA
-"56",56,1956,8,7,"Italian Grand Prix","1956-09-02",NA
-"57",57,1957,1,12,"Argentine Grand Prix","1957-01-13",NA
-"58",58,1957,2,2,"Monaco Grand Prix","1957-05-19",NA
-"59",59,1957,3,3,"Indianapolis 500","1957-05-30",NA
-"60",60,1957,4,10,"French Grand Prix","1957-07-07",NA
-"61",61,1957,5,13,"British Grand Prix","1957-07-20",NA
-"62",62,1957,6,8,"German Grand Prix","1957-08-04",NA
-"63",63,1957,7,14,"Pescara Grand Prix","1957-08-18",NA
-"64",64,1957,8,7,"Italian Grand Prix","1957-09-08",NA
-"65",65,1958,1,12,"Argentine Grand Prix","1958-01-19",NA
-"66",66,1958,2,2,"Monaco Grand Prix","1958-05-18",NA
-"67",67,1958,3,11,"Dutch Grand Prix","1958-05-26",NA
-"68",68,1958,4,3,"Indianapolis 500","1958-05-30",NA
-"69",69,1958,5,5,"Belgian Grand Prix","1958-06-15",NA
-"70",70,1958,6,6,"French Grand Prix","1958-07-06",NA
-"71",71,1958,7,1,"British Grand Prix","1958-07-19",NA
-"72",72,1958,8,8,"German Grand Prix","1958-08-03",NA
-"73",73,1958,9,15,"Portuguese Grand Prix","1958-08-24",NA
-"74",74,1958,10,7,"Italian Grand Prix","1958-09-07",NA
-"75",75,1958,11,16,"Moroccan Grand Prix","1958-10-19",NA
-"76",76,1959,1,2,"Monaco Grand Prix","1959-05-10",NA
-"77",77,1959,2,3,"Indianapolis 500","1959-05-30",NA
-"78",78,1959,3,11,"Dutch Grand Prix","1959-05-31",NA
-"79",79,1959,4,6,"French Grand Prix","1959-07-05",NA
-"80",80,1959,5,13,"British Grand Prix","1959-07-18",NA
-"81",81,1959,6,17,"German Grand Prix","1959-08-02",NA
-"82",82,1959,7,18,"Portuguese Grand Prix","1959-08-23",NA
-"83",83,1959,8,7,"Italian Grand Prix","1959-09-13",NA
-"84",84,1959,9,19,"United States Grand Prix","1959-12-12",NA
-"85",85,1960,1,12,"Argentine Grand Prix","1960-02-07",NA
-"86",86,1960,2,2,"Monaco Grand Prix","1960-05-29",NA
-"87",87,1960,3,3,"Indianapolis 500","1960-05-30",NA
-"88",88,1960,4,11,"Dutch Grand Prix","1960-06-06",NA
-"89",89,1960,5,5,"Belgian Grand Prix","1960-06-19",NA
-"90",90,1960,6,6,"French Grand Prix","1960-07-03",NA
-"91",91,1960,7,1,"British Grand Prix","1960-07-16",NA
-"92",92,1960,8,15,"Portuguese Grand Prix","1960-08-14",NA
-"93",93,1960,9,7,"Italian Grand Prix","1960-09-04",NA
-"94",94,1960,10,20,"United States Grand Prix","1960-11-20",NA
-"95",95,1961,1,2,"Monaco Grand Prix","1961-05-14",NA
-"96",96,1961,2,11,"Dutch Grand Prix","1961-05-22",NA
-"97",97,1961,3,5,"Belgian Grand Prix","1961-06-18",NA
-"98",98,1961,4,6,"French Grand Prix","1961-07-02",NA
-"99",99,1961,5,13,"British Grand Prix","1961-07-15",NA
-"100",100,1961,6,8,"German Grand Prix","1961-08-06",NA
-"101",101,1961,7,7,"Italian Grand Prix","1961-09-10",NA
-"102",102,1961,8,21,"United States Grand Prix","1961-10-08",NA
-"103",103,1962,1,11,"Dutch Grand Prix","1962-05-20",NA
-"104",104,1962,2,2,"Monaco Grand Prix","1962-06-03",NA
-"105",105,1962,3,5,"Belgian Grand Prix","1962-06-17",NA
-"106",106,1962,4,10,"French Grand Prix","1962-07-08",NA
-"107",107,1962,5,13,"British Grand Prix","1962-07-21",NA
-"108",108,1962,6,8,"German Grand Prix","1962-08-05",NA
-"109",109,1962,7,7,"Italian Grand Prix","1962-09-16",NA
-"110",110,1962,8,21,"United States Grand Prix","1962-10-07",NA
-"111",111,1962,9,22,"South African Grand Prix","1962-12-29",NA
-"112",112,1963,1,2,"Monaco Grand Prix","1963-05-26",NA
-"113",113,1963,2,5,"Belgian Grand Prix","1963-06-09",NA
-"114",114,1963,3,11,"Dutch Grand Prix","1963-06-23",NA
-"115",115,1963,4,6,"French Grand Prix","1963-06-30",NA
-"116",116,1963,5,1,"British Grand Prix","1963-07-20",NA
-"117",117,1963,6,8,"German Grand Prix","1963-08-04",NA
-"118",118,1963,7,7,"Italian Grand Prix","1963-09-08",NA
-"119",119,1963,8,21,"United States Grand Prix","1963-10-06",NA
-"120",120,1963,9,23,"Mexican Grand Prix","1963-10-27",NA
-"121",121,1963,10,22,"South African Grand Prix","1963-12-28",NA
-"122",122,1964,1,2,"Monaco Grand Prix","1964-05-10",NA
-"123",123,1964,2,11,"Dutch Grand Prix","1964-05-24",NA
-"124",124,1964,3,5,"Belgian Grand Prix","1964-06-14",NA
-"125",125,1964,4,10,"French Grand Prix","1964-06-28",NA
-"126",126,1964,5,24,"British Grand Prix","1964-07-11",NA
-"127",127,1964,6,8,"German Grand Prix","1964-08-02",NA
-"128",128,1964,7,25,"Austrian Grand Prix","1964-08-23",NA
-"129",129,1964,8,7,"Italian Grand Prix","1964-09-06",NA
-"130",130,1964,9,21,"United States Grand Prix","1964-10-04",NA
-"131",131,1964,10,23,"Mexican Grand Prix","1964-10-25",NA
-"132",132,1965,1,22,"South African Grand Prix","1965-01-01",NA
-"133",133,1965,2,2,"Monaco Grand Prix","1965-05-30",NA
-"134",134,1965,3,5,"Belgian Grand Prix","1965-06-13",NA
-"135",135,1965,4,26,"French Grand Prix","1965-06-27",NA
-"136",136,1965,5,1,"British Grand Prix","1965-07-10",NA
-"137",137,1965,6,11,"Dutch Grand Prix","1965-07-18",NA
-"138",138,1965,7,8,"German Grand Prix","1965-08-01",NA
-"139",139,1965,8,7,"Italian Grand Prix","1965-09-12",NA
-"140",140,1965,9,21,"United States Grand Prix","1965-10-03",NA
-"141",141,1965,10,23,"Mexican Grand Prix","1965-10-24",NA
-"142",142,1966,1,2,"Monaco Grand Prix","1966-05-22",NA
-"143",143,1966,2,5,"Belgian Grand Prix","1966-06-12",NA
-"144",144,1966,3,6,"French Grand Prix","1966-07-03",NA
-"145",145,1966,4,24,"British Grand Prix","1966-07-16",NA
-"146",146,1966,5,11,"Dutch Grand Prix","1966-07-24",NA
-"147",147,1966,6,8,"German Grand Prix","1966-08-07",NA
-"148",148,1966,7,7,"Italian Grand Prix","1966-09-04",NA
-"149",149,1966,8,21,"United States Grand Prix","1966-10-02",NA
-"150",150,1966,9,23,"Mexican Grand Prix","1966-10-23",NA
-"151",151,1967,1,27,"South African Grand Prix","1967-01-02",NA
-"152",152,1967,2,2,"Monaco Grand Prix","1967-05-07",NA
-"153",153,1967,3,11,"Dutch Grand Prix","1967-06-04",NA
-"154",154,1967,4,5,"Belgian Grand Prix","1967-06-18",NA
-"155",155,1967,5,28,"French Grand Prix","1967-07-02",NA
-"156",156,1967,6,1,"British Grand Prix","1967-07-15",NA
-"157",157,1967,7,8,"German Grand Prix","1967-08-06",NA
-"158",158,1967,8,29,"Canadian Grand Prix","1967-08-27",NA
-"159",159,1967,9,7,"Italian Grand Prix","1967-09-10",NA
-"160",160,1967,10,21,"United States Grand Prix","1967-10-01",NA
-"161",161,1967,11,23,"Mexican Grand Prix","1967-10-22",NA
-"162",162,1968,1,27,"South African Grand Prix","1968-01-01",NA
-"163",163,1968,2,30,"Spanish Grand Prix","1968-05-12",NA
-"164",164,1968,3,2,"Monaco Grand Prix","1968-05-26",NA
-"165",165,1968,4,5,"Belgian Grand Prix","1968-06-09",NA
-"166",166,1968,5,11,"Dutch Grand Prix","1968-06-23",NA
-"167",167,1968,6,10,"French Grand Prix","1968-07-07",NA
-"168",168,1968,7,24,"British Grand Prix","1968-07-20",NA
-"169",169,1968,8,8,"German Grand Prix","1968-08-04",NA
-"170",170,1968,9,7,"Italian Grand Prix","1968-09-08",NA
-"171",171,1968,10,31,"Canadian Grand Prix","1968-09-22",NA
-"172",172,1968,11,21,"United States Grand Prix","1968-10-06",NA
-"173",173,1968,12,23,"Mexican Grand Prix","1968-11-03",NA
-"174",174,1969,1,27,"South African Grand Prix","1969-03-01",NA
-"175",175,1969,2,32,"Spanish Grand Prix","1969-05-04",NA
-"176",176,1969,3,2,"Monaco Grand Prix","1969-05-18",NA
-"177",177,1969,4,11,"Dutch Grand Prix","1969-06-21",NA
-"178",178,1969,5,26,"French Grand Prix","1969-07-06",NA
-"179",179,1969,6,1,"British Grand Prix","1969-07-19",NA
-"180",180,1969,7,8,"German Grand Prix","1969-08-03",NA
-"181",181,1969,8,7,"Italian Grand Prix","1969-09-07",NA
-"182",182,1969,9,29,"Canadian Grand Prix","1969-09-20",NA
-"183",183,1969,10,21,"United States Grand Prix","1969-10-05",NA
-"184",184,1969,11,23,"Mexican Grand Prix","1969-10-19",NA
-"185",185,1970,1,27,"South African Grand Prix","1970-03-07",NA
-"186",186,1970,2,30,"Spanish Grand Prix","1970-04-19",NA
-"187",187,1970,3,2,"Monaco Grand Prix","1970-05-10",NA
-"188",188,1970,4,5,"Belgian Grand Prix","1970-06-07",NA
-"189",189,1970,5,11,"Dutch Grand Prix","1970-06-21",NA
-"190",190,1970,6,26,"French Grand Prix","1970-07-05",NA
-"191",191,1970,7,24,"British Grand Prix","1970-07-18",NA
-"192",192,1970,8,33,"German Grand Prix","1970-08-02",NA
-"193",193,1970,9,34,"Austrian Grand Prix","1970-08-16",NA
-"194",194,1970,10,7,"Italian Grand Prix","1970-09-06",NA
-"195",195,1970,11,31,"Canadian Grand Prix","1970-09-20",NA
-"196",196,1970,12,21,"United States Grand Prix","1970-10-04",NA
-"197",197,1970,13,23,"Mexican Grand Prix","1970-10-25",NA
-"198",198,1971,1,27,"South African Grand Prix","1971-03-06",NA
-"199",199,1971,2,32,"Spanish Grand Prix","1971-04-18",NA
-"200",200,1971,3,2,"Monaco Grand Prix","1971-05-23",NA
-"201",201,1971,4,11,"Dutch Grand Prix","1971-06-20",NA
-"202",202,1971,5,35,"French Grand Prix","1971-07-04",NA
-"203",203,1971,6,1,"British Grand Prix","1971-07-17",NA
-"204",204,1971,7,8,"German Grand Prix","1971-08-01",NA
-"205",205,1971,8,34,"Austrian Grand Prix","1971-08-15",NA
-"206",206,1971,9,7,"Italian Grand Prix","1971-09-05",NA
-"207",207,1971,10,29,"Canadian Grand Prix","1971-09-19",NA
-"208",208,1971,11,21,"United States Grand Prix","1971-10-03",NA
-"209",209,1972,1,12,"Argentine Grand Prix","1972-01-23",NA
-"210",210,1972,2,27,"South African Grand Prix","1972-03-04",NA
-"211",211,1972,3,30,"Spanish Grand Prix","1972-05-01",NA
-"212",212,1972,4,2,"Monaco Grand Prix","1972-05-14",NA
-"213",213,1972,5,36,"Belgian Grand Prix","1972-06-04",NA
-"214",214,1972,6,26,"French Grand Prix","1972-07-02",NA
-"215",215,1972,7,24,"British Grand Prix","1972-07-15",NA
-"216",216,1972,8,8,"German Grand Prix","1972-07-30",NA
-"217",217,1972,9,34,"Austrian Grand Prix","1972-08-13",NA
-"218",218,1972,10,7,"Italian Grand Prix","1972-09-10",NA
-"219",219,1972,11,29,"Canadian Grand Prix","1972-09-24",NA
-"220",220,1972,12,21,"United States Grand Prix","1972-10-08",NA
-"221",221,1973,1,12,"Argentine Grand Prix","1973-01-28",NA
-"222",222,1973,2,37,"Brazilian Grand Prix","1973-02-11",NA
-"223",223,1973,3,27,"South African Grand Prix","1973-03-03",NA
-"224",224,1973,4,32,"Spanish Grand Prix","1973-04-29",NA
-"225",225,1973,5,38,"Belgian Grand Prix","1973-05-20",NA
-"226",226,1973,6,2,"Monaco Grand Prix","1973-06-03",NA
-"227",227,1973,7,39,"Swedish Grand Prix","1973-06-17",NA
-"228",228,1973,8,35,"French Grand Prix","1973-07-01",NA
-"229",229,1973,9,1,"British Grand Prix","1973-07-14",NA
-"230",230,1973,10,11,"Dutch Grand Prix","1973-07-29",NA
-"231",231,1973,11,8,"German Grand Prix","1973-08-05",NA
-"232",232,1973,12,34,"Austrian Grand Prix","1973-08-19",NA
-"233",233,1973,13,7,"Italian Grand Prix","1973-09-09",NA
-"234",234,1973,14,29,"Canadian Grand Prix","1973-09-23",NA
-"235",235,1973,15,21,"United States Grand Prix","1973-10-07",NA
-"236",236,1974,1,12,"Argentine Grand Prix","1974-01-13",NA
-"237",237,1974,2,37,"Brazilian Grand Prix","1974-01-27",NA
-"238",238,1974,3,27,"South African Grand Prix","1974-03-30",NA
-"239",239,1974,4,30,"Spanish Grand Prix","1974-04-28",NA
-"240",240,1974,5,36,"Belgian Grand Prix","1974-05-12",NA
-"241",241,1974,6,2,"Monaco Grand Prix","1974-05-26",NA
-"242",242,1974,7,39,"Swedish Grand Prix","1974-06-09",NA
-"243",243,1974,8,11,"Dutch Grand Prix","1974-06-23",NA
-"244",244,1974,9,40,"French Grand Prix","1974-07-07",NA
-"245",245,1974,10,24,"British Grand Prix","1974-07-20",NA
-"246",246,1974,11,8,"German Grand Prix","1974-08-04",NA
-"247",247,1974,12,34,"Austrian Grand Prix","1974-08-18",NA
-"248",248,1974,13,7,"Italian Grand Prix","1974-09-08",NA
-"249",249,1974,14,29,"Canadian Grand Prix","1974-09-22",NA
-"250",250,1974,15,21,"United States Grand Prix","1974-10-06",NA
-"251",251,1975,1,12,"Argentine Grand Prix","1975-01-12",NA
-"252",252,1975,2,37,"Brazilian Grand Prix","1975-01-26",NA
-"253",253,1975,3,27,"South African Grand Prix","1975-03-01",NA
-"254",254,1975,4,32,"Spanish Grand Prix","1975-04-27",NA
-"255",255,1975,5,2,"Monaco Grand Prix","1975-05-11",NA
-"256",256,1975,6,38,"Belgian Grand Prix","1975-05-25",NA
-"257",257,1975,7,39,"Swedish Grand Prix","1975-06-08",NA
-"258",258,1975,8,11,"Dutch Grand Prix","1975-06-22",NA
-"259",259,1975,9,35,"French Grand Prix","1975-07-06",NA
-"260",260,1975,10,1,"British Grand Prix","1975-07-19",NA
-"261",261,1975,11,8,"German Grand Prix","1975-08-03",NA
-"262",262,1975,12,34,"Austrian Grand Prix","1975-08-17",NA
-"263",263,1975,13,7,"Italian Grand Prix","1975-09-07",NA
-"264",264,1975,14,21,"United States Grand Prix","1975-10-05",NA
-"265",265,1976,1,37,"Brazilian Grand Prix","1976-01-25",NA
-"266",266,1976,2,27,"South African Grand Prix","1976-03-06",NA
-"267",267,1976,3,41,"United States Grand Prix West","1976-03-28",NA
-"268",268,1976,4,30,"Spanish Grand Prix","1976-05-02",NA
-"269",269,1976,5,38,"Belgian Grand Prix","1976-05-16",NA
-"270",270,1976,6,2,"Monaco Grand Prix","1976-05-30",NA
-"271",271,1976,7,39,"Swedish Grand Prix","1976-06-13",NA
-"272",272,1976,8,35,"French Grand Prix","1976-07-04",NA
-"273",273,1976,9,24,"British Grand Prix","1976-07-18",NA
-"274",274,1976,10,8,"German Grand Prix","1976-08-01",NA
-"275",275,1976,11,34,"Austrian Grand Prix","1976-08-15",NA
-"276",276,1976,12,11,"Dutch Grand Prix","1976-08-29",NA
-"277",277,1976,13,7,"Italian Grand Prix","1976-09-12",NA
-"278",278,1976,14,29,"Canadian Grand Prix","1976-10-03",NA
-"279",279,1976,15,21,"United States Grand Prix","1976-10-10",NA
-"280",280,1976,16,42,"Japanese Grand Prix","1976-10-24",NA
-"281",281,1977,1,12,"Argentine Grand Prix","1977-01-09",NA
-"282",282,1977,2,37,"Brazilian Grand Prix","1977-01-23",NA
-"283",283,1977,3,27,"South African Grand Prix","1977-03-05",NA
-"284",284,1977,4,41,"United States Grand Prix West","1977-04-03",NA
-"285",285,1977,5,30,"Spanish Grand Prix","1977-05-08",NA
-"286",286,1977,6,2,"Monaco Grand Prix","1977-05-22",NA
-"287",287,1977,7,38,"Belgian Grand Prix","1977-06-05",NA
-"288",288,1977,8,39,"Swedish Grand Prix","1977-06-19",NA
-"289",289,1977,9,40,"French Grand Prix","1977-07-03",NA
-"290",290,1977,10,1,"British Grand Prix","1977-07-16",NA
-"291",291,1977,11,33,"German Grand Prix","1977-07-31",NA
-"292",292,1977,12,34,"Austrian Grand Prix","1977-08-14",NA
-"293",293,1977,13,11,"Dutch Grand Prix","1977-08-28",NA
-"294",294,1977,14,7,"Italian Grand Prix","1977-09-11",NA
-"295",295,1977,15,21,"United States Grand Prix","1977-10-02",NA
-"296",296,1977,16,29,"Canadian Grand Prix","1977-10-09",NA
-"297",297,1977,17,42,"Japanese Grand Prix","1977-10-23",NA
-"298",298,1978,1,12,"Argentine Grand Prix","1978-01-15",NA
-"299",299,1978,2,43,"Brazilian Grand Prix","1978-01-29",NA
-"300",300,1978,3,27,"South African Grand Prix","1978-03-04",NA
-"301",301,1978,4,41,"United States Grand Prix West","1978-04-02",NA
-"302",302,1978,5,2,"Monaco Grand Prix","1978-05-07",NA
-"303",303,1978,6,38,"Belgian Grand Prix","1978-05-21",NA
-"304",304,1978,7,30,"Spanish Grand Prix","1978-06-04",NA
-"305",305,1978,8,39,"Swedish Grand Prix","1978-06-17",NA
-"306",306,1978,9,35,"French Grand Prix","1978-07-02",NA
-"307",307,1978,10,24,"British Grand Prix","1978-07-16",NA
-"308",308,1978,11,33,"German Grand Prix","1978-07-30",NA
-"309",309,1978,12,34,"Austrian Grand Prix","1978-08-13",NA
-"310",310,1978,13,11,"Dutch Grand Prix","1978-08-27",NA
-"311",311,1978,14,7,"Italian Grand Prix","1978-09-10",NA
-"312",312,1978,15,21,"United States Grand Prix","1978-10-01",NA
-"313",313,1978,16,44,"Canadian Grand Prix","1978-10-08",NA
-"314",314,1979,1,12,"Argentine Grand Prix","1979-01-21",NA
-"315",315,1979,2,37,"Brazilian Grand Prix","1979-02-04",NA
-"316",316,1979,3,27,"South African Grand Prix","1979-03-03",NA
-"317",317,1979,4,41,"United States Grand Prix West","1979-04-08",NA
-"318",318,1979,5,30,"Spanish Grand Prix","1979-04-29",NA
-"319",319,1979,6,38,"Belgian Grand Prix","1979-05-13",NA
-"320",320,1979,7,2,"Monaco Grand Prix","1979-05-27",NA
-"321",321,1979,8,40,"French Grand Prix","1979-07-01",NA
-"322",322,1979,9,1,"British Grand Prix","1979-07-14",NA
-"323",323,1979,10,33,"German Grand Prix","1979-07-29",NA
-"324",324,1979,11,34,"Austrian Grand Prix","1979-08-12",NA
-"325",325,1979,12,11,"Dutch Grand Prix","1979-08-26",NA
-"326",326,1979,13,7,"Italian Grand Prix","1979-09-09",NA
-"327",327,1979,14,44,"Canadian Grand Prix","1979-09-30",NA
-"328",328,1979,15,21,"United States Grand Prix","1979-10-07",NA
-"329",329,1980,1,12,"Argentine Grand Prix","1980-01-13",NA
-"330",330,1980,2,37,"Brazilian Grand Prix","1980-01-27",NA
-"331",331,1980,3,27,"South African Grand Prix","1980-03-01",NA
-"332",332,1980,4,41,"United States Grand Prix West","1980-03-30",NA
-"333",333,1980,5,38,"Belgian Grand Prix","1980-05-04",NA
-"334",334,1980,6,2,"Monaco Grand Prix","1980-05-18",NA
-"335",335,1980,7,35,"French Grand Prix","1980-06-29",NA
-"336",336,1980,8,24,"British Grand Prix","1980-07-13",NA
-"337",337,1980,9,33,"German Grand Prix","1980-08-10",NA
-"338",338,1980,10,34,"Austrian Grand Prix","1980-08-17",NA
-"339",339,1980,11,11,"Dutch Grand Prix","1980-08-31",NA
-"340",340,1980,12,45,"Italian Grand Prix","1980-09-14",NA
-"341",341,1980,13,44,"Canadian Grand Prix","1980-09-28",NA
-"342",342,1980,14,21,"United States Grand Prix","1980-10-05",NA
-"343",343,1981,1,41,"United States Grand Prix West","1981-03-15",NA
-"344",344,1981,2,43,"Brazilian Grand Prix","1981-03-29",NA
-"345",345,1981,3,12,"Argentine Grand Prix","1981-04-12",NA
-"346",346,1981,4,45,"San Marino Grand Prix","1981-05-03",NA
-"347",347,1981,5,38,"Belgian Grand Prix","1981-05-17",NA
-"348",348,1981,6,2,"Monaco Grand Prix","1981-05-31",NA
-"349",349,1981,7,30,"Spanish Grand Prix","1981-06-21",NA
-"350",350,1981,8,40,"French Grand Prix","1981-07-05",NA
-"351",351,1981,9,1,"British Grand Prix","1981-07-18",NA
-"352",352,1981,10,33,"German Grand Prix","1981-08-02",NA
-"353",353,1981,11,34,"Austrian Grand Prix","1981-08-16",NA
-"354",354,1981,12,11,"Dutch Grand Prix","1981-08-30",NA
-"355",355,1981,13,7,"Italian Grand Prix","1981-09-13",NA
-"356",356,1981,14,44,"Canadian Grand Prix","1981-09-27",NA
-"357",357,1981,15,46,"Caesars Palace Grand Prix","1981-10-17",NA
-"358",358,1982,1,27,"South African Grand Prix","1982-01-23",NA
-"359",359,1982,2,43,"Brazilian Grand Prix","1982-03-21",NA
-"360",360,1982,3,41,"United States Grand Prix West","1982-04-04",NA
-"361",361,1982,4,45,"San Marino Grand Prix","1982-04-25",NA
-"362",362,1982,5,38,"Belgian Grand Prix","1982-05-09",NA
-"363",363,1982,6,2,"Monaco Grand Prix","1982-05-23",NA
-"364",364,1982,7,47,"Detroit Grand Prix","1982-06-06",NA
-"365",365,1982,8,44,"Canadian Grand Prix","1982-06-13",NA
-"366",366,1982,9,11,"Dutch Grand Prix","1982-07-03",NA
-"367",367,1982,10,24,"British Grand Prix","1982-07-18",NA
-"368",368,1982,11,35,"French Grand Prix","1982-07-25",NA
-"369",369,1982,12,33,"German Grand Prix","1982-08-08",NA
-"370",370,1982,13,34,"Austrian Grand Prix","1982-08-15",NA
-"371",371,1982,14,40,"Swiss Grand Prix","1982-08-29",NA
-"372",372,1982,15,7,"Italian Grand Prix","1982-09-12",NA
-"373",373,1982,16,46,"Caesars Palace Grand Prix","1982-09-25",NA
-"374",374,1983,1,43,"Brazilian Grand Prix","1983-03-13",NA
-"375",375,1983,2,41,"United States Grand Prix West","1983-03-27",NA
-"376",376,1983,3,35,"French Grand Prix","1983-04-17",NA
-"377",377,1983,4,45,"San Marino Grand Prix","1983-05-01",NA
-"378",378,1983,5,2,"Monaco Grand Prix","1983-05-15",NA
-"379",379,1983,6,5,"Belgian Grand Prix","1983-05-22",NA
-"380",380,1983,7,47,"Detroit Grand Prix","1983-06-05",NA
-"381",381,1983,8,44,"Canadian Grand Prix","1983-06-12",NA
-"382",382,1983,9,1,"British Grand Prix","1983-07-16",NA
-"383",383,1983,10,33,"German Grand Prix","1983-08-07",NA
-"384",384,1983,11,34,"Austrian Grand Prix","1983-08-14",NA
-"385",385,1983,12,11,"Dutch Grand Prix","1983-08-28",NA
-"386",386,1983,13,7,"Italian Grand Prix","1983-09-11",NA
-"387",387,1983,14,24,"European Grand Prix","1983-09-25",NA
-"388",388,1983,15,27,"South African Grand Prix","1983-10-15",NA
-"389",389,1984,1,43,"Brazilian Grand Prix","1984-03-25",NA
-"390",390,1984,2,27,"South African Grand Prix","1984-04-07",NA
-"391",391,1984,3,38,"Belgian Grand Prix","1984-04-29",NA
-"392",392,1984,4,45,"San Marino Grand Prix","1984-05-06",NA
-"393",393,1984,5,40,"French Grand Prix","1984-05-20",NA
-"394",394,1984,6,2,"Monaco Grand Prix","1984-06-03",NA
-"395",395,1984,7,44,"Canadian Grand Prix","1984-06-17",NA
-"396",396,1984,8,47,"Detroit Grand Prix","1984-06-24",NA
-"397",397,1984,9,48,"Dallas Grand Prix","1984-07-08",NA
-"398",398,1984,10,24,"British Grand Prix","1984-07-22",NA
-"399",399,1984,11,33,"German Grand Prix","1984-08-05",NA
-"400",400,1984,12,34,"Austrian Grand Prix","1984-08-19",NA
-"401",401,1984,13,11,"Dutch Grand Prix","1984-08-26",NA
-"402",402,1984,14,7,"Italian Grand Prix","1984-09-09",NA
-"403",403,1984,15,8,"European Grand Prix","1984-10-07",NA
-"404",404,1984,16,49,"Portuguese Grand Prix","1984-10-21",NA
-"405",405,1985,1,43,"Brazilian Grand Prix","1985-04-07",NA
-"406",406,1985,2,49,"Portuguese Grand Prix","1985-04-21",NA
-"407",407,1985,3,45,"San Marino Grand Prix","1985-05-05",NA
-"408",408,1985,4,2,"Monaco Grand Prix","1985-05-19",NA
-"409",409,1985,5,44,"Canadian Grand Prix","1985-06-16",NA
-"410",410,1985,6,47,"Detroit Grand Prix","1985-06-23",NA
-"411",411,1985,7,35,"French Grand Prix","1985-07-07",NA
-"412",412,1985,8,1,"British Grand Prix","1985-07-21",NA
-"413",413,1985,9,8,"German Grand Prix","1985-08-04",NA
-"414",414,1985,10,34,"Austrian Grand Prix","1985-08-18",NA
-"415",415,1985,11,11,"Dutch Grand Prix","1985-08-25",NA
-"416",416,1985,12,7,"Italian Grand Prix","1985-09-08",NA
-"417",417,1985,13,5,"Belgian Grand Prix","1985-09-15",NA
-"418",418,1985,14,24,"European Grand Prix","1985-10-06",NA
-"419",419,1985,15,27,"South African Grand Prix","1985-10-19",NA
-"420",420,1985,16,50,"Australian Grand Prix","1985-11-03",NA
-"421",421,1986,1,43,"Brazilian Grand Prix","1986-03-23",NA
-"422",422,1986,2,51,"Spanish Grand Prix","1986-04-13",NA
-"423",423,1986,3,45,"San Marino Grand Prix","1986-04-27",NA
-"424",424,1986,4,2,"Monaco Grand Prix","1986-05-11",NA
-"425",425,1986,5,5,"Belgian Grand Prix","1986-05-25",NA
-"426",426,1986,6,44,"Canadian Grand Prix","1986-06-15",NA
-"427",427,1986,7,47,"Detroit Grand Prix","1986-06-22",NA
-"428",428,1986,8,35,"French Grand Prix","1986-07-06",NA
-"429",429,1986,9,24,"British Grand Prix","1986-07-13",NA
-"430",430,1986,10,33,"German Grand Prix","1986-07-27",NA
-"431",431,1986,11,52,"Hungarian Grand Prix","1986-08-10",NA
-"432",432,1986,12,34,"Austrian Grand Prix","1986-08-17",NA
-"433",433,1986,13,7,"Italian Grand Prix","1986-09-07",NA
-"434",434,1986,14,49,"Portuguese Grand Prix","1986-09-21",NA
-"435",435,1986,15,23,"Mexican Grand Prix","1986-10-12",NA
-"436",436,1986,16,50,"Australian Grand Prix","1986-10-26",NA
-"437",437,1987,1,43,"Brazilian Grand Prix","1987-04-12",NA
-"438",438,1987,2,45,"San Marino Grand Prix","1987-05-03",NA
-"439",439,1987,3,5,"Belgian Grand Prix","1987-05-17",NA
-"440",440,1987,4,2,"Monaco Grand Prix","1987-05-31",NA
-"441",441,1987,5,47,"Detroit Grand Prix","1987-06-21",NA
-"442",442,1987,6,35,"French Grand Prix","1987-07-05",NA
-"443",443,1987,7,1,"British Grand Prix","1987-07-12",NA
-"444",444,1987,8,33,"German Grand Prix","1987-07-26",NA
-"445",445,1987,9,52,"Hungarian Grand Prix","1987-08-09",NA
-"446",446,1987,10,34,"Austrian Grand Prix","1987-08-16",NA
-"447",447,1987,11,7,"Italian Grand Prix","1987-09-06",NA
-"448",448,1987,12,49,"Portuguese Grand Prix","1987-09-20",NA
-"449",449,1987,13,51,"Spanish Grand Prix","1987-09-27",NA
-"450",450,1987,14,23,"Mexican Grand Prix","1987-10-18",NA
-"451",451,1987,15,53,"Japanese Grand Prix","1987-11-01",NA
-"452",452,1987,16,50,"Australian Grand Prix","1987-11-15",NA
-"453",453,1988,1,43,"Brazilian Grand Prix","1988-04-03",NA
-"454",454,1988,2,45,"San Marino Grand Prix","1988-05-01",NA
-"455",455,1988,3,2,"Monaco Grand Prix","1988-05-15",NA
-"456",456,1988,4,23,"Mexican Grand Prix","1988-05-29",NA
-"457",457,1988,5,44,"Canadian Grand Prix","1988-06-12",NA
-"458",458,1988,6,47,"Detroit Grand Prix","1988-06-19",NA
-"459",459,1988,7,35,"French Grand Prix","1988-07-03",NA
-"460",460,1988,8,1,"British Grand Prix","1988-07-10",NA
-"461",461,1988,9,33,"German Grand Prix","1988-07-24",NA
-"462",462,1988,10,52,"Hungarian Grand Prix","1988-08-07",NA
-"463",463,1988,11,5,"Belgian Grand Prix","1988-08-28",NA
-"464",464,1988,12,7,"Italian Grand Prix","1988-09-11",NA
-"465",465,1988,13,49,"Portuguese Grand Prix","1988-09-25",NA
-"466",466,1988,14,51,"Spanish Grand Prix","1988-10-02",NA
-"467",467,1988,15,53,"Japanese Grand Prix","1988-10-30",NA
-"468",468,1988,16,50,"Australian Grand Prix","1988-11-13",NA
-"469",469,1989,1,43,"Brazilian Grand Prix","1989-03-26",NA
-"470",470,1989,2,45,"San Marino Grand Prix","1989-04-23",NA
-"471",471,1989,3,2,"Monaco Grand Prix","1989-05-07",NA
-"472",472,1989,4,23,"Mexican Grand Prix","1989-05-28",NA
-"473",473,1989,5,54,"United States Grand Prix","1989-06-04",NA
-"474",474,1989,6,44,"Canadian Grand Prix","1989-06-18",NA
-"475",475,1989,7,35,"French Grand Prix","1989-07-09",NA
-"476",476,1989,8,1,"British Grand Prix","1989-07-16",NA
-"477",477,1989,9,33,"German Grand Prix","1989-07-30",NA
-"478",478,1989,10,52,"Hungarian Grand Prix","1989-08-13",NA
-"479",479,1989,11,5,"Belgian Grand Prix","1989-08-27",NA
-"480",480,1989,12,7,"Italian Grand Prix","1989-09-10",NA
-"481",481,1989,13,49,"Portuguese Grand Prix","1989-09-24",NA
-"482",482,1989,14,51,"Spanish Grand Prix","1989-10-01",NA
-"483",483,1989,15,53,"Japanese Grand Prix","1989-10-22",NA
-"484",484,1989,16,50,"Australian Grand Prix","1989-11-05",NA
-"485",485,1990,1,54,"United States Grand Prix","1990-03-11",NA
-"486",486,1990,2,37,"Brazilian Grand Prix","1990-03-25",NA
-"487",487,1990,3,45,"San Marino Grand Prix","1990-05-13",NA
-"488",488,1990,4,2,"Monaco Grand Prix","1990-05-27",NA
-"489",489,1990,5,44,"Canadian Grand Prix","1990-06-10",NA
-"490",490,1990,6,23,"Mexican Grand Prix","1990-06-24",NA
-"491",491,1990,7,35,"French Grand Prix","1990-07-08",NA
-"492",492,1990,8,1,"British Grand Prix","1990-07-15",NA
-"493",493,1990,9,33,"German Grand Prix","1990-07-29",NA
-"494",494,1990,10,52,"Hungarian Grand Prix","1990-08-12",NA
-"495",495,1990,11,5,"Belgian Grand Prix","1990-08-26",NA
-"496",496,1990,12,7,"Italian Grand Prix","1990-09-09",NA
-"497",497,1990,13,49,"Portuguese Grand Prix","1990-09-23",NA
-"498",498,1990,14,51,"Spanish Grand Prix","1990-09-30",NA
-"499",499,1990,15,53,"Japanese Grand Prix","1990-10-21",NA
-"500",500,1990,16,50,"Australian Grand Prix","1990-11-04",NA
-"501",501,1991,1,54,"United States Grand Prix","1991-03-10",NA
-"502",502,1991,2,37,"Brazilian Grand Prix","1991-03-24",NA
-"503",503,1991,3,45,"San Marino Grand Prix","1991-04-28",NA
-"504",504,1991,4,2,"Monaco Grand Prix","1991-05-12",NA
-"505",505,1991,5,44,"Canadian Grand Prix","1991-06-02",NA
-"506",506,1991,6,23,"Mexican Grand Prix","1991-06-16",NA
-"507",507,1991,7,55,"French Grand Prix","1991-07-07",NA
-"508",508,1991,8,1,"British Grand Prix","1991-07-14",NA
-"509",509,1991,9,33,"German Grand Prix","1991-07-28",NA
-"510",510,1991,10,52,"Hungarian Grand Prix","1991-08-11",NA
-"511",511,1991,11,5,"Belgian Grand Prix","1991-08-25",NA
-"512",512,1991,12,7,"Italian Grand Prix","1991-09-08",NA
-"513",513,1991,13,49,"Portuguese Grand Prix","1991-09-22",NA
-"514",514,1991,14,56,"Spanish Grand Prix","1991-09-29",NA
-"515",515,1991,15,53,"Japanese Grand Prix","1991-10-20",NA
-"516",516,1991,16,50,"Australian Grand Prix","1991-11-03",NA
-"517",517,1992,1,27,"South African Grand Prix","1992-03-01",NA
-"518",518,1992,2,23,"Mexican Grand Prix","1992-03-22",NA
-"519",519,1992,3,37,"Brazilian Grand Prix","1992-04-05",NA
-"520",520,1992,4,56,"Spanish Grand Prix","1992-05-03",NA
-"521",521,1992,5,45,"San Marino Grand Prix","1992-05-17",NA
-"522",522,1992,6,2,"Monaco Grand Prix","1992-05-31",NA
-"523",523,1992,7,44,"Canadian Grand Prix","1992-06-14",NA
-"524",524,1992,8,55,"French Grand Prix","1992-07-05",NA
-"525",525,1992,9,1,"British Grand Prix","1992-07-12",NA
-"526",526,1992,10,33,"German Grand Prix","1992-07-26",NA
-"527",527,1992,11,52,"Hungarian Grand Prix","1992-08-16",NA
-"528",528,1992,12,5,"Belgian Grand Prix","1992-08-30",NA
-"529",529,1992,13,7,"Italian Grand Prix","1992-09-13",NA
-"530",530,1992,14,49,"Portuguese Grand Prix","1992-09-27",NA
-"531",531,1992,15,53,"Japanese Grand Prix","1992-10-25",NA
-"532",532,1992,16,50,"Australian Grand Prix","1992-11-08",NA
-"533",533,1993,1,27,"South African Grand Prix","1993-03-14",NA
-"534",534,1993,2,37,"Brazilian Grand Prix","1993-03-28",NA
-"535",535,1993,3,57,"European Grand Prix","1993-04-11",NA
-"536",536,1993,4,45,"San Marino Grand Prix","1993-04-25",NA
-"537",537,1993,5,56,"Spanish Grand Prix","1993-05-09",NA
-"538",538,1993,6,2,"Monaco Grand Prix","1993-05-23",NA
-"539",539,1993,7,44,"Canadian Grand Prix","1993-06-13",NA
-"540",540,1993,8,55,"French Grand Prix","1993-07-04",NA
-"541",541,1993,9,1,"British Grand Prix","1993-07-11",NA
-"542",542,1993,10,33,"German Grand Prix","1993-07-25",NA
-"543",543,1993,11,52,"Hungarian Grand Prix","1993-08-15",NA
-"544",544,1993,12,5,"Belgian Grand Prix","1993-08-29",NA
-"545",545,1993,13,7,"Italian Grand Prix","1993-09-12",NA
-"546",546,1993,14,49,"Portuguese Grand Prix","1993-09-26",NA
-"547",547,1993,15,53,"Japanese Grand Prix","1993-10-24",NA
-"548",548,1993,16,50,"Australian Grand Prix","1993-11-07",NA
-"549",549,1994,1,37,"Brazilian Grand Prix","1994-03-27",NA
-"550",550,1994,2,58,"Pacific Grand Prix","1994-04-17",NA
-"551",551,1994,3,45,"San Marino Grand Prix","1994-05-01",NA
-"552",552,1994,4,2,"Monaco Grand Prix","1994-05-15",NA
-"553",553,1994,5,56,"Spanish Grand Prix","1994-05-29",NA
-"554",554,1994,6,44,"Canadian Grand Prix","1994-06-12",NA
-"555",555,1994,7,55,"French Grand Prix","1994-07-03",NA
-"556",556,1994,8,1,"British Grand Prix","1994-07-10",NA
-"557",557,1994,9,33,"German Grand Prix","1994-07-31",NA
-"558",558,1994,10,52,"Hungarian Grand Prix","1994-08-14",NA
-"559",559,1994,11,5,"Belgian Grand Prix","1994-08-28",NA
-"560",560,1994,12,7,"Italian Grand Prix","1994-09-11",NA
-"561",561,1994,13,49,"Portuguese Grand Prix","1994-09-25",NA
-"562",562,1994,14,51,"European Grand Prix","1994-10-16",NA
-"563",563,1994,15,53,"Japanese Grand Prix","1994-11-06",NA
-"564",564,1994,16,50,"Australian Grand Prix","1994-11-13",NA
-"565",565,1995,1,37,"Brazilian Grand Prix","1995-03-26",NA
-"566",566,1995,2,12,"Argentine Grand Prix","1995-04-09",NA
-"567",567,1995,3,45,"San Marino Grand Prix","1995-04-30",NA
-"568",568,1995,4,56,"Spanish Grand Prix","1995-05-14",NA
-"569",569,1995,5,2,"Monaco Grand Prix","1995-05-28",NA
-"570",570,1995,6,44,"Canadian Grand Prix","1995-06-11",NA
-"571",571,1995,7,55,"French Grand Prix","1995-07-02",NA
-"572",572,1995,8,1,"British Grand Prix","1995-07-16",NA
-"573",573,1995,9,33,"German Grand Prix","1995-07-30",NA
-"574",574,1995,10,52,"Hungarian Grand Prix","1995-08-13",NA
-"575",575,1995,11,5,"Belgian Grand Prix","1995-08-27",NA
-"576",576,1995,12,7,"Italian Grand Prix","1995-09-10",NA
-"577",577,1995,13,49,"Portuguese Grand Prix","1995-09-24",NA
-"578",578,1995,14,8,"European Grand Prix","1995-10-01",NA
-"579",579,1995,15,58,"Pacific Grand Prix","1995-10-22",NA
-"580",580,1995,16,53,"Japanese Grand Prix","1995-10-29",NA
-"581",581,1995,17,50,"Australian Grand Prix","1995-11-12",NA
-"582",582,1996,1,59,"Australian Grand Prix","1996-03-10",NA
-"583",583,1996,2,37,"Brazilian Grand Prix","1996-03-31",NA
-"584",584,1996,3,12,"Argentine Grand Prix","1996-04-07",NA
-"585",585,1996,4,8,"European Grand Prix","1996-04-28",NA
-"586",586,1996,5,45,"San Marino Grand Prix","1996-05-05",NA
-"587",587,1996,6,2,"Monaco Grand Prix","1996-05-19",NA
-"588",588,1996,7,56,"Spanish Grand Prix","1996-06-02",NA
-"589",589,1996,8,44,"Canadian Grand Prix","1996-06-16",NA
-"590",590,1996,9,55,"French Grand Prix","1996-06-30",NA
-"591",591,1996,10,1,"British Grand Prix","1996-07-14",NA
-"592",592,1996,11,33,"German Grand Prix","1996-07-28",NA
-"593",593,1996,12,52,"Hungarian Grand Prix","1996-08-11",NA
-"594",594,1996,13,5,"Belgian Grand Prix","1996-08-25",NA
-"595",595,1996,14,7,"Italian Grand Prix","1996-09-08",NA
-"596",596,1996,15,49,"Portuguese Grand Prix","1996-09-22",NA
-"597",597,1996,16,53,"Japanese Grand Prix","1996-10-13",NA
-"598",598,1997,1,59,"Australian Grand Prix","1997-03-09",NA
-"599",599,1997,2,37,"Brazilian Grand Prix","1997-03-30",NA
-"600",600,1997,3,12,"Argentine Grand Prix","1997-04-13",NA
-"601",601,1997,4,45,"San Marino Grand Prix","1997-04-27",NA
-"602",602,1997,5,2,"Monaco Grand Prix","1997-05-11",NA
-"603",603,1997,6,56,"Spanish Grand Prix","1997-05-25",NA
-"604",604,1997,7,44,"Canadian Grand Prix","1997-06-15",NA
-"605",605,1997,8,55,"French Grand Prix","1997-06-29",NA
-"606",606,1997,9,1,"British Grand Prix","1997-07-13",NA
-"607",607,1997,10,33,"German Grand Prix","1997-07-27",NA
-"608",608,1997,11,52,"Hungarian Grand Prix","1997-08-10",NA
-"609",609,1997,12,5,"Belgian Grand Prix","1997-08-24",NA
-"610",610,1997,13,7,"Italian Grand Prix","1997-09-07",NA
-"611",611,1997,14,34,"Austrian Grand Prix","1997-09-21",NA
-"612",612,1997,15,8,"Luxembourg Grand Prix","1997-09-28",NA
-"613",613,1997,16,53,"Japanese Grand Prix","1997-10-12",NA
-"614",614,1997,17,51,"European Grand Prix","1997-10-26",NA
-"615",615,1998,1,59,"Australian Grand Prix","1998-03-08",NA
-"616",616,1998,2,37,"Brazilian Grand Prix","1998-03-29",NA
-"617",617,1998,3,12,"Argentine Grand Prix","1998-04-12",NA
-"618",618,1998,4,45,"San Marino Grand Prix","1998-04-26",NA
-"619",619,1998,5,56,"Spanish Grand Prix","1998-05-10",NA
-"620",620,1998,6,2,"Monaco Grand Prix","1998-05-24",NA
-"621",621,1998,7,44,"Canadian Grand Prix","1998-06-07",NA
-"622",622,1998,8,55,"French Grand Prix","1998-06-28",NA
-"623",623,1998,9,1,"British Grand Prix","1998-07-12",NA
-"624",624,1998,10,34,"Austrian Grand Prix","1998-07-26",NA
-"625",625,1998,11,33,"German Grand Prix","1998-08-02",NA
-"626",626,1998,12,52,"Hungarian Grand Prix","1998-08-16",NA
-"627",627,1998,13,5,"Belgian Grand Prix","1998-08-30",NA
-"628",628,1998,14,7,"Italian Grand Prix","1998-09-13",NA
-"629",629,1998,15,8,"Luxembourg Grand Prix","1998-09-27",NA
-"630",630,1998,16,53,"Japanese Grand Prix","1998-11-01",NA
-"631",631,1999,1,59,"Australian Grand Prix","1999-03-07",NA
-"632",632,1999,2,37,"Brazilian Grand Prix","1999-04-11",NA
-"633",633,1999,3,45,"San Marino Grand Prix","1999-05-02",NA
-"634",634,1999,4,2,"Monaco Grand Prix","1999-05-16",NA
-"635",635,1999,5,56,"Spanish Grand Prix","1999-05-30",NA
-"636",636,1999,6,44,"Canadian Grand Prix","1999-06-13",NA
-"637",637,1999,7,55,"French Grand Prix","1999-06-27",NA
-"638",638,1999,8,1,"British Grand Prix","1999-07-11",NA
-"639",639,1999,9,34,"Austrian Grand Prix","1999-07-25",NA
-"640",640,1999,10,33,"German Grand Prix","1999-08-01",NA
-"641",641,1999,11,52,"Hungarian Grand Prix","1999-08-15",NA
-"642",642,1999,12,5,"Belgian Grand Prix","1999-08-29",NA
-"643",643,1999,13,7,"Italian Grand Prix","1999-09-12",NA
-"644",644,1999,14,8,"European Grand Prix","1999-09-26",NA
-"645",645,1999,15,60,"Malaysian Grand Prix","1999-10-17",NA
-"646",646,1999,16,53,"Japanese Grand Prix","1999-10-31",NA
-"647",647,2000,1,59,"Australian Grand Prix","2000-03-12",NA
-"648",648,2000,2,37,"Brazilian Grand Prix","2000-03-26",NA
-"649",649,2000,3,45,"San Marino Grand Prix","2000-04-09",NA
-"650",650,2000,4,1,"British Grand Prix","2000-04-23",NA
-"651",651,2000,5,56,"Spanish Grand Prix","2000-05-07",NA
-"652",652,2000,6,8,"European Grand Prix","2000-05-21",NA
-"653",653,2000,7,2,"Monaco Grand Prix","2000-06-04",NA
-"654",654,2000,8,44,"Canadian Grand Prix","2000-06-18",NA
-"655",655,2000,9,55,"French Grand Prix","2000-07-02",NA
-"656",656,2000,10,34,"Austrian Grand Prix","2000-07-16",NA
-"657",657,2000,11,33,"German Grand Prix","2000-07-30",NA
-"658",658,2000,12,52,"Hungarian Grand Prix","2000-08-13",NA
-"659",659,2000,13,5,"Belgian Grand Prix","2000-08-27",NA
-"660",660,2000,14,7,"Italian Grand Prix","2000-09-10",NA
-"661",661,2000,15,3,"United States Grand Prix","2000-09-24",NA
-"662",662,2000,16,53,"Japanese Grand Prix","2000-10-08",NA
-"663",663,2000,17,60,"Malaysian Grand Prix","2000-10-22",NA
-"664",664,2001,1,59,"Australian Grand Prix","2001-03-04",NA
-"665",665,2001,2,60,"Malaysian Grand Prix","2001-03-18",NA
-"666",666,2001,3,37,"Brazilian Grand Prix","2001-04-01",NA
-"667",667,2001,4,45,"San Marino Grand Prix","2001-04-15",NA
-"668",668,2001,5,56,"Spanish Grand Prix","2001-04-29",NA
-"669",669,2001,6,34,"Austrian Grand Prix","2001-05-13",NA
-"670",670,2001,7,2,"Monaco Grand Prix","2001-05-27",NA
-"671",671,2001,8,44,"Canadian Grand Prix","2001-06-10",NA
-"672",672,2001,9,8,"European Grand Prix","2001-06-24",NA
-"673",673,2001,10,55,"French Grand Prix","2001-07-01",NA
-"674",674,2001,11,1,"British Grand Prix","2001-07-15",NA
-"675",675,2001,12,33,"German Grand Prix","2001-07-29",NA
-"676",676,2001,13,52,"Hungarian Grand Prix","2001-08-19",NA
-"677",677,2001,14,5,"Belgian Grand Prix","2001-09-02",NA
-"678",678,2001,15,7,"Italian Grand Prix","2001-09-16",NA
-"679",679,2001,16,3,"United States Grand Prix","2001-09-30",NA
-"680",680,2001,17,53,"Japanese Grand Prix","2001-10-14",NA
-"681",681,2002,1,59,"Australian Grand Prix","2002-03-03",NA
-"682",682,2002,2,60,"Malaysian Grand Prix","2002-03-17",NA
-"683",683,2002,3,37,"Brazilian Grand Prix","2002-03-31",NA
-"684",684,2002,4,45,"San Marino Grand Prix","2002-04-14",NA
-"685",685,2002,5,56,"Spanish Grand Prix","2002-04-28",NA
-"686",686,2002,6,34,"Austrian Grand Prix","2002-05-12",NA
-"687",687,2002,7,2,"Monaco Grand Prix","2002-05-26",NA
-"688",688,2002,8,44,"Canadian Grand Prix","2002-06-09",NA
-"689",689,2002,9,8,"European Grand Prix","2002-06-23",NA
-"690",690,2002,10,1,"British Grand Prix","2002-07-07",NA
-"691",691,2002,11,55,"French Grand Prix","2002-07-21",NA
-"692",692,2002,12,33,"German Grand Prix","2002-07-28",NA
-"693",693,2002,13,52,"Hungarian Grand Prix","2002-08-18",NA
-"694",694,2002,14,5,"Belgian Grand Prix","2002-09-01",NA
-"695",695,2002,15,7,"Italian Grand Prix","2002-09-15",NA
-"696",696,2002,16,3,"United States Grand Prix","2002-09-29",NA
-"697",697,2002,17,53,"Japanese Grand Prix","2002-10-13",NA
-"698",698,2003,1,59,"Australian Grand Prix","2003-03-09",NA
-"699",699,2003,2,60,"Malaysian Grand Prix","2003-03-23",NA
-"700",700,2003,3,37,"Brazilian Grand Prix","2003-04-06",NA
-"701",701,2003,4,45,"San Marino Grand Prix","2003-04-20",NA
-"702",702,2003,5,56,"Spanish Grand Prix","2003-05-04",NA
-"703",703,2003,6,34,"Austrian Grand Prix","2003-05-18",NA
-"704",704,2003,7,2,"Monaco Grand Prix","2003-06-01",NA
-"705",705,2003,8,44,"Canadian Grand Prix","2003-06-15",NA
-"706",706,2003,9,8,"European Grand Prix","2003-06-29",NA
-"707",707,2003,10,55,"French Grand Prix","2003-07-06",NA
-"708",708,2003,11,1,"British Grand Prix","2003-07-20",NA
-"709",709,2003,12,33,"German Grand Prix","2003-08-03",NA
-"710",710,2003,13,52,"Hungarian Grand Prix","2003-08-24",NA
-"711",711,2003,14,7,"Italian Grand Prix","2003-09-14",NA
-"712",712,2003,15,3,"United States Grand Prix","2003-09-28",NA
-"713",713,2003,16,53,"Japanese Grand Prix","2003-10-12",NA
-"714",714,2004,1,59,"Australian Grand Prix","2004-03-07",NA
-"715",715,2004,2,60,"Malaysian Grand Prix","2004-03-21",NA
-"716",716,2004,3,61,"Bahrain Grand Prix","2004-04-04",NA
-"717",717,2004,4,45,"San Marino Grand Prix","2004-04-25",NA
-"718",718,2004,5,56,"Spanish Grand Prix","2004-05-09",NA
-"719",719,2004,6,2,"Monaco Grand Prix","2004-05-23",NA
-"720",720,2004,7,8,"European Grand Prix","2004-05-30",NA
-"721",721,2004,8,44,"Canadian Grand Prix","2004-06-13",NA
-"722",722,2004,9,3,"United States Grand Prix","2004-06-20",NA
-"723",723,2004,10,55,"French Grand Prix","2004-07-04",NA
-"724",724,2004,11,1,"British Grand Prix","2004-07-11",NA
-"725",725,2004,12,33,"German Grand Prix","2004-07-25",NA
-"726",726,2004,13,52,"Hungarian Grand Prix","2004-08-15",NA
-"727",727,2004,14,5,"Belgian Grand Prix","2004-08-29",NA
-"728",728,2004,15,7,"Italian Grand Prix","2004-09-12",NA
-"729",729,2004,16,62,"Chinese Grand Prix","2004-09-26",NA
-"730",730,2004,17,53,"Japanese Grand Prix","2004-10-10",NA
-"731",731,2004,18,37,"Brazilian Grand Prix","2004-10-24",NA
-"732",732,2005,1,59,"Australian Grand Prix","2005-03-06","14:00:00.000"
-"733",733,2005,2,60,"Malaysian Grand Prix","2005-03-20","15:00:00.000"
-"734",734,2005,3,61,"Bahrain Grand Prix","2005-04-03","14:30:00.000"
-"735",735,2005,4,45,"San Marino Grand Prix","2005-04-24","14:00:00.000"
-"736",736,2005,5,56,"Spanish Grand Prix","2005-05-08","14:00:00.000"
-"737",737,2005,6,2,"Monaco Grand Prix","2005-05-22","14:00:00.000"
-"738",738,2005,7,8,"European Grand Prix","2005-05-29","14:00:00.000"
-"739",739,2005,8,44,"Canadian Grand Prix","2005-06-12","13:00:00.000"
-"740",740,2005,9,3,"United States Grand Prix","2005-06-19","14:00:00.000"
-"741",741,2005,10,55,"French Grand Prix","2005-07-03","14:00:00.000"
-"742",742,2005,11,1,"British Grand Prix","2005-07-10","14:00:00.000"
-"743",743,2005,12,33,"German Grand Prix","2005-07-24","14:00:00.000"
-"744",744,2005,13,52,"Hungarian Grand Prix","2005-07-31","14:00:00.000"
-"745",745,2005,14,63,"Turkish Grand Prix","2005-08-21","15:00:00.000"
-"746",746,2005,15,7,"Italian Grand Prix","2005-09-04","14:00:00.000"
-"747",747,2005,16,5,"Belgian Grand Prix","2005-09-11","14:00:00.000"
-"748",748,2005,17,37,"Brazilian Grand Prix","2005-09-25","14:00:00.000"
-"749",749,2005,18,53,"Japanese Grand Prix","2005-10-09","14:00:00.000"
-"750",750,2005,19,62,"Chinese Grand Prix","2005-10-16","14:00:00.000"
-"751",751,2006,1,61,"Bahrain Grand Prix","2006-03-12","14:30:00.000"
-"752",752,2006,2,60,"Malaysian Grand Prix","2006-03-19","15:00:00.000"
-"753",753,2006,3,59,"Australian Grand Prix","2006-04-02","14:00:00.000"
-"754",754,2006,4,45,"San Marino Grand Prix","2006-04-23","14:00:00.000"
-"755",755,2006,5,8,"European Grand Prix","2006-05-07","14:00:00.000"
-"756",756,2006,6,56,"Spanish Grand Prix","2006-05-14","14:00:00.000"
-"757",757,2006,7,2,"Monaco Grand Prix","2006-05-28","14:00:00.000"
-"758",758,2006,8,1,"British Grand Prix","2006-06-11","12:00:00.000"
-"759",759,2006,9,44,"Canadian Grand Prix","2006-06-25","13:00:00.000"
-"760",760,2006,10,3,"United States Grand Prix","2006-07-02","14:00:00.000"
-"761",761,2006,11,55,"French Grand Prix","2006-07-16","14:00:00.000"
-"762",762,2006,12,33,"German Grand Prix","2006-07-30","14:00:00.000"
-"763",763,2006,13,52,"Hungarian Grand Prix","2006-08-06","14:00:00.000"
-"764",764,2006,14,63,"Turkish Grand Prix","2006-08-27","15:00:00.000"
-"765",765,2006,15,7,"Italian Grand Prix","2006-09-10","14:00:00.000"
-"766",766,2006,16,62,"Chinese Grand Prix","2006-10-01","14:00:00.000"
-"767",767,2006,17,53,"Japanese Grand Prix","2006-10-08","14:00:00.000"
-"768",768,2006,18,37,"Brazilian Grand Prix","2006-10-22","14:00:00.000"
-"769",769,2007,1,59,"Australian Grand Prix","2007-03-18","03:00:00.000"
-"770",770,2007,2,60,"Malaysian Grand Prix","2007-04-08","07:00:00.000"
-"771",771,2007,3,61,"Bahrain Grand Prix","2007-04-15","11:30:00.000"
-"772",772,2007,4,56,"Spanish Grand Prix","2007-05-13","12:00:00.000"
-"773",773,2007,5,2,"Monaco Grand Prix","2007-05-27","12:00:00.000"
-"774",774,2007,6,44,"Canadian Grand Prix","2007-06-10","17:00:00.000"
-"775",775,2007,7,3,"United States Grand Prix","2007-06-17","17:00:00.000"
-"776",776,2007,8,55,"French Grand Prix","2007-07-01","12:00:00.000"
-"777",777,2007,9,1,"British Grand Prix","2007-07-08","12:00:00.000"
-"778",778,2007,10,8,"European Grand Prix","2007-07-22","12:00:00.000"
-"779",779,2007,11,52,"Hungarian Grand Prix","2007-08-05","12:00:00.000"
-"780",780,2007,12,63,"Turkish Grand Prix","2007-08-26","12:00:00.000"
-"781",781,2007,13,7,"Italian Grand Prix","2007-09-09","12:00:00.000"
-"782",782,2007,14,5,"Belgian Grand Prix","2007-09-16","12:00:00.000"
-"783",783,2007,15,42,"Japanese Grand Prix","2007-09-30","04:30:00.000"
-"784",784,2007,16,62,"Chinese Grand Prix","2007-10-07","06:00:00.000"
-"785",785,2007,17,37,"Brazilian Grand Prix","2007-10-21","16:00:00.000"
-"786",786,2008,1,59,"Australian Grand Prix","2008-03-16","04:30:00.000"
-"787",787,2008,2,60,"Malaysian Grand Prix","2008-03-23","07:00:00.000"
-"788",788,2008,3,61,"Bahrain Grand Prix","2008-04-06","11:30:00.000"
-"789",789,2008,4,56,"Spanish Grand Prix","2008-04-27","12:00:00.000"
-"790",790,2008,5,63,"Turkish Grand Prix","2008-05-11","12:00:00.000"
-"791",791,2008,6,2,"Monaco Grand Prix","2008-05-25","12:00:00.000"
-"792",792,2008,7,44,"Canadian Grand Prix","2008-06-08","17:00:00.000"
-"793",793,2008,8,55,"French Grand Prix","2008-06-22","12:00:00.000"
-"794",794,2008,9,1,"British Grand Prix","2008-07-06","12:00:00.000"
-"795",795,2008,10,33,"German Grand Prix","2008-07-20","12:00:00.000"
-"796",796,2008,11,52,"Hungarian Grand Prix","2008-08-03","12:00:00.000"
-"797",797,2008,12,64,"European Grand Prix","2008-08-24","12:00:00.000"
-"798",798,2008,13,5,"Belgian Grand Prix","2008-09-07","12:00:00.000"
-"799",799,2008,14,7,"Italian Grand Prix","2008-09-14","12:00:00.000"
-"800",800,2008,15,65,"Singapore Grand Prix","2008-09-28","12:00:00.000"
-"801",801,2008,16,42,"Japanese Grand Prix","2008-10-12","04:30:00.000"
-"802",802,2008,17,62,"Chinese Grand Prix","2008-10-19","07:00:00.000"
-"803",803,2008,18,37,"Brazilian Grand Prix","2008-11-02","17:00:00.000"
-"804",804,2009,1,59,"Australian Grand Prix","2009-03-29","06:00:00.000"
-"805",805,2009,2,60,"Malaysian Grand Prix","2009-04-05","09:00:00.000"
-"806",806,2009,3,62,"Chinese Grand Prix","2009-04-19","07:00:00.000"
-"807",807,2009,4,61,"Bahrain Grand Prix","2009-04-26","12:00:00.000"
-"808",808,2009,5,56,"Spanish Grand Prix","2009-05-10","12:00:00.000"
-"809",809,2009,6,2,"Monaco Grand Prix","2009-05-24","12:00:00.000"
-"810",810,2009,7,63,"Turkish Grand Prix","2009-06-07","12:00:00.000"
-"811",811,2009,8,1,"British Grand Prix","2009-06-21","12:00:00.000"
-"812",812,2009,9,8,"German Grand Prix","2009-07-12","12:00:00.000"
-"813",813,2009,10,52,"Hungarian Grand Prix","2009-07-26","12:00:00.000"
-"814",814,2009,11,64,"European Grand Prix","2009-08-23","12:00:00.000"
-"815",815,2009,12,5,"Belgian Grand Prix","2009-08-30","12:00:00.000"
-"816",816,2009,13,7,"Italian Grand Prix","2009-09-13","12:00:00.000"
-"817",817,2009,14,65,"Singapore Grand Prix","2009-09-27","12:00:00.000"
-"818",818,2009,15,53,"Japanese Grand Prix","2009-10-04","05:00:00.000"
-"819",819,2009,16,37,"Brazilian Grand Prix","2009-10-18","16:00:00.000"
-"820",820,2009,17,66,"Abu Dhabi Grand Prix","2009-11-01","11:00:00.000"
-"821",821,2010,1,61,"Bahrain Grand Prix","2010-03-14","12:00:00.000"
-"822",822,2010,2,59,"Australian Grand Prix","2010-03-28","06:00:00.000"
-"823",823,2010,3,60,"Malaysian Grand Prix","2010-04-04","08:00:00.000"
-"824",824,2010,4,62,"Chinese Grand Prix","2010-04-18","06:00:00.000"
-"825",825,2010,5,56,"Spanish Grand Prix","2010-05-09","12:00:00.000"
-"826",826,2010,6,2,"Monaco Grand Prix","2010-05-16","12:00:00.000"
-"827",827,2010,7,63,"Turkish Grand Prix","2010-05-30","11:00:00.000"
-"828",828,2010,8,44,"Canadian Grand Prix","2010-06-13","16:00:00.000"
-"829",829,2010,9,64,"European Grand Prix","2010-06-27","12:00:00.000"
-"830",830,2010,10,1,"British Grand Prix","2010-07-11","12:00:00.000"
-"831",831,2010,11,33,"German Grand Prix","2010-07-25","12:00:00.000"
-"832",832,2010,12,52,"Hungarian Grand Prix","2010-08-01","12:00:00.000"
-"833",833,2010,13,5,"Belgian Grand Prix","2010-08-29","12:00:00.000"
-"834",834,2010,14,7,"Italian Grand Prix","2010-09-12","12:00:00.000"
-"835",835,2010,15,65,"Singapore Grand Prix","2010-09-26","12:00:00.000"
-"836",836,2010,16,53,"Japanese Grand Prix","2010-10-10","06:00:00.000"
-"837",837,2010,17,67,"Korean Grand Prix","2010-10-24","05:00:00.000"
-"838",838,2010,18,37,"Brazilian Grand Prix","2010-11-07","16:00:00.000"
-"839",839,2010,19,66,"Abu Dhabi Grand Prix","2010-11-14","13:00:00.000"
-"840",840,2011,1,59,"Australian Grand Prix","2011-03-27","06:00:00.000"
-"841",841,2011,2,60,"Malaysian Grand Prix","2011-04-10","08:00:00.000"
-"842",842,2011,3,62,"Chinese Grand Prix","2011-04-17","07:00:00.000"
-"843",843,2011,4,63,"Turkish Grand Prix","2011-05-08","12:00:00.000"
-"844",844,2011,5,56,"Spanish Grand Prix","2011-05-22","12:00:00.000"
-"845",845,2011,6,2,"Monaco Grand Prix","2011-05-29","12:00:00.000"
-"846",846,2011,7,44,"Canadian Grand Prix","2011-06-12","17:00:00.000"
-"847",847,2011,8,64,"European Grand Prix","2011-06-26","12:00:00.000"
-"848",848,2011,9,1,"British Grand Prix","2011-07-10","12:00:00.000"
-"849",849,2011,10,8,"German Grand Prix","2011-07-24","12:00:00.000"
-"850",850,2011,11,52,"Hungarian Grand Prix","2011-07-31","12:00:00.000"
-"851",851,2011,12,5,"Belgian Grand Prix","2011-08-28","12:00:00.000"
-"852",852,2011,13,7,"Italian Grand Prix","2011-09-11","12:00:00.000"
-"853",853,2011,14,65,"Singapore Grand Prix","2011-09-25","12:00:00.000"
-"854",854,2011,15,53,"Japanese Grand Prix","2011-10-09","06:00:00.000"
-"855",855,2011,16,67,"Korean Grand Prix","2011-10-16","06:00:00.000"
-"856",856,2011,17,68,"Indian Grand Prix","2011-10-30","09:30:00.000"
-"857",857,2011,18,66,"Abu Dhabi Grand Prix","2011-11-13","13:00:00.000"
-"858",858,2011,19,37,"Brazilian Grand Prix","2011-11-27","16:00:00.000"
-"859",859,2012,1,59,"Australian Grand Prix","2012-03-18","06:00:00.000"
-"860",860,2012,2,60,"Malaysian Grand Prix","2012-03-25","08:00:00.000"
-"861",861,2012,3,62,"Chinese Grand Prix","2012-04-15","07:00:00.000"
-"862",862,2012,4,61,"Bahrain Grand Prix","2012-04-22","12:00:00.000"
-"863",863,2012,5,56,"Spanish Grand Prix","2012-05-13","12:00:00.000"
-"864",864,2012,6,2,"Monaco Grand Prix","2012-05-27","12:00:00.000"
-"865",865,2012,7,44,"Canadian Grand Prix","2012-06-10","18:00:00.000"
-"866",866,2012,8,64,"European Grand Prix","2012-06-24","12:00:00.000"
-"867",867,2012,9,1,"British Grand Prix","2012-07-08","12:00:00.000"
-"868",868,2012,10,33,"German Grand Prix","2012-07-22","12:00:00.000"
-"869",869,2012,11,52,"Hungarian Grand Prix","2012-07-29","12:00:00.000"
-"870",870,2012,12,5,"Belgian Grand Prix","2012-09-02","12:00:00.000"
-"871",871,2012,13,7,"Italian Grand Prix","2012-09-09","12:00:00.000"
-"872",872,2012,14,65,"Singapore Grand Prix","2012-09-23","12:00:00.000"
-"873",873,2012,15,53,"Japanese Grand Prix","2012-10-07","06:00:00.000"
-"874",874,2012,16,67,"Korean Grand Prix","2012-10-14","06:00:00.000"
-"875",875,2012,17,68,"Indian Grand Prix","2012-10-28","09:30:00.000"
-"876",876,2012,18,66,"Abu Dhabi Grand Prix","2012-11-04","13:00:00.000"
-"877",877,2012,19,69,"United States Grand Prix","2012-11-18","19:00:00.000"
-"878",878,2012,20,37,"Brazilian Grand Prix","2012-11-25","16:00:00.000"
-"879",879,2013,1,59,"Australian Grand Prix","2013-03-17","06:00:00.000"
-"880",880,2013,2,60,"Malaysian Grand Prix","2013-03-24","08:00:00.000"
-"881",881,2013,3,62,"Chinese Grand Prix","2013-04-14","07:00:00.000"
-"882",882,2013,4,61,"Bahrain Grand Prix","2013-04-21","12:00:00.000"
-"883",883,2013,5,56,"Spanish Grand Prix","2013-05-12","12:00:00.000"
-"884",884,2013,6,2,"Monaco Grand Prix","2013-05-26","12:00:00.000"
-"885",885,2013,7,44,"Canadian Grand Prix","2013-06-09","18:00:00.000"
-"886",886,2013,8,1,"British Grand Prix","2013-06-30","12:00:00.000"
-"887",887,2013,9,8,"German Grand Prix","2013-07-07","12:00:00.000"
-"888",888,2013,10,52,"Hungarian Grand Prix","2013-07-28","12:00:00.000"
-"889",889,2013,11,5,"Belgian Grand Prix","2013-08-25","12:00:00.000"
-"890",890,2013,12,7,"Italian Grand Prix","2013-09-08","12:00:00.000"
-"891",891,2013,13,65,"Singapore Grand Prix","2013-09-22","12:00:00.000"
-"892",892,2013,14,67,"Korean Grand Prix","2013-10-06","06:00:00.000"
-"893",893,2013,15,53,"Japanese Grand Prix","2013-10-13","06:00:00.000"
-"894",894,2013,16,68,"Indian Grand Prix","2013-10-27","09:30:00.000"
-"895",895,2013,17,66,"Abu Dhabi Grand Prix","2013-11-03","13:00:00.000"
-"896",896,2013,18,69,"United States Grand Prix","2013-11-17","19:00:00.000"
-"897",897,2013,19,37,"Brazilian Grand Prix","2013-11-24","16:00:00.000"
-"898",898,2014,1,59,"Australian Grand Prix","2014-03-16","06:00:00.000"
-"899",899,2014,2,60,"Malaysian Grand Prix","2014-03-30","08:00:00.000"
-"900",900,2014,3,61,"Bahrain Grand Prix","2014-04-06","15:00:00.000"
-"901",901,2014,4,62,"Chinese Grand Prix","2014-04-20","07:00:00.000"
-"902",902,2014,5,56,"Spanish Grand Prix","2014-05-11","12:00:00.000"
-"903",903,2014,6,2,"Monaco Grand Prix","2014-05-25","12:00:00.000"
-"904",904,2014,7,44,"Canadian Grand Prix","2014-06-08","18:00:00.000"
-"905",905,2014,8,34,"Austrian Grand Prix","2014-06-22","12:00:00.000"
-"906",906,2014,9,1,"British Grand Prix","2014-07-06","12:00:00.000"
-"907",907,2014,10,33,"German Grand Prix","2014-07-20","12:00:00.000"
-"908",908,2014,11,52,"Hungarian Grand Prix","2014-07-27","12:00:00.000"
-"909",909,2014,12,5,"Belgian Grand Prix","2014-08-24","12:00:00.000"
-"910",910,2014,13,7,"Italian Grand Prix","2014-09-07","12:00:00.000"
-"911",911,2014,14,65,"Singapore Grand Prix","2014-09-21","12:00:00.000"
-"912",912,2014,15,53,"Japanese Grand Prix","2014-10-05","06:00:00.000"
-"913",913,2014,16,70,"Russian Grand Prix","2014-10-12","11:00:00.000"
-"914",914,2014,17,69,"United States Grand Prix","2014-11-02","20:00:00.000"
-"915",915,2014,18,37,"Brazilian Grand Prix","2014-11-09","16:00:00.000"
-"916",916,2014,19,66,"Abu Dhabi Grand Prix","2014-11-23","13:00:00.000"
-"917",917,2015,1,59,"Australian Grand Prix","2015-03-15","05:00:00.000"
-"918",918,2015,2,60,"Malaysian Grand Prix","2015-03-29","07:00:00.000"
-"919",919,2015,3,62,"Chinese Grand Prix","2015-04-12","06:00:00.000"
-"920",920,2015,4,61,"Bahrain Grand Prix","2015-04-19","15:00:00.000"
-"921",921,2015,5,56,"Spanish Grand Prix","2015-05-10","12:00:00.000"
-"922",922,2015,6,2,"Monaco Grand Prix","2015-05-24","12:00:00.000"
-"923",923,2015,7,44,"Canadian Grand Prix","2015-06-07","18:00:00.000"
-"924",924,2015,8,34,"Austrian Grand Prix","2015-06-21","12:00:00.000"
-"925",925,2015,9,1,"British Grand Prix","2015-07-05","12:00:00.000"
-"926",926,2015,10,52,"Hungarian Grand Prix","2015-07-26","12:00:00.000"
-"927",927,2015,11,5,"Belgian Grand Prix","2015-08-23","12:00:00.000"
-"928",928,2015,12,7,"Italian Grand Prix","2015-09-06","12:00:00.000"
-"929",929,2015,13,65,"Singapore Grand Prix","2015-09-20","12:00:00.000"
-"930",930,2015,14,53,"Japanese Grand Prix","2015-09-27","05:00:00.000"
-"931",931,2015,15,70,"Russian Grand Prix","2015-10-11","11:00:00.000"
-"932",932,2015,16,69,"United States Grand Prix","2015-10-25","19:00:00.000"
-"933",933,2015,17,23,"Mexican Grand Prix","2015-11-01","19:00:00.000"
-"934",934,2015,18,37,"Brazilian Grand Prix","2015-11-15","16:00:00.000"
-"935",935,2015,19,66,"Abu Dhabi Grand Prix","2015-11-29","13:00:00.000"
-"936",936,2016,1,59,"Australian Grand Prix","2016-03-20","05:00:00.000"
-"937",937,2016,2,61,"Bahrain Grand Prix","2016-04-03","15:00:00.000"
-"938",938,2016,3,62,"Chinese Grand Prix","2016-04-17","06:00:00.000"
-"939",939,2016,4,70,"Russian Grand Prix","2016-05-01","12:00:00.000"
-"940",940,2016,5,56,"Spanish Grand Prix","2016-05-15","12:00:00.000"
-"941",941,2016,6,2,"Monaco Grand Prix","2016-05-29","12:00:00.000"
-"942",942,2016,7,44,"Canadian Grand Prix","2016-06-12","18:00:00.000"
-"943",943,2016,8,71,"European Grand Prix","2016-06-19","13:00:00.000"
-"944",944,2016,9,34,"Austrian Grand Prix","2016-07-03","12:00:00.000"
-"945",945,2016,10,1,"British Grand Prix","2016-07-10","12:00:00.000"
-"946",946,2016,11,52,"Hungarian Grand Prix","2016-07-24","12:00:00.000"
-"947",947,2016,12,33,"German Grand Prix","2016-07-31","12:00:00.000"
-"948",948,2016,13,5,"Belgian Grand Prix","2016-08-28","12:00:00.000"
-"949",949,2016,14,7,"Italian Grand Prix","2016-09-04","12:00:00.000"
-"950",950,2016,15,65,"Singapore Grand Prix","2016-09-18","12:00:00.000"
-"951",951,2016,16,60,"Malaysian Grand Prix","2016-10-02","07:00:00.000"
-"952",952,2016,17,53,"Japanese Grand Prix","2016-10-09","05:00:00.000"
-"953",953,2016,18,69,"United States Grand Prix","2016-10-23","19:00:00.000"
-"954",954,2016,19,23,"Mexican Grand Prix","2016-10-30","19:00:00.000"
-"955",955,2016,20,37,"Brazilian Grand Prix","2016-11-13","16:00:00.000"
-"956",956,2016,21,66,"Abu Dhabi Grand Prix","2016-11-27","13:00:00.000"
-"957",957,2017,1,59,"Australian Grand Prix","2017-03-26","05:00:00.000"
-"958",958,2017,2,62,"Chinese Grand Prix","2017-04-09","06:00:00.000"
-"959",959,2017,3,61,"Bahrain Grand Prix","2017-04-16","15:00:00.000"
-"960",960,2017,4,70,"Russian Grand Prix","2017-04-30","12:00:00.000"
-"961",961,2017,5,56,"Spanish Grand Prix","2017-05-14","12:00:00.000"
-"962",962,2017,6,2,"Monaco Grand Prix","2017-05-28","12:00:00.000"
-"963",963,2017,7,44,"Canadian Grand Prix","2017-06-11","18:00:00.000"
-"964",964,2017,8,71,"Azerbaijan Grand Prix","2017-06-25","13:00:00.000"
-"965",965,2017,9,34,"Austrian Grand Prix","2017-07-09","12:00:00.000"
-"966",966,2017,10,1,"British Grand Prix","2017-07-16","12:00:00.000"
-"967",967,2017,11,52,"Hungarian Grand Prix","2017-07-30","12:00:00.000"
-"968",968,2017,12,5,"Belgian Grand Prix","2017-08-27","12:00:00.000"
-"969",969,2017,13,7,"Italian Grand Prix","2017-09-03","12:00:00.000"
-"970",970,2017,14,65,"Singapore Grand Prix","2017-09-17","12:00:00.000"
-"971",971,2017,15,60,"Malaysian Grand Prix","2017-10-01","07:00:00.000"
-"972",972,2017,16,53,"Japanese Grand Prix","2017-10-08","05:00:00.000"
-"973",973,2017,17,69,"United States Grand Prix","2017-10-22","19:00:00.000"
-"974",974,2017,18,23,"Mexican Grand Prix","2017-10-29","19:00:00.000"
-"975",975,2017,19,37,"Brazilian Grand Prix","2017-11-12","16:00:00.000"
-"976",976,2017,20,66,"Abu Dhabi Grand Prix","2017-11-26","13:00:00.000"
-"977",977,2018,1,59,"Australian Grand Prix","2018-03-25","05:10:00.000"
-"978",978,2018,2,61,"Bahrain Grand Prix","2018-04-08","15:10:00.000"
-"979",979,2018,3,62,"Chinese Grand Prix","2018-04-15","06:10:00.000"
-"980",980,2018,4,71,"Azerbaijan Grand Prix","2018-04-29","12:10:00.000"
-"981",981,2018,5,56,"Spanish Grand Prix","2018-05-13","13:10:00.000"
-"982",982,2018,6,2,"Monaco Grand Prix","2018-05-27","13:10:00.000"
-"983",983,2018,7,44,"Canadian Grand Prix","2018-06-10","18:10:00.000"
-"984",984,2018,8,35,"French Grand Prix","2018-06-24","14:10:00.000"
-"985",985,2018,9,34,"Austrian Grand Prix","2018-07-01","13:10:00.000"
-"986",986,2018,10,1,"British Grand Prix","2018-07-08","13:10:00.000"
-"987",987,2018,11,33,"German Grand Prix","2018-07-22","13:10:00.000"
-"988",988,2018,12,52,"Hungarian Grand Prix","2018-07-29","13:10:00.000"
-"989",989,2018,13,5,"Belgian Grand Prix","2018-08-26","13:10:00.000"
-"990",990,2018,14,7,"Italian Grand Prix","2018-09-02","13:10:00.000"
-"991",991,2018,15,65,"Singapore Grand Prix","2018-09-16","12:10:00.000"
-"992",992,2018,16,70,"Russian Grand Prix","2018-09-30","11:10:00.000"
-"993",993,2018,17,53,"Japanese Grand Prix","2018-10-07","05:10:00.000"
-"994",994,2018,18,69,"United States Grand Prix","2018-10-21","18:10:00.000"
-"995",995,2018,19,23,"Mexican Grand Prix","2018-10-28","19:10:00.000"
-"996",996,2018,20,37,"Brazilian Grand Prix","2018-11-11","17:10:00.000"
-"997",997,2018,21,66,"Abu Dhabi Grand Prix","2018-11-25","13:10:00.000"
-"998",998,2019,1,59,"Australian Grand Prix","2019-03-17","05:10:00.000"
-"999",999,2019,2,61,"Bahrain Grand Prix","2019-03-31","15:10:00.000"
-"1000",1000,2019,3,62,"Chinese Grand Prix","2019-04-14","06:10:00.000"
-"1001",1001,2019,4,71,"Azerbaijan Grand Prix","2019-04-28","12:10:00.000"
-"1002",1002,2019,5,56,"Spanish Grand Prix","2019-05-12","13:10:00.000"
-"1003",1003,2019,6,2,"Monaco Grand Prix","2019-05-26","13:10:00.000"
-"1004",1004,2019,7,44,"Canadian Grand Prix","2019-06-09","18:10:00.000"
-"1005",1005,2019,8,35,"French Grand Prix","2019-06-23","13:10:00.000"
-"1006",1006,2019,9,34,"Austrian Grand Prix","2019-06-30","13:10:00.000"
-"1007",1007,2019,10,1,"British Grand Prix","2019-07-14","13:10:00.000"
-"1008",1008,2019,11,33,"German Grand Prix","2019-07-28","13:10:00.000"
-"1009",1009,2019,12,52,"Hungarian Grand Prix","2019-08-04","13:10:00.000"
-"1010",1010,2019,13,5,"Belgian Grand Prix","2019-09-01","13:10:00.000"
-"1011",1011,2019,14,7,"Italian Grand Prix","2019-09-08","13:10:00.000"
-"1012",1012,2019,15,65,"Singapore Grand Prix","2019-09-22","12:10:00.000"
-"1013",1013,2019,16,70,"Russian Grand Prix","2019-09-29","11:10:00.000"
-"1014",1014,2019,17,53,"Japanese Grand Prix","2019-10-13","05:10:00.000"
-"1015",1015,2019,18,23,"Mexican Grand Prix","2019-10-27","19:10:00.000"
-"1016",1016,2019,19,69,"United States Grand Prix","2019-11-03","19:10:00.000"
-"1017",1017,2019,20,37,"Brazilian Grand Prix","2019-11-17","17:10:00.000"
-"1018",1018,2019,21,66,"Abu Dhabi Grand Prix","2019-12-01","13:10:00.000"
-"1019",1019,2020,1,34,"Austrian Grand Prix","2020-07-05","13:10:00.000"
-"1020",1020,2020,2,34,"Styrian Grand Prix","2020-07-12","13:10:00.000"
-"1021",1021,2020,3,52,"Hungarian Grand Prix","2020-07-19","13:10:00.000"
-"1022",1022,2020,4,1,"British Grand Prix","2020-08-02","13:10:00.000"
-"1023",1023,2020,5,1,"70th Anniversary Grand Prix","2020-08-09","13:10:00.000"
-"1024",1024,2020,6,56,"Spanish Grand Prix","2020-08-16","13:10:00.000"
-"1025",1025,2020,7,5,"Belgian Grand Prix","2020-08-30","13:10:00.000"
-"1026",1026,2020,8,7,"Italian Grand Prix","2020-09-06","13:10:00.000"
-"1027",1027,2020,9,72,"Tuscan Grand Prix","2020-09-13","13:10:00.000"
-"1028",1028,2020,10,70,"Russian Grand Prix","2020-09-27","11:10:00.000"
-"1029",1029,2020,11,8,"Eifel Grand Prix","2020-10-11","13:10:00.000"
-"1030",1030,2020,12,73,"Portuguese Grand Prix","2020-10-25","12:10:00.000"
-"1031",1031,2020,13,45,"Emilia Romagna Grand Prix","2020-11-01","12:10:00.000"
-"1032",1032,2020,14,63,"Turkish Grand Prix","2020-11-15","10:10:00.000"
-"1033",1033,2020,15,61,"Bahrain Grand Prix","2020-11-29","14:10:00.000"
-"1034",1034,2020,16,61,"Sakhir Grand Prix","2020-12-06","17:10:00.000"
-"1035",1035,2020,17,66,"Abu Dhabi Grand Prix","2020-12-13","13:10:00.000"
-"1036",1036,2021,1,61,"Bahrain Grand Prix","2021-03-28","15:00:00.000"
-"1037",1037,2021,2,45,"Emilia Romagna Grand Prix","2021-04-18","13:00:00.000"
-"1038",1038,2021,3,73,"Portuguese Grand Prix","2021-05-02","14:00:00.000"
-"1039",1039,2021,4,56,"Spanish Grand Prix","2021-05-09","13:00:00.000"
-"1040",1040,2021,5,2,"Monaco Grand Prix","2021-05-23","13:00:00.000"
-"1041",1041,2021,6,71,"Azerbaijan Grand Prix","2021-06-06","12:00:00.000"
-"1042",1042,2021,7,35,"French Grand Prix","2021-06-20","13:00:00.000"
-"1043",1043,2021,8,34,"Styrian Grand Prix","2021-06-27","13:00:00.000"
-"1044",1044,2021,9,34,"Austrian Grand Prix","2021-07-04","13:00:00.000"
-"1045",1045,2021,10,1,"British Grand Prix","2021-07-18","14:00:00.000"
-"1046",1046,2021,11,52,"Hungarian Grand Prix","2021-08-01","13:00:00.000"
-"1047",1047,2021,12,5,"Belgian Grand Prix","2021-08-29","13:00:00.000"
-"1048",1048,2021,13,11,"Dutch Grand Prix","2021-09-05","13:00:00.000"
-"1049",1049,2021,14,7,"Italian Grand Prix","2021-09-12","13:00:00.000"
-"1050",1050,2021,15,70,"Russian Grand Prix","2021-09-26","12:00:00.000"
-"1051",1051,2021,16,63,"Turkish Grand Prix","2021-10-10","12:00:00.000"
-"1052",1052,2021,17,69,"United States Grand Prix","2021-10-24","19:00:00.000"
-"1053",1053,2021,18,23,"Mexico City Grand Prix","2021-11-07","19:00:00.000"
-"1054",1054,2021,19,37,"SÃ£o Paulo Grand Prix","2021-11-14","17:00:00.000"
-"1055",1055,2021,20,74,"Qatar Grand Prix","2021-11-21","14:00:00.000"
-"1056",1056,2021,21,75,"Saudi Arabian Grand Prix","2021-12-05","17:30:00.000"
-"1057",1057,2021,22,66,"Abu Dhabi Grand Prix","2021-12-12","13:00:00.000"
-"1058",1058,2022,1,61,"Bahrain Grand Prix","2022-03-20","15:00:00.000"
-"1059",1059,2022,2,75,"Saudi Arabian Grand Prix","2022-03-27","17:00:00.000"
-"1060",1060,2022,3,59,"Australian Grand Prix","2022-04-10","05:00:00.000"
-"1061",1061,2022,4,45,"Emilia Romagna Grand Prix","2022-04-24","13:00:00.000"
-"1062",1062,2022,5,76,"Miami Grand Prix","2022-05-08","19:30:00.000"
-"1063",1063,2022,6,56,"Spanish Grand Prix","2022-05-22","13:00:00.000"
-"1064",1064,2022,7,2,"Monaco Grand Prix","2022-05-29","13:00:00.000"
-"1065",1065,2022,8,71,"Azerbaijan Grand Prix","2022-06-12","11:00:00.000"
-"1066",1066,2022,9,44,"Canadian Grand Prix","2022-06-19","18:00:00.000"
-"1067",1067,2022,10,1,"British Grand Prix","2022-07-03","14:00:00.000"
-"1068",1068,2022,11,34,"Austrian Grand Prix","2022-07-10","13:00:00.000"
-"1069",1069,2022,12,35,"French Grand Prix","2022-07-24","13:00:00.000"
-"1070",1070,2022,13,52,"Hungarian Grand Prix","2022-07-31","13:00:00.000"
-"1071",1071,2022,14,5,"Belgian Grand Prix","2022-08-28","13:00:00.000"
-"1072",1072,2022,15,11,"Dutch Grand Prix","2022-09-04","13:00:00.000"
-"1073",1073,2022,16,7,"Italian Grand Prix","2022-09-11","13:00:00.000"
-"1074",1074,2022,17,65,"Singapore Grand Prix","2022-10-02","12:00:00.000"
-"1075",1075,2022,18,53,"Japanese Grand Prix","2022-10-09","05:00:00.000"
-"1076",1076,2022,19,69,"United States Grand Prix","2022-10-23","19:00:00.000"
-"1077",1077,2022,20,23,"Mexico City Grand Prix","2022-10-30","20:00:00.000"
-"1078",1078,2022,21,37,"Brazilian Grand Prix","2022-11-13","18:00:00.000"
-"1079",1079,2022,22,66,"Abu Dhabi Grand Prix","2022-11-20","13:00:00.000"
-"1080",1080,2023,1,61,"Bahrain Grand Prix","2023-03-05","15:00:00.000"
-"1081",1081,2023,2,75,"Saudi Arabian Grand Prix","2023-03-19","17:00:00.000"
-"1082",1082,2023,3,59,"Australian Grand Prix","2023-04-02","05:00:00.000"
-"1083",1083,2023,4,71,"Azerbaijan Grand Prix","2023-04-30","11:00:00.000"
-"1084",1084,2023,5,76,"Miami Grand Prix","2023-05-07","19:30:00.000"
-"1085",1085,2023,6,45,"Emilia Romagna Grand Prix","2023-05-21","13:00:00.000"
-"1086",1086,2023,7,2,"Monaco Grand Prix","2023-05-28","13:00:00.000"
-"1087",1087,2023,8,56,"Spanish Grand Prix","2023-06-04","13:00:00.000"
-"1088",1088,2023,9,44,"Canadian Grand Prix","2023-06-18","18:00:00.000"
-"1089",1089,2023,10,34,"Austrian Grand Prix","2023-07-02","13:00:00.000"
-"1090",1090,2023,11,1,"British Grand Prix","2023-07-09","14:00:00.000"
-"1091",1091,2023,12,52,"Hungarian Grand Prix","2023-07-23","13:00:00.000"
-"1092",1092,2023,13,5,"Belgian Grand Prix","2023-07-30","13:00:00.000"
-"1093",1093,2023,14,11,"Dutch Grand Prix","2023-08-27","13:00:00.000"
-"1094",1094,2023,15,7,"Italian Grand Prix","2023-09-03","13:00:00.000"
-"1095",1095,2023,16,65,"Singapore Grand Prix","2023-09-17","12:00:00.000"
-"1096",1096,2023,17,53,"Japanese Grand Prix","2023-09-24","05:00:00.000"
-"1097",1097,2023,18,74,"Qatar Grand Prix","2023-10-08","14:00:00.000"
-"1098",1098,2023,19,69,"United States Grand Prix","2023-10-22","19:00:00.000"
-"1099",1099,2023,20,23,"Mexico City Grand Prix","2023-10-29","20:00:00.000"
-"1100",1100,2023,21,37,"SÃ£o Paulo Grand Prix","2023-11-05","17:00:00.000"
-"1101",1101,2023,22,77,"Las Vegas Grand Prix","2023-11-19","06:00:00.000"
-"1102",1102,2023,23,66,"Abu Dhabi Grand Prix","2023-11-26","13:00:00.000"
+"race_ID","year","round","circuit_ID","race_name","date","time"
+1,1950,1,1,"British Grand Prix","1950-05-13",NA
+2,1950,2,2,"Monaco Grand Prix","1950-05-21",NA
+3,1950,3,3,"Indianapolis 500","1950-05-30",NA
+4,1950,4,4,"Swiss Grand Prix","1950-06-04",NA
+5,1950,5,5,"Belgian Grand Prix","1950-06-18",NA
+6,1950,6,6,"French Grand Prix","1950-07-02",NA
+7,1950,7,7,"Italian Grand Prix","1950-09-03",NA
+8,1951,1,4,"Swiss Grand Prix","1951-05-27",NA
+9,1951,2,3,"Indianapolis 500","1951-05-30",NA
+10,1951,3,5,"Belgian Grand Prix","1951-06-17",NA
+11,1951,4,6,"French Grand Prix","1951-07-01",NA
+12,1951,5,1,"British Grand Prix","1951-07-14",NA
+13,1951,6,8,"German Grand Prix","1951-07-29",NA
+14,1951,7,7,"Italian Grand Prix","1951-09-16",NA
+15,1951,8,9,"Spanish Grand Prix","1951-10-28",NA
+16,1952,1,4,"Swiss Grand Prix","1952-05-18",NA
+17,1952,2,3,"Indianapolis 500","1952-05-30",NA
+18,1952,3,5,"Belgian Grand Prix","1952-06-22",NA
+19,1952,4,10,"French Grand Prix","1952-07-06",NA
+20,1952,5,1,"British Grand Prix","1952-07-19",NA
+21,1952,6,8,"German Grand Prix","1952-08-03",NA
+22,1952,7,11,"Dutch Grand Prix","1952-08-17",NA
+23,1952,8,7,"Italian Grand Prix","1952-09-07",NA
+24,1953,1,12,"Argentine Grand Prix","1953-01-18",NA
+25,1953,2,3,"Indianapolis 500","1953-05-30",NA
+26,1953,3,11,"Dutch Grand Prix","1953-06-07",NA
+27,1953,4,5,"Belgian Grand Prix","1953-06-21",NA
+28,1953,5,6,"French Grand Prix","1953-07-05",NA
+29,1953,6,1,"British Grand Prix","1953-07-18",NA
+30,1953,7,8,"German Grand Prix","1953-08-02",NA
+31,1953,8,4,"Swiss Grand Prix","1953-08-23",NA
+32,1953,9,7,"Italian Grand Prix","1953-09-13",NA
+33,1954,1,12,"Argentine Grand Prix","1954-01-17",NA
+34,1954,2,3,"Indianapolis 500","1954-05-31",NA
+35,1954,3,5,"Belgian Grand Prix","1954-06-20",NA
+36,1954,4,6,"French Grand Prix","1954-07-04",NA
+37,1954,5,1,"British Grand Prix","1954-07-17",NA
+38,1954,6,8,"German Grand Prix","1954-08-01",NA
+39,1954,7,4,"Swiss Grand Prix","1954-08-22",NA
+40,1954,8,7,"Italian Grand Prix","1954-09-05",NA
+41,1954,9,9,"Spanish Grand Prix","1954-10-24",NA
+42,1955,1,12,"Argentine Grand Prix","1955-01-16",NA
+43,1955,2,2,"Monaco Grand Prix","1955-05-22",NA
+44,1955,3,3,"Indianapolis 500","1955-05-30",NA
+45,1955,4,5,"Belgian Grand Prix","1955-06-05",NA
+46,1955,5,11,"Dutch Grand Prix","1955-06-19",NA
+47,1955,6,13,"British Grand Prix","1955-07-16",NA
+48,1955,7,7,"Italian Grand Prix","1955-09-11",NA
+49,1956,1,12,"Argentine Grand Prix","1956-01-22",NA
+50,1956,2,2,"Monaco Grand Prix","1956-05-13",NA
+51,1956,3,3,"Indianapolis 500","1956-05-30",NA
+52,1956,4,5,"Belgian Grand Prix","1956-06-03",NA
+53,1956,5,6,"French Grand Prix","1956-07-01",NA
+54,1956,6,1,"British Grand Prix","1956-07-14",NA
+55,1956,7,8,"German Grand Prix","1956-08-05",NA
+56,1956,8,7,"Italian Grand Prix","1956-09-02",NA
+57,1957,1,12,"Argentine Grand Prix","1957-01-13",NA
+58,1957,2,2,"Monaco Grand Prix","1957-05-19",NA
+59,1957,3,3,"Indianapolis 500","1957-05-30",NA
+60,1957,4,10,"French Grand Prix","1957-07-07",NA
+61,1957,5,13,"British Grand Prix","1957-07-20",NA
+62,1957,6,8,"German Grand Prix","1957-08-04",NA
+63,1957,7,14,"Pescara Grand Prix","1957-08-18",NA
+64,1957,8,7,"Italian Grand Prix","1957-09-08",NA
+65,1958,1,12,"Argentine Grand Prix","1958-01-19",NA
+66,1958,2,2,"Monaco Grand Prix","1958-05-18",NA
+67,1958,3,11,"Dutch Grand Prix","1958-05-26",NA
+68,1958,4,3,"Indianapolis 500","1958-05-30",NA
+69,1958,5,5,"Belgian Grand Prix","1958-06-15",NA
+70,1958,6,6,"French Grand Prix","1958-07-06",NA
+71,1958,7,1,"British Grand Prix","1958-07-19",NA
+72,1958,8,8,"German Grand Prix","1958-08-03",NA
+73,1958,9,15,"Portuguese Grand Prix","1958-08-24",NA
+74,1958,10,7,"Italian Grand Prix","1958-09-07",NA
+75,1958,11,16,"Moroccan Grand Prix","1958-10-19",NA
+76,1959,1,2,"Monaco Grand Prix","1959-05-10",NA
+77,1959,2,3,"Indianapolis 500","1959-05-30",NA
+78,1959,3,11,"Dutch Grand Prix","1959-05-31",NA
+79,1959,4,6,"French Grand Prix","1959-07-05",NA
+80,1959,5,13,"British Grand Prix","1959-07-18",NA
+81,1959,6,17,"German Grand Prix","1959-08-02",NA
+82,1959,7,18,"Portuguese Grand Prix","1959-08-23",NA
+83,1959,8,7,"Italian Grand Prix","1959-09-13",NA
+84,1959,9,19,"United States Grand Prix","1959-12-12",NA
+85,1960,1,12,"Argentine Grand Prix","1960-02-07",NA
+86,1960,2,2,"Monaco Grand Prix","1960-05-29",NA
+87,1960,3,3,"Indianapolis 500","1960-05-30",NA
+88,1960,4,11,"Dutch Grand Prix","1960-06-06",NA
+89,1960,5,5,"Belgian Grand Prix","1960-06-19",NA
+90,1960,6,6,"French Grand Prix","1960-07-03",NA
+91,1960,7,1,"British Grand Prix","1960-07-16",NA
+92,1960,8,15,"Portuguese Grand Prix","1960-08-14",NA
+93,1960,9,7,"Italian Grand Prix","1960-09-04",NA
+94,1960,10,20,"United States Grand Prix","1960-11-20",NA
+95,1961,1,2,"Monaco Grand Prix","1961-05-14",NA
+96,1961,2,11,"Dutch Grand Prix","1961-05-22",NA
+97,1961,3,5,"Belgian Grand Prix","1961-06-18",NA
+98,1961,4,6,"French Grand Prix","1961-07-02",NA
+99,1961,5,13,"British Grand Prix","1961-07-15",NA
+100,1961,6,8,"German Grand Prix","1961-08-06",NA
+101,1961,7,7,"Italian Grand Prix","1961-09-10",NA
+102,1961,8,21,"United States Grand Prix","1961-10-08",NA
+103,1962,1,11,"Dutch Grand Prix","1962-05-20",NA
+104,1962,2,2,"Monaco Grand Prix","1962-06-03",NA
+105,1962,3,5,"Belgian Grand Prix","1962-06-17",NA
+106,1962,4,10,"French Grand Prix","1962-07-08",NA
+107,1962,5,13,"British Grand Prix","1962-07-21",NA
+108,1962,6,8,"German Grand Prix","1962-08-05",NA
+109,1962,7,7,"Italian Grand Prix","1962-09-16",NA
+110,1962,8,21,"United States Grand Prix","1962-10-07",NA
+111,1962,9,22,"South African Grand Prix","1962-12-29",NA
+112,1963,1,2,"Monaco Grand Prix","1963-05-26",NA
+113,1963,2,5,"Belgian Grand Prix","1963-06-09",NA
+114,1963,3,11,"Dutch Grand Prix","1963-06-23",NA
+115,1963,4,6,"French Grand Prix","1963-06-30",NA
+116,1963,5,1,"British Grand Prix","1963-07-20",NA
+117,1963,6,8,"German Grand Prix","1963-08-04",NA
+118,1963,7,7,"Italian Grand Prix","1963-09-08",NA
+119,1963,8,21,"United States Grand Prix","1963-10-06",NA
+120,1963,9,23,"Mexican Grand Prix","1963-10-27",NA
+121,1963,10,22,"South African Grand Prix","1963-12-28",NA
+122,1964,1,2,"Monaco Grand Prix","1964-05-10",NA
+123,1964,2,11,"Dutch Grand Prix","1964-05-24",NA
+124,1964,3,5,"Belgian Grand Prix","1964-06-14",NA
+125,1964,4,10,"French Grand Prix","1964-06-28",NA
+126,1964,5,24,"British Grand Prix","1964-07-11",NA
+127,1964,6,8,"German Grand Prix","1964-08-02",NA
+128,1964,7,25,"Austrian Grand Prix","1964-08-23",NA
+129,1964,8,7,"Italian Grand Prix","1964-09-06",NA
+130,1964,9,21,"United States Grand Prix","1964-10-04",NA
+131,1964,10,23,"Mexican Grand Prix","1964-10-25",NA
+132,1965,1,22,"South African Grand Prix","1965-01-01",NA
+133,1965,2,2,"Monaco Grand Prix","1965-05-30",NA
+134,1965,3,5,"Belgian Grand Prix","1965-06-13",NA
+135,1965,4,26,"French Grand Prix","1965-06-27",NA
+136,1965,5,1,"British Grand Prix","1965-07-10",NA
+137,1965,6,11,"Dutch Grand Prix","1965-07-18",NA
+138,1965,7,8,"German Grand Prix","1965-08-01",NA
+139,1965,8,7,"Italian Grand Prix","1965-09-12",NA
+140,1965,9,21,"United States Grand Prix","1965-10-03",NA
+141,1965,10,23,"Mexican Grand Prix","1965-10-24",NA
+142,1966,1,2,"Monaco Grand Prix","1966-05-22",NA
+143,1966,2,5,"Belgian Grand Prix","1966-06-12",NA
+144,1966,3,6,"French Grand Prix","1966-07-03",NA
+145,1966,4,24,"British Grand Prix","1966-07-16",NA
+146,1966,5,11,"Dutch Grand Prix","1966-07-24",NA
+147,1966,6,8,"German Grand Prix","1966-08-07",NA
+148,1966,7,7,"Italian Grand Prix","1966-09-04",NA
+149,1966,8,21,"United States Grand Prix","1966-10-02",NA
+150,1966,9,23,"Mexican Grand Prix","1966-10-23",NA
+151,1967,1,27,"South African Grand Prix","1967-01-02",NA
+152,1967,2,2,"Monaco Grand Prix","1967-05-07",NA
+153,1967,3,11,"Dutch Grand Prix","1967-06-04",NA
+154,1967,4,5,"Belgian Grand Prix","1967-06-18",NA
+155,1967,5,28,"French Grand Prix","1967-07-02",NA
+156,1967,6,1,"British Grand Prix","1967-07-15",NA
+157,1967,7,8,"German Grand Prix","1967-08-06",NA
+158,1967,8,29,"Canadian Grand Prix","1967-08-27",NA
+159,1967,9,7,"Italian Grand Prix","1967-09-10",NA
+160,1967,10,21,"United States Grand Prix","1967-10-01",NA
+161,1967,11,23,"Mexican Grand Prix","1967-10-22",NA
+162,1968,1,27,"South African Grand Prix","1968-01-01",NA
+163,1968,2,30,"Spanish Grand Prix","1968-05-12",NA
+164,1968,3,2,"Monaco Grand Prix","1968-05-26",NA
+165,1968,4,5,"Belgian Grand Prix","1968-06-09",NA
+166,1968,5,11,"Dutch Grand Prix","1968-06-23",NA
+167,1968,6,10,"French Grand Prix","1968-07-07",NA
+168,1968,7,24,"British Grand Prix","1968-07-20",NA
+169,1968,8,8,"German Grand Prix","1968-08-04",NA
+170,1968,9,7,"Italian Grand Prix","1968-09-08",NA
+171,1968,10,31,"Canadian Grand Prix","1968-09-22",NA
+172,1968,11,21,"United States Grand Prix","1968-10-06",NA
+173,1968,12,23,"Mexican Grand Prix","1968-11-03",NA
+174,1969,1,27,"South African Grand Prix","1969-03-01",NA
+175,1969,2,32,"Spanish Grand Prix","1969-05-04",NA
+176,1969,3,2,"Monaco Grand Prix","1969-05-18",NA
+177,1969,4,11,"Dutch Grand Prix","1969-06-21",NA
+178,1969,5,26,"French Grand Prix","1969-07-06",NA
+179,1969,6,1,"British Grand Prix","1969-07-19",NA
+180,1969,7,8,"German Grand Prix","1969-08-03",NA
+181,1969,8,7,"Italian Grand Prix","1969-09-07",NA
+182,1969,9,29,"Canadian Grand Prix","1969-09-20",NA
+183,1969,10,21,"United States Grand Prix","1969-10-05",NA
+184,1969,11,23,"Mexican Grand Prix","1969-10-19",NA
+185,1970,1,27,"South African Grand Prix","1970-03-07",NA
+186,1970,2,30,"Spanish Grand Prix","1970-04-19",NA
+187,1970,3,2,"Monaco Grand Prix","1970-05-10",NA
+188,1970,4,5,"Belgian Grand Prix","1970-06-07",NA
+189,1970,5,11,"Dutch Grand Prix","1970-06-21",NA
+190,1970,6,26,"French Grand Prix","1970-07-05",NA
+191,1970,7,24,"British Grand Prix","1970-07-18",NA
+192,1970,8,33,"German Grand Prix","1970-08-02",NA
+193,1970,9,34,"Austrian Grand Prix","1970-08-16",NA
+194,1970,10,7,"Italian Grand Prix","1970-09-06",NA
+195,1970,11,31,"Canadian Grand Prix","1970-09-20",NA
+196,1970,12,21,"United States Grand Prix","1970-10-04",NA
+197,1970,13,23,"Mexican Grand Prix","1970-10-25",NA
+198,1971,1,27,"South African Grand Prix","1971-03-06",NA
+199,1971,2,32,"Spanish Grand Prix","1971-04-18",NA
+200,1971,3,2,"Monaco Grand Prix","1971-05-23",NA
+201,1971,4,11,"Dutch Grand Prix","1971-06-20",NA
+202,1971,5,35,"French Grand Prix","1971-07-04",NA
+203,1971,6,1,"British Grand Prix","1971-07-17",NA
+204,1971,7,8,"German Grand Prix","1971-08-01",NA
+205,1971,8,34,"Austrian Grand Prix","1971-08-15",NA
+206,1971,9,7,"Italian Grand Prix","1971-09-05",NA
+207,1971,10,29,"Canadian Grand Prix","1971-09-19",NA
+208,1971,11,21,"United States Grand Prix","1971-10-03",NA
+209,1972,1,12,"Argentine Grand Prix","1972-01-23",NA
+210,1972,2,27,"South African Grand Prix","1972-03-04",NA
+211,1972,3,30,"Spanish Grand Prix","1972-05-01",NA
+212,1972,4,2,"Monaco Grand Prix","1972-05-14",NA
+213,1972,5,36,"Belgian Grand Prix","1972-06-04",NA
+214,1972,6,26,"French Grand Prix","1972-07-02",NA
+215,1972,7,24,"British Grand Prix","1972-07-15",NA
+216,1972,8,8,"German Grand Prix","1972-07-30",NA
+217,1972,9,34,"Austrian Grand Prix","1972-08-13",NA
+218,1972,10,7,"Italian Grand Prix","1972-09-10",NA
+219,1972,11,29,"Canadian Grand Prix","1972-09-24",NA
+220,1972,12,21,"United States Grand Prix","1972-10-08",NA
+221,1973,1,12,"Argentine Grand Prix","1973-01-28",NA
+222,1973,2,37,"Brazilian Grand Prix","1973-02-11",NA
+223,1973,3,27,"South African Grand Prix","1973-03-03",NA
+224,1973,4,32,"Spanish Grand Prix","1973-04-29",NA
+225,1973,5,38,"Belgian Grand Prix","1973-05-20",NA
+226,1973,6,2,"Monaco Grand Prix","1973-06-03",NA
+227,1973,7,39,"Swedish Grand Prix","1973-06-17",NA
+228,1973,8,35,"French Grand Prix","1973-07-01",NA
+229,1973,9,1,"British Grand Prix","1973-07-14",NA
+230,1973,10,11,"Dutch Grand Prix","1973-07-29",NA
+231,1973,11,8,"German Grand Prix","1973-08-05",NA
+232,1973,12,34,"Austrian Grand Prix","1973-08-19",NA
+233,1973,13,7,"Italian Grand Prix","1973-09-09",NA
+234,1973,14,29,"Canadian Grand Prix","1973-09-23",NA
+235,1973,15,21,"United States Grand Prix","1973-10-07",NA
+236,1974,1,12,"Argentine Grand Prix","1974-01-13",NA
+237,1974,2,37,"Brazilian Grand Prix","1974-01-27",NA
+238,1974,3,27,"South African Grand Prix","1974-03-30",NA
+239,1974,4,30,"Spanish Grand Prix","1974-04-28",NA
+240,1974,5,36,"Belgian Grand Prix","1974-05-12",NA
+241,1974,6,2,"Monaco Grand Prix","1974-05-26",NA
+242,1974,7,39,"Swedish Grand Prix","1974-06-09",NA
+243,1974,8,11,"Dutch Grand Prix","1974-06-23",NA
+244,1974,9,40,"French Grand Prix","1974-07-07",NA
+245,1974,10,24,"British Grand Prix","1974-07-20",NA
+246,1974,11,8,"German Grand Prix","1974-08-04",NA
+247,1974,12,34,"Austrian Grand Prix","1974-08-18",NA
+248,1974,13,7,"Italian Grand Prix","1974-09-08",NA
+249,1974,14,29,"Canadian Grand Prix","1974-09-22",NA
+250,1974,15,21,"United States Grand Prix","1974-10-06",NA
+251,1975,1,12,"Argentine Grand Prix","1975-01-12",NA
+252,1975,2,37,"Brazilian Grand Prix","1975-01-26",NA
+253,1975,3,27,"South African Grand Prix","1975-03-01",NA
+254,1975,4,32,"Spanish Grand Prix","1975-04-27",NA
+255,1975,5,2,"Monaco Grand Prix","1975-05-11",NA
+256,1975,6,38,"Belgian Grand Prix","1975-05-25",NA
+257,1975,7,39,"Swedish Grand Prix","1975-06-08",NA
+258,1975,8,11,"Dutch Grand Prix","1975-06-22",NA
+259,1975,9,35,"French Grand Prix","1975-07-06",NA
+260,1975,10,1,"British Grand Prix","1975-07-19",NA
+261,1975,11,8,"German Grand Prix","1975-08-03",NA
+262,1975,12,34,"Austrian Grand Prix","1975-08-17",NA
+263,1975,13,7,"Italian Grand Prix","1975-09-07",NA
+264,1975,14,21,"United States Grand Prix","1975-10-05",NA
+265,1976,1,37,"Brazilian Grand Prix","1976-01-25",NA
+266,1976,2,27,"South African Grand Prix","1976-03-06",NA
+267,1976,3,41,"United States Grand Prix West","1976-03-28",NA
+268,1976,4,30,"Spanish Grand Prix","1976-05-02",NA
+269,1976,5,38,"Belgian Grand Prix","1976-05-16",NA
+270,1976,6,2,"Monaco Grand Prix","1976-05-30",NA
+271,1976,7,39,"Swedish Grand Prix","1976-06-13",NA
+272,1976,8,35,"French Grand Prix","1976-07-04",NA
+273,1976,9,24,"British Grand Prix","1976-07-18",NA
+274,1976,10,8,"German Grand Prix","1976-08-01",NA
+275,1976,11,34,"Austrian Grand Prix","1976-08-15",NA
+276,1976,12,11,"Dutch Grand Prix","1976-08-29",NA
+277,1976,13,7,"Italian Grand Prix","1976-09-12",NA
+278,1976,14,29,"Canadian Grand Prix","1976-10-03",NA
+279,1976,15,21,"United States Grand Prix","1976-10-10",NA
+280,1976,16,42,"Japanese Grand Prix","1976-10-24",NA
+281,1977,1,12,"Argentine Grand Prix","1977-01-09",NA
+282,1977,2,37,"Brazilian Grand Prix","1977-01-23",NA
+283,1977,3,27,"South African Grand Prix","1977-03-05",NA
+284,1977,4,41,"United States Grand Prix West","1977-04-03",NA
+285,1977,5,30,"Spanish Grand Prix","1977-05-08",NA
+286,1977,6,2,"Monaco Grand Prix","1977-05-22",NA
+287,1977,7,38,"Belgian Grand Prix","1977-06-05",NA
+288,1977,8,39,"Swedish Grand Prix","1977-06-19",NA
+289,1977,9,40,"French Grand Prix","1977-07-03",NA
+290,1977,10,1,"British Grand Prix","1977-07-16",NA
+291,1977,11,33,"German Grand Prix","1977-07-31",NA
+292,1977,12,34,"Austrian Grand Prix","1977-08-14",NA
+293,1977,13,11,"Dutch Grand Prix","1977-08-28",NA
+294,1977,14,7,"Italian Grand Prix","1977-09-11",NA
+295,1977,15,21,"United States Grand Prix","1977-10-02",NA
+296,1977,16,29,"Canadian Grand Prix","1977-10-09",NA
+297,1977,17,42,"Japanese Grand Prix","1977-10-23",NA
+298,1978,1,12,"Argentine Grand Prix","1978-01-15",NA
+299,1978,2,43,"Brazilian Grand Prix","1978-01-29",NA
+300,1978,3,27,"South African Grand Prix","1978-03-04",NA
+301,1978,4,41,"United States Grand Prix West","1978-04-02",NA
+302,1978,5,2,"Monaco Grand Prix","1978-05-07",NA
+303,1978,6,38,"Belgian Grand Prix","1978-05-21",NA
+304,1978,7,30,"Spanish Grand Prix","1978-06-04",NA
+305,1978,8,39,"Swedish Grand Prix","1978-06-17",NA
+306,1978,9,35,"French Grand Prix","1978-07-02",NA
+307,1978,10,24,"British Grand Prix","1978-07-16",NA
+308,1978,11,33,"German Grand Prix","1978-07-30",NA
+309,1978,12,34,"Austrian Grand Prix","1978-08-13",NA
+310,1978,13,11,"Dutch Grand Prix","1978-08-27",NA
+311,1978,14,7,"Italian Grand Prix","1978-09-10",NA
+312,1978,15,21,"United States Grand Prix","1978-10-01",NA
+313,1978,16,44,"Canadian Grand Prix","1978-10-08",NA
+314,1979,1,12,"Argentine Grand Prix","1979-01-21",NA
+315,1979,2,37,"Brazilian Grand Prix","1979-02-04",NA
+316,1979,3,27,"South African Grand Prix","1979-03-03",NA
+317,1979,4,41,"United States Grand Prix West","1979-04-08",NA
+318,1979,5,30,"Spanish Grand Prix","1979-04-29",NA
+319,1979,6,38,"Belgian Grand Prix","1979-05-13",NA
+320,1979,7,2,"Monaco Grand Prix","1979-05-27",NA
+321,1979,8,40,"French Grand Prix","1979-07-01",NA
+322,1979,9,1,"British Grand Prix","1979-07-14",NA
+323,1979,10,33,"German Grand Prix","1979-07-29",NA
+324,1979,11,34,"Austrian Grand Prix","1979-08-12",NA
+325,1979,12,11,"Dutch Grand Prix","1979-08-26",NA
+326,1979,13,7,"Italian Grand Prix","1979-09-09",NA
+327,1979,14,44,"Canadian Grand Prix","1979-09-30",NA
+328,1979,15,21,"United States Grand Prix","1979-10-07",NA
+329,1980,1,12,"Argentine Grand Prix","1980-01-13",NA
+330,1980,2,37,"Brazilian Grand Prix","1980-01-27",NA
+331,1980,3,27,"South African Grand Prix","1980-03-01",NA
+332,1980,4,41,"United States Grand Prix West","1980-03-30",NA
+333,1980,5,38,"Belgian Grand Prix","1980-05-04",NA
+334,1980,6,2,"Monaco Grand Prix","1980-05-18",NA
+335,1980,7,35,"French Grand Prix","1980-06-29",NA
+336,1980,8,24,"British Grand Prix","1980-07-13",NA
+337,1980,9,33,"German Grand Prix","1980-08-10",NA
+338,1980,10,34,"Austrian Grand Prix","1980-08-17",NA
+339,1980,11,11,"Dutch Grand Prix","1980-08-31",NA
+340,1980,12,45,"Italian Grand Prix","1980-09-14",NA
+341,1980,13,44,"Canadian Grand Prix","1980-09-28",NA
+342,1980,14,21,"United States Grand Prix","1980-10-05",NA
+343,1981,1,41,"United States Grand Prix West","1981-03-15",NA
+344,1981,2,43,"Brazilian Grand Prix","1981-03-29",NA
+345,1981,3,12,"Argentine Grand Prix","1981-04-12",NA
+346,1981,4,45,"San Marino Grand Prix","1981-05-03",NA
+347,1981,5,38,"Belgian Grand Prix","1981-05-17",NA
+348,1981,6,2,"Monaco Grand Prix","1981-05-31",NA
+349,1981,7,30,"Spanish Grand Prix","1981-06-21",NA
+350,1981,8,40,"French Grand Prix","1981-07-05",NA
+351,1981,9,1,"British Grand Prix","1981-07-18",NA
+352,1981,10,33,"German Grand Prix","1981-08-02",NA
+353,1981,11,34,"Austrian Grand Prix","1981-08-16",NA
+354,1981,12,11,"Dutch Grand Prix","1981-08-30",NA
+355,1981,13,7,"Italian Grand Prix","1981-09-13",NA
+356,1981,14,44,"Canadian Grand Prix","1981-09-27",NA
+357,1981,15,46,"Caesars Palace Grand Prix","1981-10-17",NA
+358,1982,1,27,"South African Grand Prix","1982-01-23",NA
+359,1982,2,43,"Brazilian Grand Prix","1982-03-21",NA
+360,1982,3,41,"United States Grand Prix West","1982-04-04",NA
+361,1982,4,45,"San Marino Grand Prix","1982-04-25",NA
+362,1982,5,38,"Belgian Grand Prix","1982-05-09",NA
+363,1982,6,2,"Monaco Grand Prix","1982-05-23",NA
+364,1982,7,47,"Detroit Grand Prix","1982-06-06",NA
+365,1982,8,44,"Canadian Grand Prix","1982-06-13",NA
+366,1982,9,11,"Dutch Grand Prix","1982-07-03",NA
+367,1982,10,24,"British Grand Prix","1982-07-18",NA
+368,1982,11,35,"French Grand Prix","1982-07-25",NA
+369,1982,12,33,"German Grand Prix","1982-08-08",NA
+370,1982,13,34,"Austrian Grand Prix","1982-08-15",NA
+371,1982,14,40,"Swiss Grand Prix","1982-08-29",NA
+372,1982,15,7,"Italian Grand Prix","1982-09-12",NA
+373,1982,16,46,"Caesars Palace Grand Prix","1982-09-25",NA
+374,1983,1,43,"Brazilian Grand Prix","1983-03-13",NA
+375,1983,2,41,"United States Grand Prix West","1983-03-27",NA
+376,1983,3,35,"French Grand Prix","1983-04-17",NA
+377,1983,4,45,"San Marino Grand Prix","1983-05-01",NA
+378,1983,5,2,"Monaco Grand Prix","1983-05-15",NA
+379,1983,6,5,"Belgian Grand Prix","1983-05-22",NA
+380,1983,7,47,"Detroit Grand Prix","1983-06-05",NA
+381,1983,8,44,"Canadian Grand Prix","1983-06-12",NA
+382,1983,9,1,"British Grand Prix","1983-07-16",NA
+383,1983,10,33,"German Grand Prix","1983-08-07",NA
+384,1983,11,34,"Austrian Grand Prix","1983-08-14",NA
+385,1983,12,11,"Dutch Grand Prix","1983-08-28",NA
+386,1983,13,7,"Italian Grand Prix","1983-09-11",NA
+387,1983,14,24,"European Grand Prix","1983-09-25",NA
+388,1983,15,27,"South African Grand Prix","1983-10-15",NA
+389,1984,1,43,"Brazilian Grand Prix","1984-03-25",NA
+390,1984,2,27,"South African Grand Prix","1984-04-07",NA
+391,1984,3,38,"Belgian Grand Prix","1984-04-29",NA
+392,1984,4,45,"San Marino Grand Prix","1984-05-06",NA
+393,1984,5,40,"French Grand Prix","1984-05-20",NA
+394,1984,6,2,"Monaco Grand Prix","1984-06-03",NA
+395,1984,7,44,"Canadian Grand Prix","1984-06-17",NA
+396,1984,8,47,"Detroit Grand Prix","1984-06-24",NA
+397,1984,9,48,"Dallas Grand Prix","1984-07-08",NA
+398,1984,10,24,"British Grand Prix","1984-07-22",NA
+399,1984,11,33,"German Grand Prix","1984-08-05",NA
+400,1984,12,34,"Austrian Grand Prix","1984-08-19",NA
+401,1984,13,11,"Dutch Grand Prix","1984-08-26",NA
+402,1984,14,7,"Italian Grand Prix","1984-09-09",NA
+403,1984,15,8,"European Grand Prix","1984-10-07",NA
+404,1984,16,49,"Portuguese Grand Prix","1984-10-21",NA
+405,1985,1,43,"Brazilian Grand Prix","1985-04-07",NA
+406,1985,2,49,"Portuguese Grand Prix","1985-04-21",NA
+407,1985,3,45,"San Marino Grand Prix","1985-05-05",NA
+408,1985,4,2,"Monaco Grand Prix","1985-05-19",NA
+409,1985,5,44,"Canadian Grand Prix","1985-06-16",NA
+410,1985,6,47,"Detroit Grand Prix","1985-06-23",NA
+411,1985,7,35,"French Grand Prix","1985-07-07",NA
+412,1985,8,1,"British Grand Prix","1985-07-21",NA
+413,1985,9,8,"German Grand Prix","1985-08-04",NA
+414,1985,10,34,"Austrian Grand Prix","1985-08-18",NA
+415,1985,11,11,"Dutch Grand Prix","1985-08-25",NA
+416,1985,12,7,"Italian Grand Prix","1985-09-08",NA
+417,1985,13,5,"Belgian Grand Prix","1985-09-15",NA
+418,1985,14,24,"European Grand Prix","1985-10-06",NA
+419,1985,15,27,"South African Grand Prix","1985-10-19",NA
+420,1985,16,50,"Australian Grand Prix","1985-11-03",NA
+421,1986,1,43,"Brazilian Grand Prix","1986-03-23",NA
+422,1986,2,51,"Spanish Grand Prix","1986-04-13",NA
+423,1986,3,45,"San Marino Grand Prix","1986-04-27",NA
+424,1986,4,2,"Monaco Grand Prix","1986-05-11",NA
+425,1986,5,5,"Belgian Grand Prix","1986-05-25",NA
+426,1986,6,44,"Canadian Grand Prix","1986-06-15",NA
+427,1986,7,47,"Detroit Grand Prix","1986-06-22",NA
+428,1986,8,35,"French Grand Prix","1986-07-06",NA
+429,1986,9,24,"British Grand Prix","1986-07-13",NA
+430,1986,10,33,"German Grand Prix","1986-07-27",NA
+431,1986,11,52,"Hungarian Grand Prix","1986-08-10",NA
+432,1986,12,34,"Austrian Grand Prix","1986-08-17",NA
+433,1986,13,7,"Italian Grand Prix","1986-09-07",NA
+434,1986,14,49,"Portuguese Grand Prix","1986-09-21",NA
+435,1986,15,23,"Mexican Grand Prix","1986-10-12",NA
+436,1986,16,50,"Australian Grand Prix","1986-10-26",NA
+437,1987,1,43,"Brazilian Grand Prix","1987-04-12",NA
+438,1987,2,45,"San Marino Grand Prix","1987-05-03",NA
+439,1987,3,5,"Belgian Grand Prix","1987-05-17",NA
+440,1987,4,2,"Monaco Grand Prix","1987-05-31",NA
+441,1987,5,47,"Detroit Grand Prix","1987-06-21",NA
+442,1987,6,35,"French Grand Prix","1987-07-05",NA
+443,1987,7,1,"British Grand Prix","1987-07-12",NA
+444,1987,8,33,"German Grand Prix","1987-07-26",NA
+445,1987,9,52,"Hungarian Grand Prix","1987-08-09",NA
+446,1987,10,34,"Austrian Grand Prix","1987-08-16",NA
+447,1987,11,7,"Italian Grand Prix","1987-09-06",NA
+448,1987,12,49,"Portuguese Grand Prix","1987-09-20",NA
+449,1987,13,51,"Spanish Grand Prix","1987-09-27",NA
+450,1987,14,23,"Mexican Grand Prix","1987-10-18",NA
+451,1987,15,53,"Japanese Grand Prix","1987-11-01",NA
+452,1987,16,50,"Australian Grand Prix","1987-11-15",NA
+453,1988,1,43,"Brazilian Grand Prix","1988-04-03",NA
+454,1988,2,45,"San Marino Grand Prix","1988-05-01",NA
+455,1988,3,2,"Monaco Grand Prix","1988-05-15",NA
+456,1988,4,23,"Mexican Grand Prix","1988-05-29",NA
+457,1988,5,44,"Canadian Grand Prix","1988-06-12",NA
+458,1988,6,47,"Detroit Grand Prix","1988-06-19",NA
+459,1988,7,35,"French Grand Prix","1988-07-03",NA
+460,1988,8,1,"British Grand Prix","1988-07-10",NA
+461,1988,9,33,"German Grand Prix","1988-07-24",NA
+462,1988,10,52,"Hungarian Grand Prix","1988-08-07",NA
+463,1988,11,5,"Belgian Grand Prix","1988-08-28",NA
+464,1988,12,7,"Italian Grand Prix","1988-09-11",NA
+465,1988,13,49,"Portuguese Grand Prix","1988-09-25",NA
+466,1988,14,51,"Spanish Grand Prix","1988-10-02",NA
+467,1988,15,53,"Japanese Grand Prix","1988-10-30",NA
+468,1988,16,50,"Australian Grand Prix","1988-11-13",NA
+469,1989,1,43,"Brazilian Grand Prix","1989-03-26",NA
+470,1989,2,45,"San Marino Grand Prix","1989-04-23",NA
+471,1989,3,2,"Monaco Grand Prix","1989-05-07",NA
+472,1989,4,23,"Mexican Grand Prix","1989-05-28",NA
+473,1989,5,54,"United States Grand Prix","1989-06-04",NA
+474,1989,6,44,"Canadian Grand Prix","1989-06-18",NA
+475,1989,7,35,"French Grand Prix","1989-07-09",NA
+476,1989,8,1,"British Grand Prix","1989-07-16",NA
+477,1989,9,33,"German Grand Prix","1989-07-30",NA
+478,1989,10,52,"Hungarian Grand Prix","1989-08-13",NA
+479,1989,11,5,"Belgian Grand Prix","1989-08-27",NA
+480,1989,12,7,"Italian Grand Prix","1989-09-10",NA
+481,1989,13,49,"Portuguese Grand Prix","1989-09-24",NA
+482,1989,14,51,"Spanish Grand Prix","1989-10-01",NA
+483,1989,15,53,"Japanese Grand Prix","1989-10-22",NA
+484,1989,16,50,"Australian Grand Prix","1989-11-05",NA
+485,1990,1,54,"United States Grand Prix","1990-03-11",NA
+486,1990,2,37,"Brazilian Grand Prix","1990-03-25",NA
+487,1990,3,45,"San Marino Grand Prix","1990-05-13",NA
+488,1990,4,2,"Monaco Grand Prix","1990-05-27",NA
+489,1990,5,44,"Canadian Grand Prix","1990-06-10",NA
+490,1990,6,23,"Mexican Grand Prix","1990-06-24",NA
+491,1990,7,35,"French Grand Prix","1990-07-08",NA
+492,1990,8,1,"British Grand Prix","1990-07-15",NA
+493,1990,9,33,"German Grand Prix","1990-07-29",NA
+494,1990,10,52,"Hungarian Grand Prix","1990-08-12",NA
+495,1990,11,5,"Belgian Grand Prix","1990-08-26",NA
+496,1990,12,7,"Italian Grand Prix","1990-09-09",NA
+497,1990,13,49,"Portuguese Grand Prix","1990-09-23",NA
+498,1990,14,51,"Spanish Grand Prix","1990-09-30",NA
+499,1990,15,53,"Japanese Grand Prix","1990-10-21",NA
+500,1990,16,50,"Australian Grand Prix","1990-11-04",NA
+501,1991,1,54,"United States Grand Prix","1991-03-10",NA
+502,1991,2,37,"Brazilian Grand Prix","1991-03-24",NA
+503,1991,3,45,"San Marino Grand Prix","1991-04-28",NA
+504,1991,4,2,"Monaco Grand Prix","1991-05-12",NA
+505,1991,5,44,"Canadian Grand Prix","1991-06-02",NA
+506,1991,6,23,"Mexican Grand Prix","1991-06-16",NA
+507,1991,7,55,"French Grand Prix","1991-07-07",NA
+508,1991,8,1,"British Grand Prix","1991-07-14",NA
+509,1991,9,33,"German Grand Prix","1991-07-28",NA
+510,1991,10,52,"Hungarian Grand Prix","1991-08-11",NA
+511,1991,11,5,"Belgian Grand Prix","1991-08-25",NA
+512,1991,12,7,"Italian Grand Prix","1991-09-08",NA
+513,1991,13,49,"Portuguese Grand Prix","1991-09-22",NA
+514,1991,14,56,"Spanish Grand Prix","1991-09-29",NA
+515,1991,15,53,"Japanese Grand Prix","1991-10-20",NA
+516,1991,16,50,"Australian Grand Prix","1991-11-03",NA
+517,1992,1,27,"South African Grand Prix","1992-03-01",NA
+518,1992,2,23,"Mexican Grand Prix","1992-03-22",NA
+519,1992,3,37,"Brazilian Grand Prix","1992-04-05",NA
+520,1992,4,56,"Spanish Grand Prix","1992-05-03",NA
+521,1992,5,45,"San Marino Grand Prix","1992-05-17",NA
+522,1992,6,2,"Monaco Grand Prix","1992-05-31",NA
+523,1992,7,44,"Canadian Grand Prix","1992-06-14",NA
+524,1992,8,55,"French Grand Prix","1992-07-05",NA
+525,1992,9,1,"British Grand Prix","1992-07-12",NA
+526,1992,10,33,"German Grand Prix","1992-07-26",NA
+527,1992,11,52,"Hungarian Grand Prix","1992-08-16",NA
+528,1992,12,5,"Belgian Grand Prix","1992-08-30",NA
+529,1992,13,7,"Italian Grand Prix","1992-09-13",NA
+530,1992,14,49,"Portuguese Grand Prix","1992-09-27",NA
+531,1992,15,53,"Japanese Grand Prix","1992-10-25",NA
+532,1992,16,50,"Australian Grand Prix","1992-11-08",NA
+533,1993,1,27,"South African Grand Prix","1993-03-14",NA
+534,1993,2,37,"Brazilian Grand Prix","1993-03-28",NA
+535,1993,3,57,"European Grand Prix","1993-04-11",NA
+536,1993,4,45,"San Marino Grand Prix","1993-04-25",NA
+537,1993,5,56,"Spanish Grand Prix","1993-05-09",NA
+538,1993,6,2,"Monaco Grand Prix","1993-05-23",NA
+539,1993,7,44,"Canadian Grand Prix","1993-06-13",NA
+540,1993,8,55,"French Grand Prix","1993-07-04",NA
+541,1993,9,1,"British Grand Prix","1993-07-11",NA
+542,1993,10,33,"German Grand Prix","1993-07-25",NA
+543,1993,11,52,"Hungarian Grand Prix","1993-08-15",NA
+544,1993,12,5,"Belgian Grand Prix","1993-08-29",NA
+545,1993,13,7,"Italian Grand Prix","1993-09-12",NA
+546,1993,14,49,"Portuguese Grand Prix","1993-09-26",NA
+547,1993,15,53,"Japanese Grand Prix","1993-10-24",NA
+548,1993,16,50,"Australian Grand Prix","1993-11-07",NA
+549,1994,1,37,"Brazilian Grand Prix","1994-03-27",NA
+550,1994,2,58,"Pacific Grand Prix","1994-04-17",NA
+551,1994,3,45,"San Marino Grand Prix","1994-05-01",NA
+552,1994,4,2,"Monaco Grand Prix","1994-05-15",NA
+553,1994,5,56,"Spanish Grand Prix","1994-05-29",NA
+554,1994,6,44,"Canadian Grand Prix","1994-06-12",NA
+555,1994,7,55,"French Grand Prix","1994-07-03",NA
+556,1994,8,1,"British Grand Prix","1994-07-10",NA
+557,1994,9,33,"German Grand Prix","1994-07-31",NA
+558,1994,10,52,"Hungarian Grand Prix","1994-08-14",NA
+559,1994,11,5,"Belgian Grand Prix","1994-08-28",NA
+560,1994,12,7,"Italian Grand Prix","1994-09-11",NA
+561,1994,13,49,"Portuguese Grand Prix","1994-09-25",NA
+562,1994,14,51,"European Grand Prix","1994-10-16",NA
+563,1994,15,53,"Japanese Grand Prix","1994-11-06",NA
+564,1994,16,50,"Australian Grand Prix","1994-11-13",NA
+565,1995,1,37,"Brazilian Grand Prix","1995-03-26",NA
+566,1995,2,12,"Argentine Grand Prix","1995-04-09",NA
+567,1995,3,45,"San Marino Grand Prix","1995-04-30",NA
+568,1995,4,56,"Spanish Grand Prix","1995-05-14",NA
+569,1995,5,2,"Monaco Grand Prix","1995-05-28",NA
+570,1995,6,44,"Canadian Grand Prix","1995-06-11",NA
+571,1995,7,55,"French Grand Prix","1995-07-02",NA
+572,1995,8,1,"British Grand Prix","1995-07-16",NA
+573,1995,9,33,"German Grand Prix","1995-07-30",NA
+574,1995,10,52,"Hungarian Grand Prix","1995-08-13",NA
+575,1995,11,5,"Belgian Grand Prix","1995-08-27",NA
+576,1995,12,7,"Italian Grand Prix","1995-09-10",NA
+577,1995,13,49,"Portuguese Grand Prix","1995-09-24",NA
+578,1995,14,8,"European Grand Prix","1995-10-01",NA
+579,1995,15,58,"Pacific Grand Prix","1995-10-22",NA
+580,1995,16,53,"Japanese Grand Prix","1995-10-29",NA
+581,1995,17,50,"Australian Grand Prix","1995-11-12",NA
+582,1996,1,59,"Australian Grand Prix","1996-03-10",NA
+583,1996,2,37,"Brazilian Grand Prix","1996-03-31",NA
+584,1996,3,12,"Argentine Grand Prix","1996-04-07",NA
+585,1996,4,8,"European Grand Prix","1996-04-28",NA
+586,1996,5,45,"San Marino Grand Prix","1996-05-05",NA
+587,1996,6,2,"Monaco Grand Prix","1996-05-19",NA
+588,1996,7,56,"Spanish Grand Prix","1996-06-02",NA
+589,1996,8,44,"Canadian Grand Prix","1996-06-16",NA
+590,1996,9,55,"French Grand Prix","1996-06-30",NA
+591,1996,10,1,"British Grand Prix","1996-07-14",NA
+592,1996,11,33,"German Grand Prix","1996-07-28",NA
+593,1996,12,52,"Hungarian Grand Prix","1996-08-11",NA
+594,1996,13,5,"Belgian Grand Prix","1996-08-25",NA
+595,1996,14,7,"Italian Grand Prix","1996-09-08",NA
+596,1996,15,49,"Portuguese Grand Prix","1996-09-22",NA
+597,1996,16,53,"Japanese Grand Prix","1996-10-13",NA
+598,1997,1,59,"Australian Grand Prix","1997-03-09",NA
+599,1997,2,37,"Brazilian Grand Prix","1997-03-30",NA
+600,1997,3,12,"Argentine Grand Prix","1997-04-13",NA
+601,1997,4,45,"San Marino Grand Prix","1997-04-27",NA
+602,1997,5,2,"Monaco Grand Prix","1997-05-11",NA
+603,1997,6,56,"Spanish Grand Prix","1997-05-25",NA
+604,1997,7,44,"Canadian Grand Prix","1997-06-15",NA
+605,1997,8,55,"French Grand Prix","1997-06-29",NA
+606,1997,9,1,"British Grand Prix","1997-07-13",NA
+607,1997,10,33,"German Grand Prix","1997-07-27",NA
+608,1997,11,52,"Hungarian Grand Prix","1997-08-10",NA
+609,1997,12,5,"Belgian Grand Prix","1997-08-24",NA
+610,1997,13,7,"Italian Grand Prix","1997-09-07",NA
+611,1997,14,34,"Austrian Grand Prix","1997-09-21",NA
+612,1997,15,8,"Luxembourg Grand Prix","1997-09-28",NA
+613,1997,16,53,"Japanese Grand Prix","1997-10-12",NA
+614,1997,17,51,"European Grand Prix","1997-10-26",NA
+615,1998,1,59,"Australian Grand Prix","1998-03-08",NA
+616,1998,2,37,"Brazilian Grand Prix","1998-03-29",NA
+617,1998,3,12,"Argentine Grand Prix","1998-04-12",NA
+618,1998,4,45,"San Marino Grand Prix","1998-04-26",NA
+619,1998,5,56,"Spanish Grand Prix","1998-05-10",NA
+620,1998,6,2,"Monaco Grand Prix","1998-05-24",NA
+621,1998,7,44,"Canadian Grand Prix","1998-06-07",NA
+622,1998,8,55,"French Grand Prix","1998-06-28",NA
+623,1998,9,1,"British Grand Prix","1998-07-12",NA
+624,1998,10,34,"Austrian Grand Prix","1998-07-26",NA
+625,1998,11,33,"German Grand Prix","1998-08-02",NA
+626,1998,12,52,"Hungarian Grand Prix","1998-08-16",NA
+627,1998,13,5,"Belgian Grand Prix","1998-08-30",NA
+628,1998,14,7,"Italian Grand Prix","1998-09-13",NA
+629,1998,15,8,"Luxembourg Grand Prix","1998-09-27",NA
+630,1998,16,53,"Japanese Grand Prix","1998-11-01",NA
+631,1999,1,59,"Australian Grand Prix","1999-03-07",NA
+632,1999,2,37,"Brazilian Grand Prix","1999-04-11",NA
+633,1999,3,45,"San Marino Grand Prix","1999-05-02",NA
+634,1999,4,2,"Monaco Grand Prix","1999-05-16",NA
+635,1999,5,56,"Spanish Grand Prix","1999-05-30",NA
+636,1999,6,44,"Canadian Grand Prix","1999-06-13",NA
+637,1999,7,55,"French Grand Prix","1999-06-27",NA
+638,1999,8,1,"British Grand Prix","1999-07-11",NA
+639,1999,9,34,"Austrian Grand Prix","1999-07-25",NA
+640,1999,10,33,"German Grand Prix","1999-08-01",NA
+641,1999,11,52,"Hungarian Grand Prix","1999-08-15",NA
+642,1999,12,5,"Belgian Grand Prix","1999-08-29",NA
+643,1999,13,7,"Italian Grand Prix","1999-09-12",NA
+644,1999,14,8,"European Grand Prix","1999-09-26",NA
+645,1999,15,60,"Malaysian Grand Prix","1999-10-17",NA
+646,1999,16,53,"Japanese Grand Prix","1999-10-31",NA
+647,2000,1,59,"Australian Grand Prix","2000-03-12",NA
+648,2000,2,37,"Brazilian Grand Prix","2000-03-26",NA
+649,2000,3,45,"San Marino Grand Prix","2000-04-09",NA
+650,2000,4,1,"British Grand Prix","2000-04-23",NA
+651,2000,5,56,"Spanish Grand Prix","2000-05-07",NA
+652,2000,6,8,"European Grand Prix","2000-05-21",NA
+653,2000,7,2,"Monaco Grand Prix","2000-06-04",NA
+654,2000,8,44,"Canadian Grand Prix","2000-06-18",NA
+655,2000,9,55,"French Grand Prix","2000-07-02",NA
+656,2000,10,34,"Austrian Grand Prix","2000-07-16",NA
+657,2000,11,33,"German Grand Prix","2000-07-30",NA
+658,2000,12,52,"Hungarian Grand Prix","2000-08-13",NA
+659,2000,13,5,"Belgian Grand Prix","2000-08-27",NA
+660,2000,14,7,"Italian Grand Prix","2000-09-10",NA
+661,2000,15,3,"United States Grand Prix","2000-09-24",NA
+662,2000,16,53,"Japanese Grand Prix","2000-10-08",NA
+663,2000,17,60,"Malaysian Grand Prix","2000-10-22",NA
+664,2001,1,59,"Australian Grand Prix","2001-03-04",NA
+665,2001,2,60,"Malaysian Grand Prix","2001-03-18",NA
+666,2001,3,37,"Brazilian Grand Prix","2001-04-01",NA
+667,2001,4,45,"San Marino Grand Prix","2001-04-15",NA
+668,2001,5,56,"Spanish Grand Prix","2001-04-29",NA
+669,2001,6,34,"Austrian Grand Prix","2001-05-13",NA
+670,2001,7,2,"Monaco Grand Prix","2001-05-27",NA
+671,2001,8,44,"Canadian Grand Prix","2001-06-10",NA
+672,2001,9,8,"European Grand Prix","2001-06-24",NA
+673,2001,10,55,"French Grand Prix","2001-07-01",NA
+674,2001,11,1,"British Grand Prix","2001-07-15",NA
+675,2001,12,33,"German Grand Prix","2001-07-29",NA
+676,2001,13,52,"Hungarian Grand Prix","2001-08-19",NA
+677,2001,14,5,"Belgian Grand Prix","2001-09-02",NA
+678,2001,15,7,"Italian Grand Prix","2001-09-16",NA
+679,2001,16,3,"United States Grand Prix","2001-09-30",NA
+680,2001,17,53,"Japanese Grand Prix","2001-10-14",NA
+681,2002,1,59,"Australian Grand Prix","2002-03-03",NA
+682,2002,2,60,"Malaysian Grand Prix","2002-03-17",NA
+683,2002,3,37,"Brazilian Grand Prix","2002-03-31",NA
+684,2002,4,45,"San Marino Grand Prix","2002-04-14",NA
+685,2002,5,56,"Spanish Grand Prix","2002-04-28",NA
+686,2002,6,34,"Austrian Grand Prix","2002-05-12",NA
+687,2002,7,2,"Monaco Grand Prix","2002-05-26",NA
+688,2002,8,44,"Canadian Grand Prix","2002-06-09",NA
+689,2002,9,8,"European Grand Prix","2002-06-23",NA
+690,2002,10,1,"British Grand Prix","2002-07-07",NA
+691,2002,11,55,"French Grand Prix","2002-07-21",NA
+692,2002,12,33,"German Grand Prix","2002-07-28",NA
+693,2002,13,52,"Hungarian Grand Prix","2002-08-18",NA
+694,2002,14,5,"Belgian Grand Prix","2002-09-01",NA
+695,2002,15,7,"Italian Grand Prix","2002-09-15",NA
+696,2002,16,3,"United States Grand Prix","2002-09-29",NA
+697,2002,17,53,"Japanese Grand Prix","2002-10-13",NA
+698,2003,1,59,"Australian Grand Prix","2003-03-09",NA
+699,2003,2,60,"Malaysian Grand Prix","2003-03-23",NA
+700,2003,3,37,"Brazilian Grand Prix","2003-04-06",NA
+701,2003,4,45,"San Marino Grand Prix","2003-04-20",NA
+702,2003,5,56,"Spanish Grand Prix","2003-05-04",NA
+703,2003,6,34,"Austrian Grand Prix","2003-05-18",NA
+704,2003,7,2,"Monaco Grand Prix","2003-06-01",NA
+705,2003,8,44,"Canadian Grand Prix","2003-06-15",NA
+706,2003,9,8,"European Grand Prix","2003-06-29",NA
+707,2003,10,55,"French Grand Prix","2003-07-06",NA
+708,2003,11,1,"British Grand Prix","2003-07-20",NA
+709,2003,12,33,"German Grand Prix","2003-08-03",NA
+710,2003,13,52,"Hungarian Grand Prix","2003-08-24",NA
+711,2003,14,7,"Italian Grand Prix","2003-09-14",NA
+712,2003,15,3,"United States Grand Prix","2003-09-28",NA
+713,2003,16,53,"Japanese Grand Prix","2003-10-12",NA
+714,2004,1,59,"Australian Grand Prix","2004-03-07",NA
+715,2004,2,60,"Malaysian Grand Prix","2004-03-21",NA
+716,2004,3,61,"Bahrain Grand Prix","2004-04-04",NA
+717,2004,4,45,"San Marino Grand Prix","2004-04-25",NA
+718,2004,5,56,"Spanish Grand Prix","2004-05-09",NA
+719,2004,6,2,"Monaco Grand Prix","2004-05-23",NA
+720,2004,7,8,"European Grand Prix","2004-05-30",NA
+721,2004,8,44,"Canadian Grand Prix","2004-06-13",NA
+722,2004,9,3,"United States Grand Prix","2004-06-20",NA
+723,2004,10,55,"French Grand Prix","2004-07-04",NA
+724,2004,11,1,"British Grand Prix","2004-07-11",NA
+725,2004,12,33,"German Grand Prix","2004-07-25",NA
+726,2004,13,52,"Hungarian Grand Prix","2004-08-15",NA
+727,2004,14,5,"Belgian Grand Prix","2004-08-29",NA
+728,2004,15,7,"Italian Grand Prix","2004-09-12",NA
+729,2004,16,62,"Chinese Grand Prix","2004-09-26",NA
+730,2004,17,53,"Japanese Grand Prix","2004-10-10",NA
+731,2004,18,37,"Brazilian Grand Prix","2004-10-24",NA
+732,2005,1,59,"Australian Grand Prix","2005-03-06","14:00:00.000"
+733,2005,2,60,"Malaysian Grand Prix","2005-03-20","15:00:00.000"
+734,2005,3,61,"Bahrain Grand Prix","2005-04-03","14:30:00.000"
+735,2005,4,45,"San Marino Grand Prix","2005-04-24","14:00:00.000"
+736,2005,5,56,"Spanish Grand Prix","2005-05-08","14:00:00.000"
+737,2005,6,2,"Monaco Grand Prix","2005-05-22","14:00:00.000"
+738,2005,7,8,"European Grand Prix","2005-05-29","14:00:00.000"
+739,2005,8,44,"Canadian Grand Prix","2005-06-12","13:00:00.000"
+740,2005,9,3,"United States Grand Prix","2005-06-19","14:00:00.000"
+741,2005,10,55,"French Grand Prix","2005-07-03","14:00:00.000"
+742,2005,11,1,"British Grand Prix","2005-07-10","14:00:00.000"
+743,2005,12,33,"German Grand Prix","2005-07-24","14:00:00.000"
+744,2005,13,52,"Hungarian Grand Prix","2005-07-31","14:00:00.000"
+745,2005,14,63,"Turkish Grand Prix","2005-08-21","15:00:00.000"
+746,2005,15,7,"Italian Grand Prix","2005-09-04","14:00:00.000"
+747,2005,16,5,"Belgian Grand Prix","2005-09-11","14:00:00.000"
+748,2005,17,37,"Brazilian Grand Prix","2005-09-25","14:00:00.000"
+749,2005,18,53,"Japanese Grand Prix","2005-10-09","14:00:00.000"
+750,2005,19,62,"Chinese Grand Prix","2005-10-16","14:00:00.000"
+751,2006,1,61,"Bahrain Grand Prix","2006-03-12","14:30:00.000"
+752,2006,2,60,"Malaysian Grand Prix","2006-03-19","15:00:00.000"
+753,2006,3,59,"Australian Grand Prix","2006-04-02","14:00:00.000"
+754,2006,4,45,"San Marino Grand Prix","2006-04-23","14:00:00.000"
+755,2006,5,8,"European Grand Prix","2006-05-07","14:00:00.000"
+756,2006,6,56,"Spanish Grand Prix","2006-05-14","14:00:00.000"
+757,2006,7,2,"Monaco Grand Prix","2006-05-28","14:00:00.000"
+758,2006,8,1,"British Grand Prix","2006-06-11","12:00:00.000"
+759,2006,9,44,"Canadian Grand Prix","2006-06-25","13:00:00.000"
+760,2006,10,3,"United States Grand Prix","2006-07-02","14:00:00.000"
+761,2006,11,55,"French Grand Prix","2006-07-16","14:00:00.000"
+762,2006,12,33,"German Grand Prix","2006-07-30","14:00:00.000"
+763,2006,13,52,"Hungarian Grand Prix","2006-08-06","14:00:00.000"
+764,2006,14,63,"Turkish Grand Prix","2006-08-27","15:00:00.000"
+765,2006,15,7,"Italian Grand Prix","2006-09-10","14:00:00.000"
+766,2006,16,62,"Chinese Grand Prix","2006-10-01","14:00:00.000"
+767,2006,17,53,"Japanese Grand Prix","2006-10-08","14:00:00.000"
+768,2006,18,37,"Brazilian Grand Prix","2006-10-22","14:00:00.000"
+769,2007,1,59,"Australian Grand Prix","2007-03-18","03:00:00.000"
+770,2007,2,60,"Malaysian Grand Prix","2007-04-08","07:00:00.000"
+771,2007,3,61,"Bahrain Grand Prix","2007-04-15","11:30:00.000"
+772,2007,4,56,"Spanish Grand Prix","2007-05-13","12:00:00.000"
+773,2007,5,2,"Monaco Grand Prix","2007-05-27","12:00:00.000"
+774,2007,6,44,"Canadian Grand Prix","2007-06-10","17:00:00.000"
+775,2007,7,3,"United States Grand Prix","2007-06-17","17:00:00.000"
+776,2007,8,55,"French Grand Prix","2007-07-01","12:00:00.000"
+777,2007,9,1,"British Grand Prix","2007-07-08","12:00:00.000"
+778,2007,10,8,"European Grand Prix","2007-07-22","12:00:00.000"
+779,2007,11,52,"Hungarian Grand Prix","2007-08-05","12:00:00.000"
+780,2007,12,63,"Turkish Grand Prix","2007-08-26","12:00:00.000"
+781,2007,13,7,"Italian Grand Prix","2007-09-09","12:00:00.000"
+782,2007,14,5,"Belgian Grand Prix","2007-09-16","12:00:00.000"
+783,2007,15,42,"Japanese Grand Prix","2007-09-30","04:30:00.000"
+784,2007,16,62,"Chinese Grand Prix","2007-10-07","06:00:00.000"
+785,2007,17,37,"Brazilian Grand Prix","2007-10-21","16:00:00.000"
+786,2008,1,59,"Australian Grand Prix","2008-03-16","04:30:00.000"
+787,2008,2,60,"Malaysian Grand Prix","2008-03-23","07:00:00.000"
+788,2008,3,61,"Bahrain Grand Prix","2008-04-06","11:30:00.000"
+789,2008,4,56,"Spanish Grand Prix","2008-04-27","12:00:00.000"
+790,2008,5,63,"Turkish Grand Prix","2008-05-11","12:00:00.000"
+791,2008,6,2,"Monaco Grand Prix","2008-05-25","12:00:00.000"
+792,2008,7,44,"Canadian Grand Prix","2008-06-08","17:00:00.000"
+793,2008,8,55,"French Grand Prix","2008-06-22","12:00:00.000"
+794,2008,9,1,"British Grand Prix","2008-07-06","12:00:00.000"
+795,2008,10,33,"German Grand Prix","2008-07-20","12:00:00.000"
+796,2008,11,52,"Hungarian Grand Prix","2008-08-03","12:00:00.000"
+797,2008,12,64,"European Grand Prix","2008-08-24","12:00:00.000"
+798,2008,13,5,"Belgian Grand Prix","2008-09-07","12:00:00.000"
+799,2008,14,7,"Italian Grand Prix","2008-09-14","12:00:00.000"
+800,2008,15,65,"Singapore Grand Prix","2008-09-28","12:00:00.000"
+801,2008,16,42,"Japanese Grand Prix","2008-10-12","04:30:00.000"
+802,2008,17,62,"Chinese Grand Prix","2008-10-19","07:00:00.000"
+803,2008,18,37,"Brazilian Grand Prix","2008-11-02","17:00:00.000"
+804,2009,1,59,"Australian Grand Prix","2009-03-29","06:00:00.000"
+805,2009,2,60,"Malaysian Grand Prix","2009-04-05","09:00:00.000"
+806,2009,3,62,"Chinese Grand Prix","2009-04-19","07:00:00.000"
+807,2009,4,61,"Bahrain Grand Prix","2009-04-26","12:00:00.000"
+808,2009,5,56,"Spanish Grand Prix","2009-05-10","12:00:00.000"
+809,2009,6,2,"Monaco Grand Prix","2009-05-24","12:00:00.000"
+810,2009,7,63,"Turkish Grand Prix","2009-06-07","12:00:00.000"
+811,2009,8,1,"British Grand Prix","2009-06-21","12:00:00.000"
+812,2009,9,8,"German Grand Prix","2009-07-12","12:00:00.000"
+813,2009,10,52,"Hungarian Grand Prix","2009-07-26","12:00:00.000"
+814,2009,11,64,"European Grand Prix","2009-08-23","12:00:00.000"
+815,2009,12,5,"Belgian Grand Prix","2009-08-30","12:00:00.000"
+816,2009,13,7,"Italian Grand Prix","2009-09-13","12:00:00.000"
+817,2009,14,65,"Singapore Grand Prix","2009-09-27","12:00:00.000"
+818,2009,15,53,"Japanese Grand Prix","2009-10-04","05:00:00.000"
+819,2009,16,37,"Brazilian Grand Prix","2009-10-18","16:00:00.000"
+820,2009,17,66,"Abu Dhabi Grand Prix","2009-11-01","11:00:00.000"
+821,2010,1,61,"Bahrain Grand Prix","2010-03-14","12:00:00.000"
+822,2010,2,59,"Australian Grand Prix","2010-03-28","06:00:00.000"
+823,2010,3,60,"Malaysian Grand Prix","2010-04-04","08:00:00.000"
+824,2010,4,62,"Chinese Grand Prix","2010-04-18","06:00:00.000"
+825,2010,5,56,"Spanish Grand Prix","2010-05-09","12:00:00.000"
+826,2010,6,2,"Monaco Grand Prix","2010-05-16","12:00:00.000"
+827,2010,7,63,"Turkish Grand Prix","2010-05-30","11:00:00.000"
+828,2010,8,44,"Canadian Grand Prix","2010-06-13","16:00:00.000"
+829,2010,9,64,"European Grand Prix","2010-06-27","12:00:00.000"
+830,2010,10,1,"British Grand Prix","2010-07-11","12:00:00.000"
+831,2010,11,33,"German Grand Prix","2010-07-25","12:00:00.000"
+832,2010,12,52,"Hungarian Grand Prix","2010-08-01","12:00:00.000"
+833,2010,13,5,"Belgian Grand Prix","2010-08-29","12:00:00.000"
+834,2010,14,7,"Italian Grand Prix","2010-09-12","12:00:00.000"
+835,2010,15,65,"Singapore Grand Prix","2010-09-26","12:00:00.000"
+836,2010,16,53,"Japanese Grand Prix","2010-10-10","06:00:00.000"
+837,2010,17,67,"Korean Grand Prix","2010-10-24","05:00:00.000"
+838,2010,18,37,"Brazilian Grand Prix","2010-11-07","16:00:00.000"
+839,2010,19,66,"Abu Dhabi Grand Prix","2010-11-14","13:00:00.000"
+840,2011,1,59,"Australian Grand Prix","2011-03-27","06:00:00.000"
+841,2011,2,60,"Malaysian Grand Prix","2011-04-10","08:00:00.000"
+842,2011,3,62,"Chinese Grand Prix","2011-04-17","07:00:00.000"
+843,2011,4,63,"Turkish Grand Prix","2011-05-08","12:00:00.000"
+844,2011,5,56,"Spanish Grand Prix","2011-05-22","12:00:00.000"
+845,2011,6,2,"Monaco Grand Prix","2011-05-29","12:00:00.000"
+846,2011,7,44,"Canadian Grand Prix","2011-06-12","17:00:00.000"
+847,2011,8,64,"European Grand Prix","2011-06-26","12:00:00.000"
+848,2011,9,1,"British Grand Prix","2011-07-10","12:00:00.000"
+849,2011,10,8,"German Grand Prix","2011-07-24","12:00:00.000"
+850,2011,11,52,"Hungarian Grand Prix","2011-07-31","12:00:00.000"
+851,2011,12,5,"Belgian Grand Prix","2011-08-28","12:00:00.000"
+852,2011,13,7,"Italian Grand Prix","2011-09-11","12:00:00.000"
+853,2011,14,65,"Singapore Grand Prix","2011-09-25","12:00:00.000"
+854,2011,15,53,"Japanese Grand Prix","2011-10-09","06:00:00.000"
+855,2011,16,67,"Korean Grand Prix","2011-10-16","06:00:00.000"
+856,2011,17,68,"Indian Grand Prix","2011-10-30","09:30:00.000"
+857,2011,18,66,"Abu Dhabi Grand Prix","2011-11-13","13:00:00.000"
+858,2011,19,37,"Brazilian Grand Prix","2011-11-27","16:00:00.000"
+859,2012,1,59,"Australian Grand Prix","2012-03-18","06:00:00.000"
+860,2012,2,60,"Malaysian Grand Prix","2012-03-25","08:00:00.000"
+861,2012,3,62,"Chinese Grand Prix","2012-04-15","07:00:00.000"
+862,2012,4,61,"Bahrain Grand Prix","2012-04-22","12:00:00.000"
+863,2012,5,56,"Spanish Grand Prix","2012-05-13","12:00:00.000"
+864,2012,6,2,"Monaco Grand Prix","2012-05-27","12:00:00.000"
+865,2012,7,44,"Canadian Grand Prix","2012-06-10","18:00:00.000"
+866,2012,8,64,"European Grand Prix","2012-06-24","12:00:00.000"
+867,2012,9,1,"British Grand Prix","2012-07-08","12:00:00.000"
+868,2012,10,33,"German Grand Prix","2012-07-22","12:00:00.000"
+869,2012,11,52,"Hungarian Grand Prix","2012-07-29","12:00:00.000"
+870,2012,12,5,"Belgian Grand Prix","2012-09-02","12:00:00.000"
+871,2012,13,7,"Italian Grand Prix","2012-09-09","12:00:00.000"
+872,2012,14,65,"Singapore Grand Prix","2012-09-23","12:00:00.000"
+873,2012,15,53,"Japanese Grand Prix","2012-10-07","06:00:00.000"
+874,2012,16,67,"Korean Grand Prix","2012-10-14","06:00:00.000"
+875,2012,17,68,"Indian Grand Prix","2012-10-28","09:30:00.000"
+876,2012,18,66,"Abu Dhabi Grand Prix","2012-11-04","13:00:00.000"
+877,2012,19,69,"United States Grand Prix","2012-11-18","19:00:00.000"
+878,2012,20,37,"Brazilian Grand Prix","2012-11-25","16:00:00.000"
+879,2013,1,59,"Australian Grand Prix","2013-03-17","06:00:00.000"
+880,2013,2,60,"Malaysian Grand Prix","2013-03-24","08:00:00.000"
+881,2013,3,62,"Chinese Grand Prix","2013-04-14","07:00:00.000"
+882,2013,4,61,"Bahrain Grand Prix","2013-04-21","12:00:00.000"
+883,2013,5,56,"Spanish Grand Prix","2013-05-12","12:00:00.000"
+884,2013,6,2,"Monaco Grand Prix","2013-05-26","12:00:00.000"
+885,2013,7,44,"Canadian Grand Prix","2013-06-09","18:00:00.000"
+886,2013,8,1,"British Grand Prix","2013-06-30","12:00:00.000"
+887,2013,9,8,"German Grand Prix","2013-07-07","12:00:00.000"
+888,2013,10,52,"Hungarian Grand Prix","2013-07-28","12:00:00.000"
+889,2013,11,5,"Belgian Grand Prix","2013-08-25","12:00:00.000"
+890,2013,12,7,"Italian Grand Prix","2013-09-08","12:00:00.000"
+891,2013,13,65,"Singapore Grand Prix","2013-09-22","12:00:00.000"
+892,2013,14,67,"Korean Grand Prix","2013-10-06","06:00:00.000"
+893,2013,15,53,"Japanese Grand Prix","2013-10-13","06:00:00.000"
+894,2013,16,68,"Indian Grand Prix","2013-10-27","09:30:00.000"
+895,2013,17,66,"Abu Dhabi Grand Prix","2013-11-03","13:00:00.000"
+896,2013,18,69,"United States Grand Prix","2013-11-17","19:00:00.000"
+897,2013,19,37,"Brazilian Grand Prix","2013-11-24","16:00:00.000"
+898,2014,1,59,"Australian Grand Prix","2014-03-16","06:00:00.000"
+899,2014,2,60,"Malaysian Grand Prix","2014-03-30","08:00:00.000"
+900,2014,3,61,"Bahrain Grand Prix","2014-04-06","15:00:00.000"
+901,2014,4,62,"Chinese Grand Prix","2014-04-20","07:00:00.000"
+902,2014,5,56,"Spanish Grand Prix","2014-05-11","12:00:00.000"
+903,2014,6,2,"Monaco Grand Prix","2014-05-25","12:00:00.000"
+904,2014,7,44,"Canadian Grand Prix","2014-06-08","18:00:00.000"
+905,2014,8,34,"Austrian Grand Prix","2014-06-22","12:00:00.000"
+906,2014,9,1,"British Grand Prix","2014-07-06","12:00:00.000"
+907,2014,10,33,"German Grand Prix","2014-07-20","12:00:00.000"
+908,2014,11,52,"Hungarian Grand Prix","2014-07-27","12:00:00.000"
+909,2014,12,5,"Belgian Grand Prix","2014-08-24","12:00:00.000"
+910,2014,13,7,"Italian Grand Prix","2014-09-07","12:00:00.000"
+911,2014,14,65,"Singapore Grand Prix","2014-09-21","12:00:00.000"
+912,2014,15,53,"Japanese Grand Prix","2014-10-05","06:00:00.000"
+913,2014,16,70,"Russian Grand Prix","2014-10-12","11:00:00.000"
+914,2014,17,69,"United States Grand Prix","2014-11-02","20:00:00.000"
+915,2014,18,37,"Brazilian Grand Prix","2014-11-09","16:00:00.000"
+916,2014,19,66,"Abu Dhabi Grand Prix","2014-11-23","13:00:00.000"
+917,2015,1,59,"Australian Grand Prix","2015-03-15","05:00:00.000"
+918,2015,2,60,"Malaysian Grand Prix","2015-03-29","07:00:00.000"
+919,2015,3,62,"Chinese Grand Prix","2015-04-12","06:00:00.000"
+920,2015,4,61,"Bahrain Grand Prix","2015-04-19","15:00:00.000"
+921,2015,5,56,"Spanish Grand Prix","2015-05-10","12:00:00.000"
+922,2015,6,2,"Monaco Grand Prix","2015-05-24","12:00:00.000"
+923,2015,7,44,"Canadian Grand Prix","2015-06-07","18:00:00.000"
+924,2015,8,34,"Austrian Grand Prix","2015-06-21","12:00:00.000"
+925,2015,9,1,"British Grand Prix","2015-07-05","12:00:00.000"
+926,2015,10,52,"Hungarian Grand Prix","2015-07-26","12:00:00.000"
+927,2015,11,5,"Belgian Grand Prix","2015-08-23","12:00:00.000"
+928,2015,12,7,"Italian Grand Prix","2015-09-06","12:00:00.000"
+929,2015,13,65,"Singapore Grand Prix","2015-09-20","12:00:00.000"
+930,2015,14,53,"Japanese Grand Prix","2015-09-27","05:00:00.000"
+931,2015,15,70,"Russian Grand Prix","2015-10-11","11:00:00.000"
+932,2015,16,69,"United States Grand Prix","2015-10-25","19:00:00.000"
+933,2015,17,23,"Mexican Grand Prix","2015-11-01","19:00:00.000"
+934,2015,18,37,"Brazilian Grand Prix","2015-11-15","16:00:00.000"
+935,2015,19,66,"Abu Dhabi Grand Prix","2015-11-29","13:00:00.000"
+936,2016,1,59,"Australian Grand Prix","2016-03-20","05:00:00.000"
+937,2016,2,61,"Bahrain Grand Prix","2016-04-03","15:00:00.000"
+938,2016,3,62,"Chinese Grand Prix","2016-04-17","06:00:00.000"
+939,2016,4,70,"Russian Grand Prix","2016-05-01","12:00:00.000"
+940,2016,5,56,"Spanish Grand Prix","2016-05-15","12:00:00.000"
+941,2016,6,2,"Monaco Grand Prix","2016-05-29","12:00:00.000"
+942,2016,7,44,"Canadian Grand Prix","2016-06-12","18:00:00.000"
+943,2016,8,71,"European Grand Prix","2016-06-19","13:00:00.000"
+944,2016,9,34,"Austrian Grand Prix","2016-07-03","12:00:00.000"
+945,2016,10,1,"British Grand Prix","2016-07-10","12:00:00.000"
+946,2016,11,52,"Hungarian Grand Prix","2016-07-24","12:00:00.000"
+947,2016,12,33,"German Grand Prix","2016-07-31","12:00:00.000"
+948,2016,13,5,"Belgian Grand Prix","2016-08-28","12:00:00.000"
+949,2016,14,7,"Italian Grand Prix","2016-09-04","12:00:00.000"
+950,2016,15,65,"Singapore Grand Prix","2016-09-18","12:00:00.000"
+951,2016,16,60,"Malaysian Grand Prix","2016-10-02","07:00:00.000"
+952,2016,17,53,"Japanese Grand Prix","2016-10-09","05:00:00.000"
+953,2016,18,69,"United States Grand Prix","2016-10-23","19:00:00.000"
+954,2016,19,23,"Mexican Grand Prix","2016-10-30","19:00:00.000"
+955,2016,20,37,"Brazilian Grand Prix","2016-11-13","16:00:00.000"
+956,2016,21,66,"Abu Dhabi Grand Prix","2016-11-27","13:00:00.000"
+957,2017,1,59,"Australian Grand Prix","2017-03-26","05:00:00.000"
+958,2017,2,62,"Chinese Grand Prix","2017-04-09","06:00:00.000"
+959,2017,3,61,"Bahrain Grand Prix","2017-04-16","15:00:00.000"
+960,2017,4,70,"Russian Grand Prix","2017-04-30","12:00:00.000"
+961,2017,5,56,"Spanish Grand Prix","2017-05-14","12:00:00.000"
+962,2017,6,2,"Monaco Grand Prix","2017-05-28","12:00:00.000"
+963,2017,7,44,"Canadian Grand Prix","2017-06-11","18:00:00.000"
+964,2017,8,71,"Azerbaijan Grand Prix","2017-06-25","13:00:00.000"
+965,2017,9,34,"Austrian Grand Prix","2017-07-09","12:00:00.000"
+966,2017,10,1,"British Grand Prix","2017-07-16","12:00:00.000"
+967,2017,11,52,"Hungarian Grand Prix","2017-07-30","12:00:00.000"
+968,2017,12,5,"Belgian Grand Prix","2017-08-27","12:00:00.000"
+969,2017,13,7,"Italian Grand Prix","2017-09-03","12:00:00.000"
+970,2017,14,65,"Singapore Grand Prix","2017-09-17","12:00:00.000"
+971,2017,15,60,"Malaysian Grand Prix","2017-10-01","07:00:00.000"
+972,2017,16,53,"Japanese Grand Prix","2017-10-08","05:00:00.000"
+973,2017,17,69,"United States Grand Prix","2017-10-22","19:00:00.000"
+974,2017,18,23,"Mexican Grand Prix","2017-10-29","19:00:00.000"
+975,2017,19,37,"Brazilian Grand Prix","2017-11-12","16:00:00.000"
+976,2017,20,66,"Abu Dhabi Grand Prix","2017-11-26","13:00:00.000"
+977,2018,1,59,"Australian Grand Prix","2018-03-25","05:10:00.000"
+978,2018,2,61,"Bahrain Grand Prix","2018-04-08","15:10:00.000"
+979,2018,3,62,"Chinese Grand Prix","2018-04-15","06:10:00.000"
+980,2018,4,71,"Azerbaijan Grand Prix","2018-04-29","12:10:00.000"
+981,2018,5,56,"Spanish Grand Prix","2018-05-13","13:10:00.000"
+982,2018,6,2,"Monaco Grand Prix","2018-05-27","13:10:00.000"
+983,2018,7,44,"Canadian Grand Prix","2018-06-10","18:10:00.000"
+984,2018,8,35,"French Grand Prix","2018-06-24","14:10:00.000"
+985,2018,9,34,"Austrian Grand Prix","2018-07-01","13:10:00.000"
+986,2018,10,1,"British Grand Prix","2018-07-08","13:10:00.000"
+987,2018,11,33,"German Grand Prix","2018-07-22","13:10:00.000"
+988,2018,12,52,"Hungarian Grand Prix","2018-07-29","13:10:00.000"
+989,2018,13,5,"Belgian Grand Prix","2018-08-26","13:10:00.000"
+990,2018,14,7,"Italian Grand Prix","2018-09-02","13:10:00.000"
+991,2018,15,65,"Singapore Grand Prix","2018-09-16","12:10:00.000"
+992,2018,16,70,"Russian Grand Prix","2018-09-30","11:10:00.000"
+993,2018,17,53,"Japanese Grand Prix","2018-10-07","05:10:00.000"
+994,2018,18,69,"United States Grand Prix","2018-10-21","18:10:00.000"
+995,2018,19,23,"Mexican Grand Prix","2018-10-28","19:10:00.000"
+996,2018,20,37,"Brazilian Grand Prix","2018-11-11","17:10:00.000"
+997,2018,21,66,"Abu Dhabi Grand Prix","2018-11-25","13:10:00.000"
+998,2019,1,59,"Australian Grand Prix","2019-03-17","05:10:00.000"
+999,2019,2,61,"Bahrain Grand Prix","2019-03-31","15:10:00.000"
+1000,2019,3,62,"Chinese Grand Prix","2019-04-14","06:10:00.000"
+1001,2019,4,71,"Azerbaijan Grand Prix","2019-04-28","12:10:00.000"
+1002,2019,5,56,"Spanish Grand Prix","2019-05-12","13:10:00.000"
+1003,2019,6,2,"Monaco Grand Prix","2019-05-26","13:10:00.000"
+1004,2019,7,44,"Canadian Grand Prix","2019-06-09","18:10:00.000"
+1005,2019,8,35,"French Grand Prix","2019-06-23","13:10:00.000"
+1006,2019,9,34,"Austrian Grand Prix","2019-06-30","13:10:00.000"
+1007,2019,10,1,"British Grand Prix","2019-07-14","13:10:00.000"
+1008,2019,11,33,"German Grand Prix","2019-07-28","13:10:00.000"
+1009,2019,12,52,"Hungarian Grand Prix","2019-08-04","13:10:00.000"
+1010,2019,13,5,"Belgian Grand Prix","2019-09-01","13:10:00.000"
+1011,2019,14,7,"Italian Grand Prix","2019-09-08","13:10:00.000"
+1012,2019,15,65,"Singapore Grand Prix","2019-09-22","12:10:00.000"
+1013,2019,16,70,"Russian Grand Prix","2019-09-29","11:10:00.000"
+1014,2019,17,53,"Japanese Grand Prix","2019-10-13","05:10:00.000"
+1015,2019,18,23,"Mexican Grand Prix","2019-10-27","19:10:00.000"
+1016,2019,19,69,"United States Grand Prix","2019-11-03","19:10:00.000"
+1017,2019,20,37,"Brazilian Grand Prix","2019-11-17","17:10:00.000"
+1018,2019,21,66,"Abu Dhabi Grand Prix","2019-12-01","13:10:00.000"
+1019,2020,1,34,"Austrian Grand Prix","2020-07-05","13:10:00.000"
+1020,2020,2,34,"Styrian Grand Prix","2020-07-12","13:10:00.000"
+1021,2020,3,52,"Hungarian Grand Prix","2020-07-19","13:10:00.000"
+1022,2020,4,1,"British Grand Prix","2020-08-02","13:10:00.000"
+1023,2020,5,1,"70th Anniversary Grand Prix","2020-08-09","13:10:00.000"
+1024,2020,6,56,"Spanish Grand Prix","2020-08-16","13:10:00.000"
+1025,2020,7,5,"Belgian Grand Prix","2020-08-30","13:10:00.000"
+1026,2020,8,7,"Italian Grand Prix","2020-09-06","13:10:00.000"
+1027,2020,9,72,"Tuscan Grand Prix","2020-09-13","13:10:00.000"
+1028,2020,10,70,"Russian Grand Prix","2020-09-27","11:10:00.000"
+1029,2020,11,8,"Eifel Grand Prix","2020-10-11","13:10:00.000"
+1030,2020,12,73,"Portuguese Grand Prix","2020-10-25","12:10:00.000"
+1031,2020,13,45,"Emilia Romagna Grand Prix","2020-11-01","12:10:00.000"
+1032,2020,14,63,"Turkish Grand Prix","2020-11-15","10:10:00.000"
+1033,2020,15,61,"Bahrain Grand Prix","2020-11-29","14:10:00.000"
+1034,2020,16,61,"Sakhir Grand Prix","2020-12-06","17:10:00.000"
+1035,2020,17,66,"Abu Dhabi Grand Prix","2020-12-13","13:10:00.000"
+1036,2021,1,61,"Bahrain Grand Prix","2021-03-28","15:00:00.000"
+1037,2021,2,45,"Emilia Romagna Grand Prix","2021-04-18","13:00:00.000"
+1038,2021,3,73,"Portuguese Grand Prix","2021-05-02","14:00:00.000"
+1039,2021,4,56,"Spanish Grand Prix","2021-05-09","13:00:00.000"
+1040,2021,5,2,"Monaco Grand Prix","2021-05-23","13:00:00.000"
+1041,2021,6,71,"Azerbaijan Grand Prix","2021-06-06","12:00:00.000"
+1042,2021,7,35,"French Grand Prix","2021-06-20","13:00:00.000"
+1043,2021,8,34,"Styrian Grand Prix","2021-06-27","13:00:00.000"
+1044,2021,9,34,"Austrian Grand Prix","2021-07-04","13:00:00.000"
+1045,2021,10,1,"British Grand Prix","2021-07-18","14:00:00.000"
+1046,2021,11,52,"Hungarian Grand Prix","2021-08-01","13:00:00.000"
+1047,2021,12,5,"Belgian Grand Prix","2021-08-29","13:00:00.000"
+1048,2021,13,11,"Dutch Grand Prix","2021-09-05","13:00:00.000"
+1049,2021,14,7,"Italian Grand Prix","2021-09-12","13:00:00.000"
+1050,2021,15,70,"Russian Grand Prix","2021-09-26","12:00:00.000"
+1051,2021,16,63,"Turkish Grand Prix","2021-10-10","12:00:00.000"
+1052,2021,17,69,"United States Grand Prix","2021-10-24","19:00:00.000"
+1053,2021,18,23,"Mexico City Grand Prix","2021-11-07","19:00:00.000"
+1054,2021,19,37,"SÃ£o Paulo Grand Prix","2021-11-14","17:00:00.000"
+1055,2021,20,74,"Qatar Grand Prix","2021-11-21","14:00:00.000"
+1056,2021,21,75,"Saudi Arabian Grand Prix","2021-12-05","17:30:00.000"
+1057,2021,22,66,"Abu Dhabi Grand Prix","2021-12-12","13:00:00.000"
+1058,2022,1,61,"Bahrain Grand Prix","2022-03-20","15:00:00.000"
+1059,2022,2,75,"Saudi Arabian Grand Prix","2022-03-27","17:00:00.000"
+1060,2022,3,59,"Australian Grand Prix","2022-04-10","05:00:00.000"
+1061,2022,4,45,"Emilia Romagna Grand Prix","2022-04-24","13:00:00.000"
+1062,2022,5,76,"Miami Grand Prix","2022-05-08","19:30:00.000"
+1063,2022,6,56,"Spanish Grand Prix","2022-05-22","13:00:00.000"
+1064,2022,7,2,"Monaco Grand Prix","2022-05-29","13:00:00.000"
+1065,2022,8,71,"Azerbaijan Grand Prix","2022-06-12","11:00:00.000"
+1066,2022,9,44,"Canadian Grand Prix","2022-06-19","18:00:00.000"
+1067,2022,10,1,"British Grand Prix","2022-07-03","14:00:00.000"
+1068,2022,11,34,"Austrian Grand Prix","2022-07-10","13:00:00.000"
+1069,2022,12,35,"French Grand Prix","2022-07-24","13:00:00.000"
+1070,2022,13,52,"Hungarian Grand Prix","2022-07-31","13:00:00.000"
+1071,2022,14,5,"Belgian Grand Prix","2022-08-28","13:00:00.000"
+1072,2022,15,11,"Dutch Grand Prix","2022-09-04","13:00:00.000"
+1073,2022,16,7,"Italian Grand Prix","2022-09-11","13:00:00.000"
+1074,2022,17,65,"Singapore Grand Prix","2022-10-02","12:00:00.000"
+1075,2022,18,53,"Japanese Grand Prix","2022-10-09","05:00:00.000"
+1076,2022,19,69,"United States Grand Prix","2022-10-23","19:00:00.000"
+1077,2022,20,23,"Mexico City Grand Prix","2022-10-30","20:00:00.000"
+1078,2022,21,37,"Brazilian Grand Prix","2022-11-13","18:00:00.000"
+1079,2022,22,66,"Abu Dhabi Grand Prix","2022-11-20","13:00:00.000"
+1080,2023,1,61,"Bahrain Grand Prix","2023-03-05","15:00:00.000"
+1081,2023,2,75,"Saudi Arabian Grand Prix","2023-03-19","17:00:00.000"
+1082,2023,3,59,"Australian Grand Prix","2023-04-02","05:00:00.000"
+1083,2023,4,71,"Azerbaijan Grand Prix","2023-04-30","11:00:00.000"
+1084,2023,5,76,"Miami Grand Prix","2023-05-07","19:30:00.000"
+1085,2023,6,45,"Emilia Romagna Grand Prix","2023-05-21","13:00:00.000"
+1086,2023,7,2,"Monaco Grand Prix","2023-05-28","13:00:00.000"
+1087,2023,8,56,"Spanish Grand Prix","2023-06-04","13:00:00.000"
+1088,2023,9,44,"Canadian Grand Prix","2023-06-18","18:00:00.000"
+1089,2023,10,34,"Austrian Grand Prix","2023-07-02","13:00:00.000"
+1090,2023,11,1,"British Grand Prix","2023-07-09","14:00:00.000"
+1091,2023,12,52,"Hungarian Grand Prix","2023-07-23","13:00:00.000"
+1092,2023,13,5,"Belgian Grand Prix","2023-07-30","13:00:00.000"
+1093,2023,14,11,"Dutch Grand Prix","2023-08-27","13:00:00.000"
+1094,2023,15,7,"Italian Grand Prix","2023-09-03","13:00:00.000"
+1095,2023,16,65,"Singapore Grand Prix","2023-09-17","12:00:00.000"
+1096,2023,17,53,"Japanese Grand Prix","2023-09-24","05:00:00.000"
+1097,2023,18,74,"Qatar Grand Prix","2023-10-08","14:00:00.000"
+1098,2023,19,69,"United States Grand Prix","2023-10-22","19:00:00.000"
+1099,2023,20,23,"Mexico City Grand Prix","2023-10-29","20:00:00.000"
+1100,2023,21,37,"SÃ£o Paulo Grand Prix","2023-11-05","17:00:00.000"
+1101,2023,22,77,"Las Vegas Grand Prix","2023-11-19","06:00:00.000"
+1102,2023,23,66,"Abu Dhabi Grand Prix","2023-11-26","13:00:00.000"
