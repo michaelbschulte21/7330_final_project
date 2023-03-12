@@ -60,7 +60,7 @@ tryCatch({
                                  if_null_char(df$driver_abbr), ", ",
                                  if_null_int(df$number), ", ",
                                  if_null_char(df$code), ", '",
-                                 drivers$first_name, "', '",
+                                 df$first_name, "', '",
                                  apostrophe_fix(df$last_name), "', '",
                                  df$DOB, "', '",
                                  df$nationality
@@ -91,7 +91,7 @@ tryCatch({
   script <- paste0("INSERT INTO races(race_ID, year, round, circuit_ID, race_name, date, time)
                  VALUES ", paste("(",
                                  races$race_ID, ", ",
-                                 races$season, ", ",
+                                 races$year, ", ",
                                  races$round, ", ",
                                  races$circuit_ID, ", ",
                                  if_null_char(races$race_name), ", ",
