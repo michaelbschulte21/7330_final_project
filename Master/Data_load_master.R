@@ -283,7 +283,10 @@ driver_standings <- merge(x = driver_standings,
                           all.x = TRUE,
                           all.y = FALSE,
                           sort = FALSE)
-driver_standings <- driver_standings %>% select(-c(constructor_ID)) %>% dplyr::rename('constructor_ID' = 'constructor_ID.y') %>% dplyr::relocate(constructor_ID, .after = wins)
+driver_standings <- driver_standings %>% 
+  select(-c(constructor_ID)) %>% 
+  dplyr::rename('constructor_ID' = 'constructor_ID.y') %>% 
+  dplyr::relocate(constructor_ID, .after = wins)
 driver_standings <- merge(x = driver_standings,
                           y = races %>% select(c(race_ID, season, round)),
                           by.x = c('season', 'round'),
@@ -292,7 +295,9 @@ driver_standings <- merge(x = driver_standings,
                           all.y = FALSE,
                           sort = FALSE)
 driver_standings <- driver_standings[order(driver_standings$season, driver_standings$round),]
-driver_standings <- driver_standings %>% select(-c(season, round)) %>% dplyr::relocate(race_ID, .before = driver_ID)
+driver_standings <- driver_standings %>% 
+  select(-c(season, round)) %>% 
+  dplyr::relocate(race_ID, .before = driver_ID)
 rownames(driver_standings) <- NULL
 driver_standings$driver_standings_ID <- 1:nrow(driver_standings)
 driver_standings <- driver_standings %>% dplyr::relocate(driver_standings_ID, .before = race_ID)
@@ -327,7 +332,10 @@ lap_times <- merge(x = lap_times,
                    all.x = TRUE,
                    all.y = FALSE,
                    sort = FALSE)
-lap_times <- lap_times %>% select(-c(driver_ID)) %>% dplyr::rename('driver_ID' = 'driver_ID.y') %>% dplyr::relocate(driver_ID, .before = lap)
+lap_times <- lap_times %>% 
+  select(-c(driver_ID)) %>%
+  dplyr::rename('driver_ID' = 'driver_ID.y') %>% 
+  dplyr::relocate(driver_ID, .before = lap)
 lap_times <- merge(x = lap_times,
                    y = races %>% select(race_ID, race_name, season, round),
                    by.x = c('season', 'round', 'race_name'),
@@ -336,7 +344,9 @@ lap_times <- merge(x = lap_times,
                    all.y = FALSE,
                    sort = FALSE)
 lap_times <- lap_times[order(lap_times$season, lap_times$round, lap_times$race_name),]
-lap_times <- lap_times %>% select(-c(season, round, race_name)) %>% dplyr::relocate(race_ID, .before = driver_ID)
+lap_times <- lap_times %>% 
+  select(-c(season, round, race_name)) %>% 
+  dplyr::relocate(race_ID, .before = driver_ID)
 
 script <- paste0("INSERT INTO lap_times (race_ID, driver_ID, lap, position, time)
                  VALUES ", paste("(",
@@ -365,10 +375,15 @@ pit_stops <- merge(x = pit_stops,
                    all.x = TRUE,
                    all.y = FALSE,
                    sort = FALSE)
-pit_stops <- pit_stops %>% select(-c(driver_ID)) %>% dplyr::rename('driver_ID' = 'driver_ID.y') %>% dplyr::relocate(driver_ID, .before = stop)
+pit_stops <- pit_stops %>% 
+  select(-c(driver_ID)) %>% 
+  dplyr::rename('driver_ID' = 'driver_ID.y') %>% 
+  dplyr::relocate(driver_ID, .before = stop)
 pit_stops$race_name[pit_stops$season == '2021' & pit_stops$round == '12'] <- races$race_name[races$season == '2021' & races$round == '12']
-for(round_num in 1:22){
-  pit_stops$race_name[pit_stops$season == '2023' & pit_stops$round == round_num] <- races$race_name[races$season == '2023' & races$round == round_num]
+for(se in 2023:2024){
+  for(round_num in 1:max(pit_stops$round[pit_stops$season == se])){
+    pit_stops$race_name[pit_stops$season == se & pit_stops$round == round_num] <- races$race_name[races$season == se & races$round == round_num]
+  }
 }
 pit_stops <- merge(x = pit_stops,
                    y = races %>% select(race_ID, race_name, season, round),
@@ -379,7 +394,9 @@ pit_stops <- merge(x = pit_stops,
                    sort = FALSE)
 pit_stops <- pit_stops[order(pit_stops$season, pit_stops$round, pit_stops$race_name),]
 rownames(pit_stops) <- NULL
-pit_stops <- pit_stops %>% select(-c(season, round, race_name)) %>% dplyr::relocate(race_ID, .before = driver_ID)
+pit_stops <- pit_stops %>%
+  select(-c(season, round, race_name)) %>%
+  dplyr::relocate(race_ID, .before = driver_ID)
 
 script <- paste0("INSERT INTO pit_stops (race_ID, driver_ID, stop, lap, time, duration)
                  VALUES ", paste("(",
@@ -408,7 +425,9 @@ qualifying <- merge(x = qualifying,
                     all.x = TRUE,
                     all.y = FALSE,
                     sort = FALSE)
-qualifying <- qualifying %>% select(-c(driver_ID)) %>% dplyr::rename('driver_ID' = 'driver_ID.y') %>% dplyr::relocate(driver_ID, .before = constructor_ID)
+qualifying <- qualifying %>% select(-c(driver_ID)) %>% 
+  dplyr::rename('driver_ID' = 'driver_ID.y') %>% 
+  dplyr::relocate(driver_ID, .before = constructor_ID)
 qualifying <- merge(x = qualifying,
                     y = constructors %>% select(c(constructor_ID, constructor_abbr)),
                     by.x = 'constructor_ID',
@@ -416,7 +435,10 @@ qualifying <- merge(x = qualifying,
                     all.x = TRUE,
                     all.y = F,
                     sort = F)
-qualifying <- qualifying %>% select(-c(constructor_ID)) %>% dplyr::rename('constructor_ID' = 'constructor_ID.y') %>% dplyr::relocate(constructor_ID, .before = number)
+qualifying <- qualifying %>% 
+  select(-c(constructor_ID)) %>% 
+  dplyr::rename('constructor_ID' = 'constructor_ID.y') %>% 
+  dplyr::relocate(constructor_ID, .before = number)
 qualifying <- merge(x = qualifying,
                     y = races %>% select(-c(circuit_ID, date, time)),
                     by.x = c('season', 'round', 'race_name'),
@@ -426,7 +448,9 @@ qualifying <- merge(x = qualifying,
                     sort = F)
 qualifying <- qualifying[order(qualifying$season, qualifying$round, qualifying$race_ID),]
 rownames(qualifying) <- NULL
-qualifying <- qualifying %>% select(-c(season, round, race_name)) %>% dplyr::relocate(race_ID, .before = driver_ID)
+qualifying <- qualifying %>% 
+  select(-c(season, round, race_name)) %>% 
+  dplyr::relocate(race_ID, .before = driver_ID)
 qualifying$qualify_ID <- 1:nrow(qualifying)
 qualifying <- qualifying %>% dplyr::relocate(qualify_ID, .before = race_ID)
 
@@ -460,7 +484,10 @@ results <- merge(x = results,
                     all.x = T,
                     all.y = F,
                     sort = F)
-results <- results %>% select(-c(driver_ID)) %>% dplyr::rename('driver_ID' = 'driver_ID.y') %>% dplyr::relocate(driver_ID, .before = constructor_ID)
+results <- results %>% 
+  select(-c(driver_ID)) %>% 
+  dplyr::rename('driver_ID' = 'driver_ID.y') %>% 
+  dplyr::relocate(driver_ID, .before = constructor_ID)
 results <- merge(x = results,
                   y = constructors %>% select(c(constructor_ID, constructor_abbr)),
                   by.x = 'constructor_ID',
@@ -468,7 +495,10 @@ results <- merge(x = results,
                   all.x = T,
                   all.y = F,
                   sort = F)
-results <- results %>% select(-c(constructor_ID)) %>% dplyr::rename('constructor_ID' = 'constructor_ID.y') %>% dplyr::relocate(constructor_ID, .before = number)
+results <- results %>%
+  select(-c(constructor_ID)) %>% 
+  dplyr::rename('constructor_ID' = 'constructor_ID.y') %>% 
+  dplyr::relocate(constructor_ID, .before = number)
 results <- merge(x = results,
                  y = status,
                  by.x = 'status',
@@ -476,7 +506,9 @@ results <- merge(x = results,
                  all.x = T,
                  all.y = F,
                  sort = F)
-results <- results %>% select(-c(status)) %>% dplyr::relocate(status_ID, .after = fastest_Lap_Speed_Units)
+results <- results %>% 
+  select(-c(status)) %>% 
+  dplyr::relocate(status_ID, .after = fastest_Lap_Speed_Units)
 results <- merge(x = results,
                   y = races %>% select(-c(circuit_ID, date, time)),
                   by.x = c('season', 'round', 'race_name'),
@@ -485,7 +517,9 @@ results <- merge(x = results,
                   all.y = F,
                   sort = F)
 results <- results[order(results$season, results$round, results$position),]
-results <- results %>% select(-c(season, round, race_name)) %>% dplyr::relocate(race_ID, .before = driver_ID)
+results <- results %>% 
+  select(-c(season, round, race_name)) %>% 
+  dplyr::relocate(race_ID, .before = driver_ID)
 rownames(results) <- NULL
 results <- results_time_cleaner(results)
 results$result_ID <- 1:nrow(results)

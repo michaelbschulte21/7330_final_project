@@ -195,15 +195,15 @@ results_time_cleaner <- function(results){
   race_IDs <- unique(results$race_ID)
   for(race_id in race_IDs){
     print(paste0('race_ID = ', race_id))
-    base.time <- results$time[results$race_ID == race_id & results$position == 1]
+    base.time <- unique(results$time[results$race_ID == race_id & results$position == 1])
     # x <- strptime(base_time, "%H:%M:%OS")
     # x <- as.POSIXct(x, format = '%H:%M:%OS')
     # x <- format.POSIXlt(x, format = '%H:%M:%OS', usetz = F)
-    all_positions <- results$position[results$race_ID == race_id & !is.na(results$time) & results$position != 1]
+    all_positions <- unique(results$position[results$race_ID == race_id & !is.na(results$time) & results$position != 1])
     if(length(all_positions) > 0){
-      for(position in all_positions){
-        # print(paste0('position = ', position))
-        add.time <- results$time[results$race_ID == race_id & results$position == position & !is.na(results$time)]
+      for(position in unique(all_positions)){
+        print(paste0('position = ', position))
+        add.time <- unique(results$time[results$race_ID == race_id & results$position == position & !is.na(results$time)])
         results$time[results$race_ID == race_id & results$position == position] <- add_time_to_base(base.time, add.time)
       }
     }
