@@ -10,6 +10,7 @@ script <- paste0("SELECT max(year) AS max_year
                  WHERE completed_insertion = '1';")
 start_year <- dbGetQuery(conn = dbconnection_f1, statement = script)
 start_year <- start_year$max_year
+
 if(is.na(start_year)){
   start_year <- 1
 } else if(start_year != max(years)){

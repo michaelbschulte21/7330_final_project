@@ -196,10 +196,8 @@ results_time_cleaner <- function(results){
   for(race_id in race_IDs){
     print(paste0('race_ID = ', race_id))
     base.time <- unique(results$time[results$race_ID == race_id & results$position == 1])
-    # x <- strptime(base_time, "%H:%M:%OS")
-    # x <- as.POSIXct(x, format = '%H:%M:%OS')
-    # x <- format.POSIXlt(x, format = '%H:%M:%OS', usetz = F)
     all_positions <- unique(results$position[results$race_ID == race_id & !is.na(results$time) & results$position != 1])
+    
     if(length(all_positions) > 0){
       for(position in unique(all_positions)){
         print(paste0('position = ', position))

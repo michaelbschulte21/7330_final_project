@@ -70,7 +70,9 @@ script <- paste0("SELECT SCHEMA_NAME
 flag_years <- dbGetQuery(conn = dbconnection_local, statement = script)
 flag_years_all <- nrow(flag_years) == length(years)
 flag_years_multi <- flag_years_all
+
 print(paste0("Schema for all years present = ", flag_years_all))
+
 if(!flag_years_all){
   flag_years_multi <- nrow(flag_years) > 1 & paste0('f1_', max(years)) %in% flag_years$SCHEMA_NAME
   print(paste0("Schema for multiple years present = ", flag_years_multi))

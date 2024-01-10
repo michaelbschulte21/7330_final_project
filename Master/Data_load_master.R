@@ -123,9 +123,10 @@ races <- merge(x = races,
               all.x = TRUE,
               all.y = FALSE,
               sort = FALSE)
-races <- races %>% select(-c(circuit_ID))
-races <- races %>% rename('circuit_ID' = 'circuit_ID.y')
-races <- races %>% relocate(circuit_ID, .after = race_name)
+races <- races %>% 
+  select(-c(circuit_ID)) %>% 
+  rename('circuit_ID' = 'circuit_ID.y') %>% 
+  relocate(circuit_ID, .after = race_name)
 races <- unique(races)
 races <- races_cleaner(races)
 races <- races[order(races$season, races$round),]
@@ -162,9 +163,10 @@ constructor_results <- merge(x = constructor_results,
             all.x = TRUE,
             all.y = FALSE,
             sort = FALSE)
-constructor_results <- constructor_results %>% select(-c(constructor_ID))
-constructor_results <- constructor_results %>% dplyr::rename('constructor_ID' = 'constructor_ID.y')
-constructor_results <- constructor_results %>% dplyr::relocate(constructor_ID, .before = driver_ID)
+constructor_results <- constructor_results %>% 
+  select(-c(constructor_ID)) %>%
+  dplyr::rename('constructor_ID' = 'constructor_ID.y') %>%
+  dplyr::relocate(constructor_ID, .before = driver_ID)
 constructor_results <- merge(x = constructor_results,
                             y = drivers %>% select(c(driver_ID, driver_abbr)),
                             by.x = 'driver_ID',
@@ -172,9 +174,10 @@ constructor_results <- merge(x = constructor_results,
                             all.x = TRUE,
                             all.y = FALSE,
                             sort = FALSE)
-constructor_results <- constructor_results %>% select(-c(driver_ID))
-constructor_results <- constructor_results %>% dplyr::rename('driver_ID' = 'driver_ID.y')
-constructor_results <- constructor_results %>% dplyr::relocate(driver_ID, .after = constructor_ID)
+constructor_results <- constructor_results %>% 
+  select(-c(driver_ID)) %>%
+  dplyr::rename('driver_ID' = 'driver_ID.y') %>% 
+  dplyr::relocate(driver_ID, .after = constructor_ID)
 constructor_results <- merge(x = constructor_results,
                             y = status,
                             by.x = 'status',
@@ -182,8 +185,9 @@ constructor_results <- merge(x = constructor_results,
                             all.x = TRUE,
                             all.y = FALSE,
                             sort = FALSE)
-constructor_results <- constructor_results %>% select(-c(status))
-constructor_results <- constructor_results %>% dplyr::relocate(status_ID, .after = position_Text)
+constructor_results <- constructor_results %>% 
+  select(-c(status)) %>% 
+  dplyr::relocate(status_ID, .after = position_Text)
 constructor_results <- merge(x = constructor_results,
                             y = races %>% select(c(race_ID, race_name, season, round)),
                             by.x = c('race_name', 'season', 'round'),
@@ -191,8 +195,9 @@ constructor_results <- merge(x = constructor_results,
                             all.x = TRUE,
                             all.y = FALSE,
                             sort = FALSE)
-constructor_results <- constructor_results %>% select(-c(race_name, season, round))
-constructor_results <- constructor_results %>% dplyr::relocate(race_ID, .before = constructor_ID)
+constructor_results <- constructor_results %>% 
+  select(-c(race_name, season, round)) %>%
+  dplyr::relocate(race_ID, .before = constructor_ID)
 constructor_results <- constructor_results[order(constructor_results$race_ID, constructor_results$constructor_ID),]
 rownames(constructor_results) <- NULL
 constructor_results$constructor_results_ID <- 1:nrow(constructor_results)
@@ -229,9 +234,10 @@ constructor_standings <- merge(x = constructor_standings,
                                 all.x = TRUE,
                                 all.y = FALSE,
                                 sort = FALSE)
-constructor_standings <- constructor_standings %>% select(-c(constructor_ID))
-constructor_standings <- constructor_standings %>% dplyr::rename('constructor_ID' = 'constructor_ID.y')
-constructor_standings <- constructor_standings %>% dplyr::relocate(constructor_ID, .before = points)
+constructor_standings <- constructor_standings %>% 
+  select(-c(constructor_ID)) %>% 
+  dplyr::rename('constructor_ID' = 'constructor_ID.y') %>% 
+  dplyr::relocate(constructor_ID, .before = points)
 constructor_standings <- merge(x = constructor_standings,
                                y = races %>% select(c(race_ID, season, round)),
                                by.x = c('season', 'round'),
@@ -275,7 +281,10 @@ driver_standings <- merge(x = driver_standings,
                           all.x = TRUE,
                           all.y = FALSE,
                           sort = FALSE)
-driver_standings <- driver_standings %>% select(-c(driver_ID)) %>% dplyr::rename('driver_ID' = 'driver_ID.y') %>% dplyr::relocate(driver_ID, .before = points)
+driver_standings <- driver_standings %>% 
+  select(-c(driver_ID)) %>% 
+  dplyr::rename('driver_ID' = 'driver_ID.y') %>%
+  dplyr::relocate(driver_ID, .before = points)
 driver_standings <- merge(x = driver_standings,
                           y = constructors %>% select(c(constructor_ID, constructor_abbr)),
                           by.x = 'constructor_ID',
